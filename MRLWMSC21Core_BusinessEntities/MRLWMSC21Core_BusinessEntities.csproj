@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02E3B185-3CC2-4493-AD11-781CE4E5BD4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRLWMSC21Core_BusinessEntities</RootNamespace>
+    <AssemblyName>MRLWMSC21Core_BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\APIInventory.cs" />
+    <Compile Include="Entities\APISOCreation.cs" />
+    <Compile Include="Entities\Colour.cs" />
+    <Compile Include="Entities\CycleCount.cs" />
+    <Compile Include="Entities\GoodsMovement.cs" />
+    <Compile Include="Entities\GRN.cs" />
+    <Compile Include="Entities\HouseKeepingJob.cs" />
+    <Compile Include="Entities\Inbound.cs" />
+    <Compile Include="Entities\InboundInventoryMap.cs" />
+    <Compile Include="Entities\Inventory.cs" />
+    <Compile Include="Entities\LoadItem.cs" />
+    <Compile Include="Entities\LoadSheet.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\MasterDataCreation.cs" />
+    <Compile Include="Entities\Material.cs" />
+    <Compile Include="Entities\Outbound.cs" />
+    <Compile Include="Entities\Pallet.cs" />
+    <Compile Include="Entities\PalletizationZoning.cs" />
+    <Compile Include="Entities\PickingPreferences.cs" />
+    <Compile Include="Entities\Picklist.cs" />
+    <Compile Include="Entities\PickListInventory.cs" />
+    <Compile Include="Entities\PutawayPreferences.cs" />
+    <Compile Include="Entities\ScannedItem.cs" />
+    <Compile Include="Entities\SearchCriteria.cs" />
+    <Compile Include="Entities\StorageLocations.cs" />
+    <Compile Include="Entities\Suggestion.cs" />
+    <Compile Include="Entities\Tenant.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserLogin.cs" />
+    <Compile Include="Entities\UserProfile.cs" />
+    <Compile Include="Entities\UserRoles.cs" />
+    <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Entities\Warehouse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MRLWMSC21Core_Libraries\MRLWMSC21Core_Libraries.csproj">
+      <Project>{fe0ec17f-b987-4557-a958-cb4ba89464be}</Project>
+      <Name>MRLWMSC21Core_Libraries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

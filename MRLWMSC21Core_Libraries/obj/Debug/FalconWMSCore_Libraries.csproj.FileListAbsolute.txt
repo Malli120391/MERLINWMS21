@@ -1,0 +1,38 @@
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\bin\Debug\Newtonsoft.Json.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csprojAssemblyReference.cache
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CoreCompileInputs.cache
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CopyComplete
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\bin\Debug\Newtonsoft.Json.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csprojAssemblyReference.cache
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CoreCompileInputs.cache
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CopyComplete
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\Newtonsoft.Json.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CoreCompileInputs.cache
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CopyComplete
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.dll
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\Newtonsoft.Json.dll
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CoreCompileInputs.cache
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CopyComplete
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.dll
+E:\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\WMSCore_Libraries.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\bin\Debug\Newtonsoft.Json.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csprojAssemblyReference.cache
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CoreCompileInputs.cache
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\FalconWMSCore_Libraries.csproj.CopyComplete
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Libraries\obj\Debug\WMSCore_Libraries.pdb

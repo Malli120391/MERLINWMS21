@@ -1,0 +1,60 @@
+﻿    <%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="mReport.master.cs" Inherits="MRLWMSC21.mReports.mReport" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="Scripts/GreenHouse_Style.css" rel="stylesheet" />
+    <script src="Scripts/FileSaver.min.js"></script>
+    
+    <script src="Scripts/html2canvas.min.js"></script>
+   <%-- <script src="../Scripts/angular.min.js"></script>
+    <script src="Scripts/dirPagination.js"></script>--%>
+    <script src="Scripts/jspdf.min.js"></script>
+    <script src="Scripts/jspdf.plugin.autotable.js"></script>
+
+
+    <script src="Scripts/tableExport.min.js"></script>
+    <script src="Scripts/xlsx.core.min.js"></script>
+    <link href="Scripts/CustomReport.css" rel="stylesheet" />
+    <script src="../Scripts/cookie.min.js"></script>
+    <style>
+ 
+    </style>
+
+   
+   <div>
+      
+   </div>
+    <div>
+        
+        <div class="module_yellow">
+            <div class="ModuleHeader" height="35px">
+                <div><a href="../Default.aspx">Home</a> <i class="material-icons">arrow_right</i> <span>Reports</span> <i class="material-icons">arrow_right</i> <span class="breadcrumbd" contenteditable="false"><asp:Literal ID="ltFormSubHeading" runat="server" /></span></div>
+                <%-- <div class="mandatory"><b>Note:</b> <span style="color:red"> __ </span>Indicates mandatory fields</div>--%>
+            </div>
+            
+            <div class="module_yellow" align="right">
+                <asp:Literal runat="server" ID="ltMenuInbound" ></asp:Literal>
+            </div>
+        </div>
+        <div>
+            <div valign="top" colspan="2" class="module_Green">  
+               
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                     <%--<div style="padding:5px;">
+                         <img id="imgReport" src="" height="50" width="166" />
+                     </div>--%>
+                        </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder runat="server" ID="MMContent" >
+                </asp:ContentPlaceHolder>
+                
+
+                
+            </div>
+            
+        </div>
+    </div>
+
+     <%--<script>
+         var data = $("#Image1").attr("src");
+         $("#imgReport").attr("src", data);
+         $(".dashed").css("display", "none");
+    </script>--%>
+</asp:Content>

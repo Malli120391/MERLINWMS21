@@ -1,0 +1,99 @@
+﻿/* 
+    Author :
+    Date: 24/01/2015
+    Date Modified:24/01/2015
+*/
+
+
+/*Custom Dailog Box Css*/
+
+.ui-dialog .ui-dialog-titlebar {
+    color: white;
+    background-color: #2CA8C2;
+}
+
+
+/*/*Button box css*/
+/*.ui-button-large {
+    color: #fff;
+    background-color: #45b9d1;
+    border-color: #2CA8C2;
+    border: 0 !important;
+    background: var(--sideNav-bg);
+}
+
+    .ui-button-large:hover, .ui-button-large:focus, .ui-button-large.focus, .ui-button-large:active, .ui-button-large.active, .open > .dropdown-toggle.ui-button-large {
+        background-color: #2CA8C2;
+    }*/
+
+
+/*.ui-button-small {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #45b9d1;
+    border: solid 1px #2CA8C2;
+    padding: 3px 5px 3px 5px;
+    border-radius: 4px;
+    border-color: #2CA8C2;
+    border: 0 !important;
+    background: var(--sideNav-bg);
+}
+
+.ui-button-small:hover, .ui-button-small:focus, .ui-button-small.focus, .ui-button-small:active, .ui-button-small.active, .open > .dropdown-toggle.ui-button-small {
+    background-color: #2CA8C2;
+}*/
+
+
+
+/*Custom Acordino*/
+/*.ui-Customaccordion {
+    border: 1px solid #99e8fa;
+    border-radius: 0px 0px 4px 4px;
+    padding: 0px 5px 10px 5px;    
+    border-top: none;
+}
+.ui-SubHeading {
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    font-weight:bold;
+}*/
+
+/*.ui-SubHeadingBar{
+    color: black;
+    /*background-color: #e8f8fb;*/
+    background-color: #CAF7FF;
+    
+    border:1px solid #99e8fa;*/
+    /*padding-top: 7px;
+    margin-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;*/
+
+
+.btnSearch {
+    background-color: #2CA8C2;
+    border-color: #2CA8C2;
+}
+
+.btnSearchSmall {
+    background-color: #2CA8C2;
+    border-color: #2CA8C2;
+}
+
+.excel {
+    padding-top: 12px;
+}
+
+.txt_search:focus {
+    border: 1px solid #2CA8C2;
+}
+
+.accordinoGap {
+    padding-top: 10px;
+}
+
+.pagewidth {
+    min-width: 1028px;
+}

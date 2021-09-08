@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="../flow/cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="troubleshooting.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                   
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-bottom:0px">
+            <div class="">
+                <div class="col m12">
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <ul class="collapsible">
+                                <li class="active">
+                                    <div class="collapsible-header active"><i class="material-icons">archive</i>Inbound</div>
+                                    <div class="collapsible-body" style="display: block;">
+                                        <div class="info">
+                                            <ul class="collapsible">
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Why am I unable to upload the invoice sent by the vendor/supplier into the PO ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>You should only upload the invoices in the standard <a href="../../mInbound/ASNImport.aspx" target="_blank">ASN Invoice <i class="material-icons xs">launch</i></a> format provided by the system.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Where do I find the Standard ASN Invoice format ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>
+                                                                In Inbound <i class="material-icons">keyboard_arrow_left</i> <a href="../../mInbound/ASNImport.aspx" target="_blank">ASN Import</a>,<i class="material-icons xs">launch</i> a “Get Template” pic button is provided. When clicked on it, the standard ASN Invoice format in an Excel sheet is downloaded.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Though the ASN template is imported, <em>“Create Inbound”<i class="material-icons xs">launch</i></em> cannot be updated successfully. Why?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <p>Probability of reasons could be the following: </p>
+                                                            <li>All the Mandatory fields are not given</li>
+                                                            <li>Any special characters are included in the excel</li>
+                                                            <li>PO number is not configured in FWMS</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        After “Create Inbound”, can the <a href="../../mInbound/ASNImport.aspx" target="_blank"> ASN <i class="material-icons xs">launch</i></a> be edited ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>No, because two invoices cannot have the same PO.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        How to modify the <a href="../../mInbound/ASNImport.aspx" target="_blank">ASN<i class="material-icons xs">launch</i></a> ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Go to <a href="../../mInbound/ASNImport.aspx" target="_blank">Inbound Search<i class="material-icons xs">launch</i></a>, select the invoice and click on Modify icon. This can be done until the Inbound is closed.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Will I be able to receive partial shipments from the vendors in this WMS ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Yes! The vendor can send a single Purchase Order (PO) in multiple Inbounds.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Can I map one <a href="../../mInbound/ASNImport.aspx" target="_blank">ASN<i class="material-icons xs">launch</i></a> with multiple purchase orders ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Yes! You can map one <a href="../../mInbound/ASNImport.aspx" target="_blank">ASN<i class="material-icons xs">launch</i></a> with multiple purchase orders but it must be from the same supplier.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Why isn’t the system allowing dock allocation for material Inward?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <p>Probability of reasons could be the following:</p>
+                                                            <li>NO docks are created for the respective warehouse.</li>
+                                                            <li>Available docks are already in use for other vehicles.</li>
+                                                            <li>While adding a Dock, if the <em>“Est. Dock-In Time”</em> deceeded the current time.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        How to check if the any docks are created for a warehouse or not ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>In Yard Management <i class="material-icons">keyboard_arrow_left</i> <a href="../../mInbound/gateentrylist.aspx" target="_blank">Gate Entry</a>,<i class="material-icons xs">launch</i> after submitting the <em>“Account &Vehicle Info”</em> and <em>“Shipment Info”</em>, <em>“Docking Info”</em> panel is displayed. Click on <em>“Add Docks +”</em> and check the Dock # dropdown after giving the Supplier, Invoice and Shipment Ref #. If an empty dropdown is displayed that indicates there are no docks created for the warehouse. </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        How to create Docks for a warehouse ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>In Master Data <i class="material-icons">keyboard_arrow_left</i> <a href="../../TPL/AccountList.aspx">Account</a>,<i class="material-icons xs">launch</i> go to warehouse details panel and in the below list click on the edit icon for the selected warehouse. Go to dock creation panel and click on <em>“Create Dock”</em>. A popup will be displayed to create a dock. Only the warehouse manager can create the dock. </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        How to check the Dock availability or are allocated for other vehicles ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>In Yard Management <i class="material-icons">keyboard_arrow_left</i> <a href="../../mInbound/gateentrylist.aspx" target="_blank">Gate Entry</a>,<i class="material-icons xs">launch</i> after submitting the <em>“Account &Vehicle Info”</em> and <em>“Shipment Info”</em>, <em>“Docking Info”</em> panel is displayed. Click on <em>“Add Docks +”</em> and check the Dock # dropdown after giving the Supplier, Invoice and Shipment Ref #. If <em>“Est. Dock In Time”</em> is displayed that means the dock is allocated to a vehicle/s and if the <em>“Est. Dock In Time”</em> is not displayed that means the dock is available and no vehicle is allocated to it.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Where to check if the <em>“Est. Dock-In Time”</em> deceeded the current time or not ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>In Yard Management <i class="material-icons">keyboard_arrow_left</i> <a href="../../mInbound/gateentrylist.aspx" target="_blank">Gate Entry</a>,<i class="material-icons xs">launch</i> after submitting the <em>“Account &Vehicle Info”</em> and <em>“Shipment Info”</em>, <em>“Docking Info”</em> panel is displayed. Click on <em>“Add Docks +”</em> and check the Dock # dropdown after giving the Supplier, Invoice and Shipment Ref #. If <em>“Est. Dock In Time”</em> given by the user is prior to the current time, then an alert message is thrown saying <em>“Est. Dock In Time Should Not Deceeds Current Time”</em>.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        An already added Dock is edited and its Invoice number is changed and clicked on “Save”. An error message is shown as “Invoice is already added”. Why ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>When an Invoice is changed, its respective shipment ref # must also be reselected from the fetched list.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Why haven’t the system suggested a location for putaway ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <p>Probability of reasons could be the following:</p>
+                                                            <li>Material dimensions are not configured in the item mater.</li>
+                                                            <li>Material category is not configured in the item master.</li>
+                                                            <li>Bin Dimensions are not configured in location master.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Where to configure Material dimensions ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Material Dimensions must be fetched from <em>SAP;</em> there is no updation in FWMS.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Where to configure Material category ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Material category must be fetched from <em>SAP;</em> there is no updation in FWMS.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Where to configure Bin Dimensions ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Bin Dimensions must be fetched from SAP; there is no updation in FWMS.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="collapsible-header">
+                                                        Will I be able to override the system suggested putaway ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>Yes! This happens only when the system logically shows bin availability but physical that bin is full. Here the system mandates to update the reason for such actions in handheld putaway screen and eventually a Cycle count will be triggered.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+
+
+                                                <li>
+                                                    <div class="collapsible-header">
+
+                                                        Why <a href="../../mInbound/ASNImport.aspx" target="_blank">GRN<i class="material-icons xs">launch</i></a> is not showing as updated ?
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li>This can be because receiving of materials is not completed as per the shipment.</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Can I import/ bulk create PO and Shipments data in the WMS ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#">Yes! You can bulk create/import the orders and shipment data into the WMS using the INWARD IMPORT functionality under INBOUND module with help of Excel Templates.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">Will I be able to receive partial shipments also from vendors with this WMS?</div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#">Yes! System allows the receipt of partial shipment receiving…</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Why am I unable to create/initiate new inbound for a particular tenant ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">You are missing out the mandatory fields.</a></li>
+                                                        <li><a href="#">Tenant is not mapped with the respective warehouse</a></li>
+                                                        <li><a href="#">User/Operator is not mapped with the respective warehouse</a></li>
+                                                        <li><a href="#">Suppliers doesn’t exist for that tenant</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Can I map one shipment with multiple purchase orders ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#">Yes! You can do map one shipment with multiple purchase orders from different vendors</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Why system is unable to allocate the docks for material inward ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">NO docks are created for the respective warehouse</a></li>
+                                                        <li><a href="#">Available docks are already in use for other vehicles</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    System doesn’t show the Receive option in RTR ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">Reason could be, you have not updated the shipment received details.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Why system has not suggested a location for putaway ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">Material dimensions are not configured in the item mater</a></li>
+                                                        <li><a href="#">Material category is not configured in the item master</a></li>
+                                                        <li><a href="#">Bin Dimensions are not configured in location manger</a></li>
+                                                        <li><a href="#">No locations are available in the respective warehouse</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Will I be able to override the system suggested putaway ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="#">Yes! But still the system mandates to update the reason for such action, which you can eventually choose/update in the putaway screen</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Why GRN is not showing as updated ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">Receiving/Putaway of materials is not completed as per the RTR</a></li>
+                                                        <li><a href="#">QC for the material is not complete</a></li>
+                                                        <li><a href="#">Line items for GRN is not selected</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Can I update the shortages and excess of inventory receipt ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            Probability of reasons could be the following:
+                                                        </p>
+                                                        <li><a href="#">Yes! You can update the details of shortage and excess inventory using the inbound discrepancy form provided in the discrepancy tab.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    Though the ASN template is imported, <a  href="../../mInbound/ASNImport.aspx" target="_blank"><em>“Create Inbound”</em></a> cannot be updated successfully. Why ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            It might be because of:
+                                                        </p>
+                                                        <li><a href="#">All the Mandatory fields are not given</a></li>
+                                                        <li><a href="#">Any special characters are included in the excel</a></li>
+                                                        <li><a href="#">PO number is not configured in FWMS</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    After <a href="../../mInbound/ASNImport.aspx" target="_blank"><em>“Create Inbound”</em></a>, can the ASN be edited ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            It might be because of:
+                                                        </p>
+                                                        <li><a href="#"> No, because two invoices cannot have the same PO.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+                                                <!--<li>
+                                                <div class="collapsible-header">
+                                                    How to Modify the ASN data ?
+                                                </div>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <p>
+                                                            It might be because of:
+                                                        </p>
+                                                        <li><a target="_blank" href="../../mInbound/InboundSearch.aspx">Go to Inbound Search, select the invoice and click on Modify icon. This can be done until the Inbound is closed.</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>-->
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!-- 	<div class="right-fotter">
+                                            <svg version="1.1" id="footer12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 391.399 391.399" style="enable-background:new 0 0 391.399 391.399;" xml:space="preserve"><path style="fill:#ff9800;" d="M144.299,377.699l50.4-143.6l-132.4-0.4c-5.6,0-10-4.4-10-10c0-2.4,0.8-4.4,2.4-6.4l0,0 c38.8-47.6,77.6-95.2,116.4-142.8c19.2-23.2,38.4-46.8,58-70.8c3.6-4.4,9.6-4.8,14-1.6c3.2,2.8,4.4,7.2,3.2,11.2l-50.8,144 l132.4,0.4c5.6,0,10,4.4,10,10c0,2.4-0.8,4.4-2,6l0,0c-37.2,48-76.4,95.2-115.6,142.8c-19.2,23.2-38.4,46.4-58.8,71.2 c-3.6,4.4-9.6,4.8-14,1.6C143.899,386.099,142.699,381.699,144.299,377.699"></path><g><path style="fill:var(--default-site-color);" d="M119.499,332.899c4.8,2.8,6.8,8.8,4,13.6c-2.8,4.8-8.8,6.8-13.6,4c-28.8-15.6-52.4-38.4-68.8-66 c-16-27.2-25.2-58.4-25.2-91.6c0-41.6,14.4-80.4,38.8-111.2s59.2-53.6,99.6-63.2c5.2-1.2,10.8,2,12,7.6c1.2,5.2-2,10.8-7.6,12 c-36,8.4-66.8,28.8-88.4,56s-34.4,62-34.4,98.8c0,29.2,8,57.2,22.4,81.6C73.099,298.899,93.899,319.299,119.499,332.899"></path><path style="fill:var(--default-site-color);" d="M273.099,53.699c-4.8-2.8-6.8-8.8-4-13.6c2.8-4.8,8.8-6.8,13.6-4c28.8,15.6,52,38.8,68,65.6 c16,27.2,24.8,58.4,24.8,91.2c0,42-14.8,81.2-39.6,112c-24.8,30.8-60,53.6-100.8,62.8c-5.2,1.2-10.8-2.4-12-7.6s2.4-10.8,7.6-12 c36.4-8,67.6-28.4,89.6-55.6c22-27.6,35.2-62.4,35.2-99.6c0-29.2-8-56.8-22-80.8C319.099,88.099,298.699,67.699,273.099,53.699"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g<g><g></g></g<g></svg>
+                        &nbsp;By <a href="http://inventrax.com/" target="_blank">Inventrax</a>
+                                        </div>	 -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m12">
+                    <div style="height: 10px;"></div>
+                    <div class="card m0" style="box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+                        <h4 class="getMore">Get More Help</h4>
+                        <p>Here we have more ways to get help from real humans.</p>
+                        <div class="row" style="margin-bottom: 0px;">
+                            <div class="col m4">
+                                <div class="card p5 center">
+                                    <a href="http://www.inventrax.com/csp/Login.aspx?ReturnUrl=%2fcsp">
+                                        <img src="https://image.flaticon.com/icons/svg/309/309264.svg" width="80">
+                                        <h5 class="typical">Email Us</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col m4">
+                                <div class="card p5 center">
+                                    <a href="http://www.inventrax.com/csp/Login.aspx?ReturnUrl=%2fcsp">
+                                        <img src="https://image.flaticon.com/icons/svg/309/309264.svg" width="80"><img src="https://image.flaticon.com/icons/svg/122/122917.svg" width="80">
+                                        <h5 class="typical">Call Now</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col m4">
+                                <div class="card p5 center">
+                                    <a href="http://www.inventrax.com/">
+                                        <img src="https://image.flaticon.com/icons/svg/1005/1005112.svg" width="80">
+                                        <h5 class="typical">Live Chat</h5>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m12">
+                    <div style="height: 10px;"></div>
+                    <div class="card m0" style="box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+                        <ul class="final__">
+                            <li><a href="">Change logs</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="http://www.inventrax.com/Contacts.aspx">Contact</a></li>
+                        </ul>
+                        <div class="right-fotter">
+                            <svg version="1.1" id="footer12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 391.399 391.399" style="enable-background:new 0 0 391.399 391.399;" xml:space="preserve"><path style="fill:#ff9800;" d="M144.299,377.699l50.4-143.6l-132.4-0.4c-5.6,0-10-4.4-10-10c0-2.4,0.8-4.4,2.4-6.4l0,0 c38.8-47.6,77.6-95.2,116.4-142.8c19.2-23.2,38.4-46.8,58-70.8c3.6-4.4,9.6-4.8,14-1.6c3.2,2.8,4.4,7.2,3.2,11.2l-50.8,144 l132.4,0.4c5.6,0,10,4.4,10,10c0,2.4-0.8,4.4-2,6l0,0c-37.2,48-76.4,95.2-115.6,142.8c-19.2,23.2-38.4,46.4-58.8,71.2 c-3.6,4.4-9.6,4.8-14,1.6C143.899,386.099,142.699,381.699,144.299,377.699"></path><g><path style="fill:var(--default-site-color);" d="M119.499,332.899c4.8,2.8,6.8,8.8,4,13.6c-2.8,4.8-8.8,6.8-13.6,4c-28.8-15.6-52.4-38.4-68.8-66 c-16-27.2-25.2-58.4-25.2-91.6c0-41.6,14.4-80.4,38.8-111.2s59.2-53.6,99.6-63.2c5.2-1.2,10.8,2,12,7.6c1.2,5.2-2,10.8-7.6,12 c-36,8.4-66.8,28.8-88.4,56s-34.4,62-34.4,98.8c0,29.2,8,57.2,22.4,81.6C73.099,298.899,93.899,319.299,119.499,332.899"></path><path style="fill:var(--default-site-color);" d="M273.099,53.699c-4.8-2.8-6.8-8.8-4-13.6c2.8-4.8,8.8-6.8,13.6-4c28.8,15.6,52,38.8,68,65.6 c16,27.2,24.8,58.4,24.8,91.2c0,42-14.8,81.2-39.6,112c-24.8,30.8-60,53.6-100.8,62.8c-5.2,1.2-10.8-2.4-12-7.6s2.4-10.8,7.6-12 c36.4-8,67.6-28.4,89.6-55.6c22-27.6,35.2-62.4,35.2-99.6c0-29.2-8-56.8-22-80.8C319.099,88.099,298.699,67.699,273.099,53.699"></path></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g<g><g></g></g<g></svg>
+                            &nbsp;By <a href="http://inventrax.com/" target="_blank">Inventrax</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../flow/cjs/jquery.js"></script>
+        <script src="../flow/cjs/app.js"></script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+        <script>
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+        </script>
+
+</body>
+</html>

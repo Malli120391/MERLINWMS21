@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MRLWMSC21_Library.WMS_DBCommon
+{
+    public enum DRLExecuteCode
+    {
+        WMS_CONFIG,
+        MATERIAL_INWARD_OUTWARD_BY_ID,
+        MATERIAL_OUTWARD_BY_ID,
+        MATERIAL_LIST,
+        MATERIAL_BY_ID,
+        MATERIAL_BY_MCODE,
+        MATERIAL_LIST_BY_SUPPLIER,
+        MATERIAL_INFO_BY_PO,
+        MATERIAL_INFO_BY_INVOICE,
+        MATERIAL_INFO_BY_SO,
+        MATERIAL_TENANT,
+        MATERIAL_BY_TYPE,
+        MATERIAL_BY_GROUP,
+        MATERIAL_BIN_INFO_BY_MATERIALID,
+               
+        INVOICE_LIST_TENANT,
+        INVOICE_LIST_BY_SUPPLIER,
+        INVOICE_BY_ID,
+        INVOICE_LIST_BY_PO,
+        INVOICE_LIST_BY_INBOUND,
+        
+        PO_LIST,
+        PO_LIST_BY_SUPPLIER,
+        PO_LIST_BY_STATUS,
+        
+        CUSTOMER_LIST,
+        CUSTOMER_LIST_BY_TENANT,
+        CUSTOMER_BY_ID,
+        
+        SUPPLIER_LIST,
+        SUPPLIER_LIST_BY_TENANT,
+        SUPPLIER_BY_ID,
+        SUPPLIER_LIST_BY_MATERIAL,
+
+        LOCATION_LIST_BY_WAREHOUSE,
+        LOCATION_LIST_BY_ZONE,
+        LOCATION_LIST_BY_RACK,
+        LOCATION_LIST_BY_TYPE,
+        LOCATION_LIST_BY_TENANT,
+        LOCATION_LIST_BY_SUPPLIER,
+        LOCATION_OCCUPANCY_BY_ID,
+        LOCATION_LIST_BY_ZONECODE,
+        SUGGESTED_LOCATION_OCCUPANCY,
+        ZONE_LIST_BY_WAREHOUSE,
+        DELIVERY_PICK_NOTE
+
+    }
+
+}

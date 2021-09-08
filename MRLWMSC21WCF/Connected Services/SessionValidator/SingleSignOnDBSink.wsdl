@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SingleSignOnDBSink" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.1.90/SSOServices_QC/Service/SingleSignOnDBSink.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.1.90/SSOServices_QC/Service/SingleSignOnDBSink.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.1.90/SSOServices_QC/Service/SingleSignOnDBSink.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ZohoServices" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISingleSignOnDBSink_InsertWMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWMS" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertWMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertWMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertInvSSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvSSO" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertInvSSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertInvSSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertUserInvSSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserInvSSO" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertUserInvSSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserInvSSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertSubscriptionInvSSO_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSubscriptionInvSSO" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertSubscriptionInvSSO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSubscriptionInvSSOResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ValidateUserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ValidateUserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_EndUserSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndUserSession" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_EndUserSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndUserSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ValidateUserSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserSession" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ValidateUserSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_GetAllSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_GetAllSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_GetAllPlans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlans" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_GetAllPlans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlansResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertUserInvWMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserInvWMS" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_InsertUserInvWMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserInvWMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_LoginActivation_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginActivation" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_LoginActivation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginActivationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ForgetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ForgetPassword" />
+  </wsdl:message>
+  <wsdl:message name="ISingleSignOnDBSink_ForgetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ForgetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISingleSignOnDBSink">
+    <wsdl:operation name="InsertWMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertWMS" message="tns:ISingleSignOnDBSink_InsertWMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertWMSResponse" message="tns:ISingleSignOnDBSink_InsertWMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertInvSSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertInvSSO" message="tns:ISingleSignOnDBSink_InsertInvSSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertInvSSOResponse" message="tns:ISingleSignOnDBSink_InsertInvSSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserInvSSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvSSO" message="tns:ISingleSignOnDBSink_InsertUserInvSSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvSSOResponse" message="tns:ISingleSignOnDBSink_InsertUserInvSSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSubscriptionInvSSO">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertSubscriptionInvSSO" message="tns:ISingleSignOnDBSink_InsertSubscriptionInvSSO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertSubscriptionInvSSOResponse" message="tns:ISingleSignOnDBSink_InsertSubscriptionInvSSO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ValidateUserLogin" message="tns:ISingleSignOnDBSink_ValidateUserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ValidateUserLoginResponse" message="tns:ISingleSignOnDBSink_ValidateUserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndUserSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/EndUserSession" message="tns:ISingleSignOnDBSink_EndUserSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/EndUserSessionResponse" message="tns:ISingleSignOnDBSink_EndUserSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ValidateUserSession" message="tns:ISingleSignOnDBSink_ValidateUserSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ValidateUserSessionResponse" message="tns:ISingleSignOnDBSink_ValidateUserSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSubscriptions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/GetAllSubscriptions" message="tns:ISingleSignOnDBSink_GetAllSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/GetAllSubscriptionsResponse" message="tns:ISingleSignOnDBSink_GetAllSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/GetAllPlans" message="tns:ISingleSignOnDBSink_GetAllPlans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/GetAllPlansResponse" message="tns:ISingleSignOnDBSink_GetAllPlans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserInvWMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvWMS" message="tns:ISingleSignOnDBSink_InsertUserInvWMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvWMSResponse" message="tns:ISingleSignOnDBSink_InsertUserInvWMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginActivation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/LoginActivation" message="tns:ISingleSignOnDBSink_LoginActivation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/LoginActivationResponse" message="tns:ISingleSignOnDBSink_LoginActivation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ChangePassword" message="tns:ISingleSignOnDBSink_ChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ChangePasswordResponse" message="tns:ISingleSignOnDBSink_ChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ForgetPassword" message="tns:ISingleSignOnDBSink_ForgetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISingleSignOnDBSink/ForgetPasswordResponse" message="tns:ISingleSignOnDBSink_ForgetPassword_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISingleSignOnDBSink" type="tns:ISingleSignOnDBSink">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertWMS">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/InsertWMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertInvSSO">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/InsertInvSSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserInvSSO">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvSSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSubscriptionInvSSO">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/InsertSubscriptionInvSSO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserLogin">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/ValidateUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndUserSession">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/EndUserSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserSession">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/ValidateUserSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSubscriptions">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/GetAllSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlans">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/GetAllPlans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserInvWMS">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/InsertUserInvWMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginActivation">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/LoginActivation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgetPassword">
+      <soap:operation soapAction="http://tempuri.org/ISingleSignOnDBSink/ForgetPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SingleSignOnDBSink">
+    <wsdl:port name="BasicHttpBinding_ISingleSignOnDBSink" binding="tns:BasicHttpBinding_ISingleSignOnDBSink">
+      <soap:address location="http://192.168.1.90/SSOServices_QC/Service/SingleSignOnDBSink.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

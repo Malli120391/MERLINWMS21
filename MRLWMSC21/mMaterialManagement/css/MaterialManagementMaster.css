@@ -1,0 +1,42 @@
+﻿/* 
+    Author :
+    Date: 24/01/2015
+    Date Modified:24/01/2015
+*/
+
+
+/*Custom Dailog Box Css*/
+.ui-dialog .ui-dialog-titlebar {
+    color: white;
+    background-color: #E67F22;
+}
+
+
+/*Buttons Box css*/
+.ui-button-large {
+    color: #fff;
+    background: var(--sideNav-bg);
+    /*background-color: #f7953c;
+    border-color: #E67F22;*/
+}
+.ui-button-small {
+    border:0px;
+}
+/*.ui-button-large:hover, .ui-button-large:focus, .ui-button-large.focus, .ui-button-large:active, .ui-button-large.active, .open > .dropdown-toggle.ui-button-large {
+    background-color: #E67F22;
+}*/
+
+.ui-button-small {
+text-decoration:none;
+            font-size:14px;
+            font-weight:600;
+            color:#ffffff;
+            background-color: #fc9840;
+            border: solid 1px #fb8116;            
+            padding: 3px 5px 3px 5px;
+            border-radius:4px;
+}
+.ui-button-small:hover, .ui-button-small:focus, .ui-button-small.focus, .ui-button-small:active, .ui-button-small.active, .open > .dropdown-toggle.ui-button-small {
+    background-color:#E67F22;
+}
+

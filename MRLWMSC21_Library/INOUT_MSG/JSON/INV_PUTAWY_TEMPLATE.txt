@@ -1,0 +1,106 @@
+﻿{"INV_PUTAWAY": {       "SUPPLIER_INVOICES": {"SUPPLIER_INVOICE": {
+"INV_ITEM": {
+    "LOCATION": {
+        "_BIN": "",
+        "_QTY": "",
+        "_IS_USED": "",
+        "_IS_SUGGESTED": ""
+    },
+    "MSP": {
+        "_ID": "",
+        "_QTY": "",
+        "__text": "VALUE"
+    },
+    "_ITEM_ID": "",
+    "_UOM": "",
+    "_QTY": "",
+    "_PO_REF_ID": "",
+    "_SUPPLIER_ITEM_ID": ""
+},
+"INVOICE_ORIGIN_INFO": {
+    "ADDRESS_LINE1": "",
+    "ADDRESS_LINE2": "",
+    "CITY": "",
+    "COUNTRY": "",
+    "ZIPCODE": "",
+    "NET_AMOUNT": "",
+    "GROSS_AMOUNT": "",
+    "VAT_CODE": "",
+    "_ID": "",
+    "_SUPPLIER_CODE": "",
+    "_CURRENCY": ""
+},
+"_ID": "",
+"_SUPPLIER_CODE": "",
+"_SHIPMENT_STATUS": "",
+"_STORED_REF_ID": ""
+            },
+            "_INBOUND_ID": "",
+            "_STATUS": "",
+            "_INITIATED_BY": "",
+            "_INITIATED_ON": "",
+            "_WAREHOUSE_ID": ""
+        },
+        "PURCHASE_ORDERS": {
+            "PURCHASE_ORDER": {
+"PO_DATE": "",
+"CREATED_BY": "",
+"CREATED_ON": "",
+"REMARK": "",
+"EXPECTED_DELIVERY_DATE": "",
+"SUPPLIER_INFO": {
+    "SUPPLIER": "",
+    "LEADTIME": "",
+    "ASN_DATE": "",
+    "_ID": "",
+    "_CODE": ""
+},
+"PO_LINE_ITEMS": {
+    "LINE_ITEM": {
+        "_ID": "",
+        "_ITEM_ID": "",
+        "_QTY": "",
+        "_UOM": "",
+        "_CREATED_BY": "",
+        "_CREATED_ON": ""
+    }
+},
+"_ID": ""
+            }
+        },
+        "GRN_INFO": {
+            "RECEIVED_ITEM": {
+"_ITEM_ID": "",
+"_QTY": "",
+"_UOM": "",
+"_INVOICE_ID": ""
+            },
+            "INVOICE_GRN": {
+"_ID": ""
+            },
+            "GRN_RESPONSE": {
+"MESSAGE": "",
+"_ID": ""
+            },
+            "_TYPE_ID": "",
+            "_GRN_BY": "",
+            "_TIMESTAMP": "",
+            "_INBOUND_ID": "",
+            "_STORED_REF_ID": ""
+        },
+        "REQUEST_ERRORS": {
+            "ERROR": {
+"_ID": "",
+"_VALUE": ""
+            }
+        },
+        "RESPONSE_ERRORS": {
+            "ERROR": {
+"_ID": "",
+"_VALUE": ""
+            }
+        },
+        "_VERSION": "",
+        "_TIMESTAMP": ""
+    }
+}

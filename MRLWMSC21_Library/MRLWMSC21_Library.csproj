@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CC9E124-E54A-47FF-ABDD-1C0F1B9A222F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRLWMSC21_Library</RootNamespace>
+    <AssemblyName>MRLWMSC21_Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="INOUT_MSG\MSGType.cs" />
+    <Compile Include="Parser\SerializeDeserialize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WMS_DBCommon\DAOController.cs" />
+    <Compile Include="WMS_DBCommon\DBCriteria.cs" />
+    <Compile Include="WMS_DBCommon\DBServiceController.cs" />
+    <Compile Include="WMS_DBCommon\DBServicePool.cs" />
+    <Compile Include="WMS_DBCommon\DMLExecuteCode.cs" />
+    <Compile Include="WMS_DBCommon\DRLExecuteCode.cs" />
+    <Compile Include="WMS_DBCommon\DTOController.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\CustomerDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\LocationDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\MasterDataDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\TenantDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDTO\CustomerDTO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDTO\LocationDTO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDTO\MaterialDTO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDTO\SupplierDTO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDTO\TenantDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\GoodsMovementDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\InboundDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\InvoiceDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\MaterialDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\OutboundDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\PurchaseOrderDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDAO\SalesOrderDAO.cs" />
+    <Compile Include="WMS_DBCommon\MasterDataDAO\SupplierDAO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\GoodsMovementDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\InboundDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\InvoiceDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\OutboundDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\PurchaseOrderDTO.cs" />
+    <Compile Include="WMS_DBCommon\TransactionalDTO\SalesOrderDTO.cs" />
+    <Compile Include="WMS_ServiceControl\INBServiceController.cs" />
+    <Compile Include="WMS_ServiceControl\INVServiceController.cs" />
+    <Compile Include="WMS_ServiceControl\OBDServiceController.cs" />
+    <Compile Include="WMS_ServiceControl\ServiceController.cs" />
+    <Compile Include="WMS_ServiceControl\WMSController.cs" />
+    <Compile Include="WMS_ServiceImpl\DPNServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\GRNServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\InboundServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\InventoryServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\InvoiceServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\MaterialServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\OrderServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\OutboundServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\PGIServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\PutawayServiceImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\SuggestedPicknoteImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\SuggestedPutawayImpl.cs" />
+    <Compile Include="WMS_ServiceImpl\WMSService.cs" />
+    <Compile Include="WMS_ServiceObjects\Inbound.cs" />
+    <Compile Include="WMS_ServiceObjects\LineItem.cs" />
+    <Compile Include="WMS_ServiceObjects\Location.cs" />
+    <Compile Include="WMS_ServiceObjects\MaterialMaster.cs" />
+    <Compile Include="WMS_ServiceObjects\Outbound.cs" />
+    <Compile Include="WMS_ServiceObjects\ResultObject.cs" />
+    <Compile Include="WMS_ServiceObjects\SalesOrder.cs" />
+    <Compile Include="WMS_ServiceObjects\SupplierInvoice.cs" />
+    <Compile Include="WMS_ServiceObjects\WMSConfig.cs" />
+    <Compile Include="WMS_Services\ResourceSuggestion.cs" />
+    <Compile Include="WMS_Services\ServiceCall.cs" />
+    <Compile Include="WMS_Services\ResourceMapping.cs" />
+    <Compile Include="WMS_Services\ServiceException.cs" />
+    <Compile Include="WMS_Services\ServicePool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="INOUT_MSG\JSON\INV_PUTAWY_TEMPLATE.txt" />
+    <Content Include="INOUT_MSG\XML\INV_PUTAWAY.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="INOUT_MSG\XSD\INV_COMMON_TYPE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INOUT_MSG\XSD\INV_PUTAWAY.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MRLWMSC21Common\MRLWMSC21Common.csproj">
+      <Project>{9c1aa6a0-1bde-44d5-b777-23d4940e6261}</Project>
+      <Name>MRLWMSC21Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

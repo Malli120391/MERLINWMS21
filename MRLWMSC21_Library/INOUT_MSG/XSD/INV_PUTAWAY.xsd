@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+<xsd:include schemaLocation="./INV_COMMON_TYPE.xsd" />
+  
+  <xsd:element name="INV_PUTAWAY">
+    <xsd:annotation>
+      <xsd:documentation>To get suggested put-away information and system can receive goods through this message type</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="SUPPLIER_INVOICES" type="SUPPLIER_INVOICES" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="PURCHASE_ORDERS" type="PURCHASE_ORDERS" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="GRN_INFO" type="GRN_INFO" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="REQUEST_ERRORS" type="REQUEST_ERRORS" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="RESPONSE_ERRORS" type="RESPONSE_ERRORS" minOccurs="0" maxOccurs="1" />
+      </xsd:sequence>
+      <xsd:attribute name="VERSION" type="xsd:string" use="required" />
+      <xsd:attribute name="TIMESTAMP" type="xsd:string" use="required" />
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+
+

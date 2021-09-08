@@ -1,0 +1,98 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+
+ <xsd:complexType name="SUPPLIER_INVOICES">
+  <xsd:sequence>
+    <xsd:element name="SUPPLIER_INVOICE" type="SUPPLIER_INVOICE" minOccurs="0" />
+  </xsd:sequence>
+  <xsd:attribute name="INBOUND_ID" type="xsd:string" use="required" />
+  <xsd:attribute name="STATUS" type="xsd:string" use="required" />
+  <xsd:attribute name="INITIATED_BY" type="xsd:string" use="required" />
+  <xsd:attribute name="INITIATED_ON" type="xsd:string" use="required" />
+  <xsd:attribute name="WAREHOUSE_ID" type="xsd:string" use="required" />
+</xsd:complexType>
+
+<xsd:complexType name="SUPPLIER_INVOICE">
+  <xsd:sequence>
+    <xsd:element name="INV_ITEM" type="INV_ITEM" minOccurs="0" />
+    <xsd:element name="INVOICE_ORIGIN_INFO" type="INVOICE_ORIGIN_INFO" minOccurs="0" />
+  </xsd:sequence>
+  <xsd:attribute name="ID" type="xsd:string" use="required" />
+  <xsd:attribute name="SUPPLIER_CODE" type="xsd:string" use="required" />
+  <xsd:attribute name="SHIPMENT_STATUS" type="xsd:string" use="required" />
+  <xsd:attribute name="STORED_REF_ID" type="xsd:string" use="required" />
+</xsd:complexType>
+
+<xsd:complexType name="INV_ITEM">
+  <xsd:sequence>
+    <xsd:element name="LOCATION" type="LOCATION" minOccurs="0" />
+    <xsd:element name="MSP" type="MSP" minOccurs="0" />
+  </xsd:sequence>
+  <xsd:attribute name="ITEM_ID" type="xsd:string" use="required" />
+  <xsd:attribute name="UOM" type="xsd:string" use="required" />
+  <xsd:attribute name="QTY" type="xsd:decimal" use="required" />
+  <xsd:attribute name="PO_REF_ID" type="xsd:string" use="required" />
+  <xsd:attribute name="SUPPLIER_ITEM_ID" type="xsd:string" use="required" />
+</xsd:complexType>
+
+
+<xsd:complexType name="LOCATION">
+  <xsd:sequence />
+  <xsd:attribute name="BIN" type="xsd:string" use="required" />
+  <xsd:attribute name="QTY" type="xsd:decimal" use="required" />
+  <xsd:attribute name="IS_USED" type="xsd:boolean" use="required" />
+  <xsd:attribute name="IS_SUGGESTED" type="xsd:boolean" use="required" />
+</xsd:complexType>
+
+<xsd:complexType name="MSP">
+  <xsd:sequence />
+  <xsd:attribute name="ID" type="xsd:string" use="required" />
+  <xsd:attribute name="QTY" type="xsd:decimal" use="required" />
+  <xsd:attribute name="VALUE" type="xsd:string" use="required" />
+</xsd:complexType>
+
+
+
+<xsd:complexType name="INVOICE_ORIGIN_INFO">
+  <xsd:sequence>
+    <xsd:element name="ADDRESS_LINE1" type="xsd:string"  />
+    <xsd:element name="ADDRESS_LINE2" type="xsd:string" />
+    <xsd:element name="CITY" type="xsd:string"  />
+    <xsd:element name="COUNTRY" type="xsd:string" />
+    <xsd:element name="ZIPCODE" type="xsd:string" />
+    <xsd:element name="NET_AMOUNT" type="xsd:decimal" />
+    <xsd:element name="GROSS_AMOUNT" type="xsd:decimal" />
+    <xsd:element name="VAT_CODE" type="xsd:string" />
+  </xsd:sequence>
+  <xsd:attribute name="ID" type="xsd:string" use="required" />
+  <xsd:attribute name="SUPPLIER_CODE" type="xsd:string" use="required" />
+  <xsd:attribute name="CURRENCY" type="xsd:string" use="required" />
+</xsd:complexType>
+
+
+<xsd:complexType name="PURCHASE_ORDERS">
+</xsd:complexType>
+
+
+<xsd:complexType name="PURCHASE_ORDER">
+</xsd:complexType>
+
+<xsd:complexType name="SUPPLIER_INFO">
+</xsd:complexType>
+
+<xsd:complexType name="PO_LINE_ITEMS">
+</xsd:complexType>
+
+  <xsd:complexType name="GRN_INFO">
+  </xsd:complexType>
+
+  <xsd:complexType name="REQUEST_ERRORS">
+  </xsd:complexType>
+
+
+  <xsd:complexType name="RESPONSE_ERRORS">
+  </xsd:complexType>
+</xsd:schema>
+
+
+
+

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html"><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <!--<li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <a href="javascript:void(0)" class="chip z-depth-1 white">
+                        Orders
+                        <i class="close material-icons">close</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Returns
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+                                <ul>
+                                    <ol>
+                                        <li class="scrollspy" id="creturns">
+                                            <h6 id="" class="with_in_the_block">Customer Returns</h6>
+                                            <ol>
+                                                <li><span>To initiate the Customer Returns go to Menu <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Orders <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Returns <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mInventory/CustomerReturns.aspx">Customer Returns</a>.</span></li>
+                                                <li><span>The below screen is displayed:</span></li>
+                                                <img src="report/1.png" class="w-150 materialboxed" />
+                                                <li><span>Give the mandatory fields (Tenant, OBD Number, Invoice and Store) and click on “Get Details”.</span></li>
+                                                <li><span>The below screen is displayed with the fetched data:</span></li>
+                                                <img src="report/2.png" class="w-150 materialboxed" />
+                                                <li><span>Now check the required part number and click on “Return” button.</span></li>
+                                                <li><span>Now the Customer return order is made successfully and an Inbound is created. </span></li>
+                                                <li><span>The Inbound Ref No. is displayed in the alert message after clicking on “Return” button as shown in the below screen.</span></li>
+                                                <li><span>Now Inbound can be done following the Inbound User Manual.</span></li>
+                                                <img src="report/3.png" class="w-150 materialboxed" />
+                                            </ol>
+                                        </li>
+                                        <li class="scrollspy" id="sreurns">
+                                            <h6 id="" class="with_in_the_block">Supplier Returns</h6>
+                                            <ol>
+                                                <li><span>To initiate the Customer Returns go to Menu>Orders>Returns>Customer Returns.</span></li>
+                                                <li><span>The below screen is displayed:</span></li>
+                                                <img src="report/4.png" class="w-150 materialboxed" />
+                                                <li><span>Give the mandatory fields (Tenant, OBD Number, Invoice and Store) and click on “Get Details”.</span></li>
+                                                <li><span>The below screen is displayed with the fetched data:</span></li>
+                                                <img src="report/5.png" class="w-150 materialboxed" />
+                                                <li><span>Now check the required part number and click on “Return” button.</span></li>
+                                                <li><span>Now the Supplier return order is made successfully and an Inbound is created.</span></li>
+                                                <li><span>The Outbound Ref No. is displayed in the alert message after clicking on “Return” button as shown in the below screen.</span></li>
+                                                <li><span>Now Outbound can be done following the Outbound User Manual.</span></li>
+                                                <img src="report/6.png" class="w-150 materialboxed" />
+                                            </ol>
+                                        </li>
+
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#creturns"><i class="material-icons article">description</i>Customer Returns&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#sreurns"><i class="material-icons article">description</i>Supplier Returns&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>

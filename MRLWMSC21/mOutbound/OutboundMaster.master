@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OutboundMaster.master.cs" Inherits="MRLWMSC21.mOutbound.OutboundMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="css/OutboundMaster.css" rel="stylesheet" />
+     <script src="Scripts/jspdf.min.js"></script>
+    <script src="Scripts/jspdf.plugin.autotable.js"></script>
+    <script src="Scripts/tableExport.min.js"></script>
+    <link href="../Scripts/mdtimepicker.css" rel="stylesheet" />
+    <script src="../Scripts/mdtimepicker.js"></script>
+    <script src="../Scripts/cookie.min.js"></script>
+        <div>
+        <div class="module_yellow">
+            <div class="ModuleHeader" height="35px">
+                <div><a href="../Default.aspx">Home</a> <i class="material-icons">arrow_right</i> <a href="#">Outbound</a> <i class="material-icons">arrow_right</i> <span class="breadcrumbd" contenteditable="false"><asp:Literal ID="ltFormSubHeading" runat="server"/> </span></div>
+                <%--<div class="mandatory"><b>Note:</b> <span style="color:red"> __ </span>Indicates mandatory fields</div>--%>
+            </div>
+
+        </div>
+        <div>
+             <div class="module_yellow">
+                 <asp:ContentPlaceHolder runat="server" ID="OBContent"  />
+             </div>
+
+        </div>
+    </div>
+    <div style="display:none">
+        <div class="module_yellow">
+            <asp:Literal runat="server"  ID="ltMenuInbound" />
+        </div>
+    </div>
+
+
+    <%--<table width="100%"  align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr class="module_Green"><td class="ModuleHeader" height="35px"> <asp:Literal ID="ltFormSubHeading" runat="server"/> </td> <td class="green_td" align="right"> <asp:Literal runat="server"  ID="ltMenuInbound" /> </td></tr>
+           <tr>
+               <td valign="top" colspan="2" class="module_Green" >
+                     <asp:ContentPlaceHolder runat="server" ID="OBContent"  />
+              </td></tr>
+    </table>--%>
+</asp:Content>

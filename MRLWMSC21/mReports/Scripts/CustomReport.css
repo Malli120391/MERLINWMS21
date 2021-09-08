@@ -1,0 +1,359 @@
+﻿    .addbutton {
+    width: 100%;
+    background-color: #FFFFFF !important;
+    color: #000000;
+    padding: 2px 2px;
+    margin: 2px 0;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    cursor: pointer;
+    height:27px;
+    font-family:Arial;
+    font-size:10pt;
+    font-weight:500;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(36, 183, 149, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(36, 183, 149, 0.6);
+    box-shadow:1px 3px 5px #CCCCCC;
+}
+.addbutton:hover {
+    background:#f2f2f2;
+    border-color: #CCCCCC;
+   
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9pt;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width:75px;
+    border-radius:4px;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 1px solid #455b7c;
+}
+
+.button4:hover {background-color: #455b7c;color:white;}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button6 {
+    background-color: white;
+    color: black;
+    border: 1px solid #6996e0;
+}
+
+.button6:hover {
+    background-color: #6996e0;
+    color: white;
+}
+
+.TextboxReport
+{
+    width:250px !important;
+    height:27px !important;
+    padding: 4px 6px !important;
+    margin: 2px 0 !important;
+    display: inline-block !important;
+    border: 1px solid #ccc !important;
+    border-radius: 3px !important;
+    box-sizing: border-box !important;
+}
+.TextboxReport:focus {
+    border-color: #455b7c !important;
+    outline: 0 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(132, 152, 186, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(132, 152, 186, 0.6) !important;
+}
+
+.TextboxReport:hover {
+    border-color: #455b7c !important;
+    outline: 0 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(132, 152, 186, 0.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px rgba(132, 152, 186, 0.6) !important;
+}
+.mytableReport {          
+    font-family:Arial !important;
+    font-size:10pt; color:#4e4f4d !important; 
+    font-weight:400 !important;
+    border:1px solid #CFCFAF !important; 
+    box-shadow:1px 3px 5px #CCCCCC !important;
+    background-color:#FFFFFF !important;    
+    border-radius:5px !important;   
+    padding:0px 0px !important;   
+    width:98% !important;
+    margin-left:1% !important;
+}
+/*.mytableReportItemsHeaderTR {background-color:#f4f5f7 !important;color:black !important;}
+.mytableReportHeaderTR {background-color:#455b7c !important;height:30px !important;color:white !important;}*/
+/*.mytableReportBodyTR tr:nth-child(odd){background-color: #f2f2f2;height:25px;}
+.mytableReportBodyTR tr:nth-child(even){background-color: #ffffff;height:25px;}
+.mytableReportBodyTR tr:nth-child(odd):hover {background-color:#dcdcdc;}
+.mytableReportBodyTR tr:nth-child(even):hover {background-color:#dcdcdc;}
+.mytableReportBodyTR tr:nth-child(odd):focus {background-color:#dcdcdc;}
+.mytableReportBodyTR tr:nth-child(even):focus {background-color:#dcdcdc;}*/
+/*.mytableReportFooterTR {background-color:#f4f5f7 !important;height:45px !important;}*/
+
+.divpaginationstyle {float: right !important; font-family: Arial !important; font-size: small !important; margin-right: 0.5% !important;}
+.pageheight {height:5px !important;}
+.thalign {text-align:right !important;}
+/*.divlineheight {height:12px !important;}*/
+.alignnumbers {text-align:right !important;}
+.aligntext {text-align:left !important;}
+.aligndate {text-align:center !important;}
+.dashedborder {border-top:1px dashed #CCCCCC !important;}
+
+
+/*.dashed{display:none !important}*/
+.search{ position: relative; }
+.search input { text-indent: 1px;}
+.search .fa-search { 
+  position: absolute;
+  top: 8px;
+  left: 69%;
+  font-size: small;
+  color:#bfc0c1;
+}
+
+
+/*===========================Pagination===========================*/
+
+  .pagination ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+}
+
+.pagination li {
+  display: inline;
+   
+}
+
+    .pagination li a {
+        margin: 0px 2px;
+        box-shadow: var(--z1);
+        display: inline-block !important;
+        min-width: 20px !important;
+        height: 20px !important;
+        text-align: center !important;
+        background: #fff;
+        border-radius: 2px;
+        padding: 1px;
+        text-decoration: none;
+        color: #0e0e0e;
+        line-height: 20px;
+    }
+
+    .pagination li.active a {
+        box-shadow: var(--z1);
+        padding: 0px;
+        display: inline-block !important;
+        border: 2px solid var(--sideNav-bg) !important;
+        background-color: var(--sideNav-bg) !important;
+        min-width: 20px !important;
+        height: 20px !important;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+.pagination li:hover.active a {
+  background-color: #f2f2f2;
+}
+
+.pagination li:hover:not(.active) a {
+  background-color: #f2f2f2 !important;
+  color: black;
+}
+
+/*===========================Pagination===========================*/
+
+
+
+
+        .Headertablewidth {width:100%;}
+        .mytableReport {width:100%;}
+        @media only screen and (max-width : 320px) and (orientation : portrait) {
+        .tablestyle{white-space: nowrap;margin-top:100%;}}
+       
+
+        /*--------------------  For Tab Mode landscape ----------------------*/
+        @media only screen and (max-width: 760px),(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) {
+            .divmainwidth {width:404px !important;overflow:auto !important;}
+            .Headertablewidth {width:45%;overflow:auto !important;}
+            .mytableReport { width:45% !important;overflow:auto !important;}
+            .Headertablewidth td { display: block;text-align:left !important;float:left !important;}
+            .buttonrowstyle {display:inline !important;text-align:left !important;float:left !important;}          
+            
+
+            .ModuleHeader {width:200px !important;font-size:7pt;}
+            
+            .menu-button {font-size:12pt;}
+
+            .flexnav li a {font-size:11pt;}
+
+            .tablewidth {width:60% !important;}
+
+            .tablewidth1 {width:60% !important;}
+
+            .right-fotter {margin-right:6% !important;}
+
+            .labelstyle {font-size:small !Important;}
+            .mytableReportHeaderTR {font-size:9pt !important;}
+            .mytableReportBodyTR {font-size:9pt !important;}
+            .pagination li a {padding:4px 8px !important;font-size:9pt !important;}
+            .TextboxReport {width:245px !important;}
+            .search .fa-search {left: 92%;}
+          
+        }
+        /*--------------------  For Tab Mode portrait ----------------------*/
+        @media only screen and (max-width: 1024px), (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+            /*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {*/
+            .tablewidth {width:100% !important;}
+            .tablewidth1 {width:100% !important;}           
+        }
+        /*--------------------  For Mobile Mode landscape & portrait ----------------------*/
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            .tablestyle {
+                white-space: nowrap;
+                margin-top: -5%;
+                margin-left: -5% !important;
+            }          
+        }
+
+        /* -------------- blockUI in angularJS----------------------*/
+
+ #blocker
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: #000;
+    z-index: 1000;
+    overflow: auto;
+}
+    #blocker div
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5em;
+        height: 2em;
+        margin: -1em 0 0 -2.5em;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    #blocker img
+    {
+        position: relative;
+        top: -80px;
+        left: 15%;
+    }
+
+/*----------------------end blockUI-------------------*/
+
+/*.mytableReportBodyTR tr:nth-child(odd) {
+    background-color: #ffffff !important;
+    height: 25px;
+}
+
+.mytableReportBodyTR tr:nth-child(even):hover {
+    background-color: #dfecff;
+}
+
+.mytableReportBodyTR tr:nth-child(even) {
+    background-color: #dfecff;
+    height: 25px;
+}*/
+
+.Headertablewidth {
+    width: 100%;
+
+}
+
+.mytableReportFooterTR {
+    background-color: #ffffff !important;
+    height: 45px !important;
+}
+
+.mytableReportBodyTR tr:nth-child(odd):hover {
+    background-color: #dfecff;
+}
+
+.rebound th {
+    border-radius: 10px;
+}
+
+.buttonrowstyle {
+    margin: 15px 0px;
+}
+/*.mytableReportBodyTR td {
+    font-size: 14px;
+    text-align: left;
+    padding: 6px 5px;
+}*/
+
+/*.mytableReportHeaderTR th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 5px;
+}*/

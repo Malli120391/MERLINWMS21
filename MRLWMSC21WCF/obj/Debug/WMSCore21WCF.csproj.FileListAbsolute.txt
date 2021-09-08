@@ -1,0 +1,15 @@
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\WMSCore21WCF.dll.config
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\WMSCore21WCF.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\WMSCore21WCF.pdb
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\Newtonsoft.Json.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\WMSCore21Common.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\qqMail.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\Neodynamic.SDK.ThermalLabel.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\EPPlus.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\WMSCore21Common.pdb
+D:\TFSProjects\WMSCore21\WMSCore21WCF\bin\Newtonsoft.Json.xml
+D:\TFSProjects\WMSCore21\WMSCore21WCF\obj\Debug\WMSCore21WCF.csprojAssemblyReference.cache
+D:\TFSProjects\WMSCore21\WMSCore21WCF\obj\Debug\WMSCore21WCF.csproj.CoreCompileInputs.cache
+D:\TFSProjects\WMSCore21\WMSCore21WCF\obj\Debug\WMSCore21WCF.csproj.CopyComplete
+D:\TFSProjects\WMSCore21\WMSCore21WCF\obj\Debug\WMSCore21WCF.dll
+D:\TFSProjects\WMSCore21\WMSCore21WCF\obj\Debug\WMSCore21WCF.pdb

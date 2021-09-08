@@ -1,0 +1,12 @@
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore_DataAccess.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore_DataAccess.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\Newtonsoft.Json.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore21Core_Libraries.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore_BusinessEntities.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore_BusinessEntities.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\bin\Debug\WMSCore21Core_Libraries.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\obj\Debug\WMSCore21Core_DataAccess.csprojAssemblyReference.cache
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\obj\Debug\WMSCore21Core_DataAccess.csproj.CoreCompileInputs.cache
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\obj\Debug\WMSCore21Core_DataAccess.csproj.CopyComplete
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\obj\Debug\WMSCore_DataAccess.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core_DataAccess\obj\Debug\WMSCore_DataAccess.pdb

@@ -1,0 +1,94 @@
+﻿/* 
+    Author :
+    Date: 24/01/2015
+    Date Modified:24/01/2015
+*/
+
+
+
+/*Custom Dailog Box Css*/
+
+.ui-dialog .ui-dialog-titlebar {
+    color: white;
+    background-color: #ffb033;
+}
+
+
+
+
+
+
+/*Custom Acordino*/
+.ui-Customaccordion {
+    border: 1px solid #fed18a;
+    border-radius: 0px 0px 4px 4px;
+    padding: 0px 5px 10px 5px;    
+    border-top: none;
+
+    /*background: #ffe49e;
+    background: -moz-linear-gradient(top, #ffe49e 0%, #ffb700 3%, #ffad00 35%, #ff9000 97%, #e27f00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe49e), color-stop(3%,#ffb700), color-stop(35%,#ffad00), color-stop(97%,#ff9000), color-stop(100%,#e27f00));
+    background: -webkit-linear-gradient(top, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    background: -o-linear-gradient(top, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    background: -ms-linear-gradient(top, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    background: linear-gradient(to bottom, #ffe49e 0%,#ffb700 3%,#ffad00 35%,#ff9000 97%,#e27f00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe49e', endColorstr='#e27f00',GradientType=0 );*/
+
+}
+.ui-SubHeading {
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    font-weight:bold;
+}
+
+.ui-SubHeadingBar{
+    color: #333;
+    /*background-color: #fae8cc;*/
+    background-color: #FFE6BD;
+    border-color: #fed18a;
+    padding-top: 7px;
+    margin-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+
+
+/*Custom Jquery Accordino*/
+/*.ui-accordion .ui-accordion-header {
+    color:black;
+    background-color:#FFE6BD;
+    border-color: #fed18a;
+    border-bottom:1px solid #fed18a;
+}
+
+.ui-accordion .ui-accordion-content {
+    border-color: #fed18a;
+    top: 2px;
+}*/
+
+/*.ui-icon { width: 16px; height: 16px; background-image: url(../../images/ui-icons_f39c19_256x240.png); }*/
+
+.btnSearchSmall {
+    
+    color: white;
+    background-color: #fcbd59;
+    border-color: #fcbd59;
+}
+
+.btnSearch {
+
+    background-color: #ffb033;
+    border-color: #ffb033;
+}
+
+.txt_search {
+   
+    border: 1px solid #ffb033;
+   
+}
+.txt_search:focus {
+    outline: none;
+    border:1px solid #ffb033;
+}
+

@@ -1,0 +1,475 @@
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\ApplicationInsights.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csc.exe
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csc.exe.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csc.rsp
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csi.exe
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csi.exe.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\csi.rsp
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.AppContext.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Collections.Immutable.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Console.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.Process.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Compression.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Pipes.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Reflection.Metadata.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.AccessControl.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Claims.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Principal.Windows.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Threading.Thread.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.ValueTuple.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XmlDocument.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\vbc.rsp
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Microsoft.AI.Agent.Intercept.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Microsoft.Web.Infrastructure.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Helpers.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Http.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Mvc.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Optimization.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Razor.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WebGrease.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore.dll.config
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.pdb
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Helpers.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Http.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Mvc.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Optimization.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.Razor.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.xml
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csprojAssemblyReference.cache
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CoreCompileInputs.cache
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CopyComplete
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.dll
+F:\TFS PROJECT SOURCE\FalconWMSCore_ShipperID\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csprojAssemblyReference.cache
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CoreCompileInputs.cache
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\ApplicationInsights.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csc.exe
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csc.exe.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csc.rsp
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csi.exe
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csi.exe.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\csi.rsp
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.AppContext.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Collections.Immutable.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Console.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.Process.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Compression.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Pipes.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Reflection.Metadata.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.AccessControl.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Claims.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Principal.Windows.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Threading.Thread.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.ValueTuple.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XmlDocument.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\vbc.rsp
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Microsoft.AI.Agent.Intercept.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Microsoft.Web.Infrastructure.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Helpers.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Http.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Mvc.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Optimization.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Razor.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WebGrease.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore.dll.config
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.pdb
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Helpers.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Http.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Mvc.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Optimization.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.Razor.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.xml
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CopyComplete
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.dll
+F:\TFS PROJECT SOURCE\MerlinWMS_2020_API\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\ApplicationInsights.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.rsp
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.rsp
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.AppContext.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Collections.Immutable.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Console.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.Process.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Compression.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Pipes.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Reflection.Metadata.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.AccessControl.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Claims.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Principal.Windows.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Threading.Thread.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.ValueTuple.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XmlDocument.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.rsp
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.Web.Infrastructure.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WebGrease.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll.config
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.pdb
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.xml
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csprojAssemblyReference.cache
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CoreCompileInputs.cache
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CopyComplete
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.dll
+E:\DevOps_Proj\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\ApplicationInsights.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.rsp
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.rsp
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.AppContext.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Collections.Immutable.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Console.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.Process.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Compression.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Pipes.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Reflection.Metadata.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.AccessControl.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Claims.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Principal.Windows.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Threading.Thread.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.ValueTuple.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.rsp
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.Web.Infrastructure.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WebGrease.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll.config
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.pdb
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.xml
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csprojAssemblyReference.cache
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CoreCompileInputs.cache
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CopyComplete
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.dll
+E:\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\ApplicationInsights.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\FalconWMSCore_Endpoint.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.exe.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csc.rsp
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.exe.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\csi.rsp
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.AppContext.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Collections.Immutable.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Console.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.Process.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Compression.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.IO.Pipes.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.AccessControl.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Claims.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Threading.Thread.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.ValueTuple.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.exe.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\vbc.rsp
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\roslyn\VBCSCompiler.exe.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.Web.Infrastructure.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WebGrease.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore.dll.config
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_BusinessEntities.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_DataAccess.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\WMSCore_Libraries.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Antlr3.Runtime.pdb
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\Newtonsoft.Json.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Net.Http.Formatting.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Helpers.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Http.WebHost.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Mvc.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Optimization.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.Razor.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Deployment.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\bin\System.Web.WebPages.Razor.xml
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csprojAssemblyReference.cache
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CoreCompileInputs.cache
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.csproj.CopyComplete
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.dll
+D:\TFSProjects\MerlinWMS_2020\FalconWMSCore_Endpoint\obj\Debug\FalconWMSCore_Endpoint.pdb

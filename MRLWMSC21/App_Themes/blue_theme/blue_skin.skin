@@ -1,0 +1,218 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+ 
+
+
+
+<asp:TextBox runat="server"  CssClass="txt_Blue_Small"  />
+
+<asp:TextBox runat="server" SkinID="txt_Req" CssClass="txt_small_Req"  />
+
+<asp:TextBox runat="server"  CssClass="txt_Light_Small"  SkinID="txt_Hidden_Req" />
+<asp:TextBox runat="server"  CssClass="txt_Light_Small_Auto"  SkinID="txt_Hidden_Req_Auto" />
+
+ <asp:FileUpload  CssClass="txt_Blue_Small"  runat="server"  Width="220" />
+
+<asp:DropDownList runat="server"  CssClass="txt_Blue_Small" />
+<asp:DropDownList runat="server" SkinID="ddlRequired" CssClass="txt_Blue_Small" />
+
+ <asp:RequiredFieldValidator CssClass="errorMsg" runat="server"  />
+
+
+<asp:LinkButton SkinID="lnkButSave" runat="server" CssClass="ButMSSave"/>
+<asp:LinkButton SkinID="lnkButEmpty" runat="server" CssClass="ButEmpty"/>
+<asp:LinkButton SkinID="lnkButCancel" runat="server" CssClass="ButCancel"/>
+
+
+
+<asp:GridView SkinID="gvBlue" runat="server" CssClass="gvBlue"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvBlue_footerGrid" />
+   <RowStyle CssClass="gvBlue_DataCellGrid" />
+   <EditRowStyle CssClass="gvBlue_DataCellGridEdit" />
+   <PagerStyle CssClass="gvBlue_pager" />
+   <HeaderStyle CssClass="gvBlue_headerGrid" />
+   <AlternatingRowStyle CssClass="gvBlue_DataCellGridAlt" />
+</asp:GridView>
+
+<asp:GridView SkinID="gvLightGreen" runat="server" CssClass="gvLightGreen"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvLightGreen_footerGrid" />
+   <RowStyle CssClass="gvLightGreen_DataCellGrid" />
+   <EditRowStyle CssClass="gvLightGreen_DataCellGridEdit" />
+   <PagerStyle CssClass="gvLightGreen_pager" />
+   <HeaderStyle CssClass="gvLightGreen_headerGrid" />
+   <AlternatingRowStyle CssClass="gvLightGreen_DataCellGridAlt" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightSeaBlue" runat="server" CssClass="gvLightSeaBlue"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvLightSeaBlue_footerGrid" />
+   <RowStyle CssClass="gvLightSeaBlue_DataCellGrid" />
+   <EditRowStyle CssClass="gvLightSeaBlue_DataCellGridEdit" />
+   <PagerStyle CssClass="gvLightSeaBlue_pager" />
+   <HeaderStyle CssClass="gvLightSeaBlue_headerGrid" />
+   <AlternatingRowStyle CssClass="gvLightSeaBlue_DataCellGridAlt" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightKaki" runat="server" CssClass="gvLightKaki"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvLightKaki_footerGrid" />
+   <RowStyle CssClass="gvLightKaki_DataCellGrid" />
+   <EditRowStyle CssClass="gvLightKaki_DataCellGridEdit" />
+   <PagerStyle CssClass="gvLightKaki_pager" />
+   <HeaderStyle CssClass="gvLightKaki_headerGrid" />
+   <AlternatingRowStyle CssClass="gvLightKaki_DataCellGridAlt" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightSteelBlue" runat="server" CssClass="gvLightSteelBlue"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvLightSteelBlue_footerGrid" />
+   <RowStyle CssClass="gvLightSteelBlue_DataCellGrid" />
+   <EditRowStyle CssClass="gvLightSteelBlue_DataCellGridEdit" />
+   <PagerStyle CssClass="gvLightSteelBlue_pager" />
+   <HeaderStyle CssClass="gvLightSteelBlue_headerGrid" />
+   <AlternatingRowStyle CssClass="gvLightSteelBlue_DataCellGridAlt" />
+</asp:GridView>
+
+
+
+<asp:GridView SkinID="gvGreen" runat="server" CssClass="gvGreen"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvGreen_footerGrid" />
+   <RowStyle CssClass="gvGreen_DataCellGrid" />
+   <EditRowStyle CssClass="gvGreen_DataCellGridEdit" />
+   <PagerStyle CssClass="gvGreen_pager" />
+   <HeaderStyle CssClass="gvGreen_headerGrid" />
+   <AlternatingRowStyle CssClass="gvGreen_DataCellGridAlt" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvViolet" runat="server" CssClass="gvViolet"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   <FooterStyle CssClass="gvViolet_footerGrid" />
+   <RowStyle CssClass="gvViolet_DataCellGrid" />
+   <EditRowStyle CssClass="gvViolet_DataCellGridEdit" />
+   <PagerStyle CssClass="gvViolet_pager" />
+   <HeaderStyle CssClass="gvViolet_headerGrid" />
+   <AlternatingRowStyle CssClass="gvViolet_DataCellGridAlt" />
+</asp:GridView>
+
+
+
+
+
+
+
+
+   <%-- New Grid View Styles --%>
+
+
+<asp:GridView SkinID="gvLightGreenNew" runat="server" CssClass="gvLightGreenNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightGreenNew_pager" />
+   <HeaderStyle CssClass="gvLightGreenNew_headerGrid" />
+   <FooterStyle CssClass="gvLightGreenNew_footerGrid" />
+   <RowStyle CssClass="gvLightGreenNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightGreenNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightGreenNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightOrangeNew" runat="server" CssClass="gvLightOrangeNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightOrangeNew_pager" />
+   <HeaderStyle CssClass="gvLightOrangeNew_headerGrid" />
+   <FooterStyle CssClass="gvLightOrangeNew_footerGrid" />
+   <RowStyle CssClass="gvLightOrangeNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightOrangeNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightOrangeNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightBlueNew" runat="server" CssClass="gvLightBlueNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightBlueNew_pager" />
+   <HeaderStyle CssClass="gvLightBlueNew_headerGrid" />
+   <FooterStyle CssClass="gvLightBlueNew_footerGrid" />
+   <RowStyle CssClass="gvLightBlueNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightBlueNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightBlueNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightSkyBlueNew" runat="server" CssClass="gvLightSkyBlueNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightSkyBlueNew_pager" />
+   <HeaderStyle CssClass="gvLightSkyBlueNew_headerGrid" />
+   <FooterStyle CssClass="gvLightSkyBlueNew_footerGrid" />
+   <RowStyle CssClass="gvLightSkyBlueNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightSkyBlueNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightSkyBlueNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightSteelBlueNew" runat="server" CssClass="gvLightSteelBlueNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightSteelBlueNew_pager" />
+   <HeaderStyle CssClass="gvLightSteelBlueNew_headerGrid" />
+   <FooterStyle CssClass="gvLightSteelBlueNew_footerGrid" />
+   <RowStyle CssClass="gvLightSteelBlueNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightSteelBlueNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightSteelBlueNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightSeaBlueNew" runat="server" CssClass="gvLightSeaBlueNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightSeaBlueNew_pager" />
+   <HeaderStyle CssClass="gvLightSeaBlueNew_headerGrid" />
+   <FooterStyle CssClass="gvLightSeaBlueNew_footerGrid" />
+   <RowStyle CssClass="gvLightSeaBlueNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightSeaBlueNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightSeaBlueNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightGrayNew" runat="server" CssClass="gvLightGrayNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightGrayNew_pager" />
+   <HeaderStyle CssClass="gvLightGrayNew_headerGrid" />
+   <FooterStyle CssClass="gvLightGrayNew_footerGrid" />
+   <RowStyle CssClass="gvLightGrayNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightGrayNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightGrayNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightPurpleNew" runat="server" CssClass="gvLightPurpleNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightPurpleNew_pager" />
+   <HeaderStyle CssClass="gvLightPurpleNew_headerGrid" />
+   <FooterStyle CssClass="gvLightPurpleNew_footerGrid" />
+   <RowStyle CssClass="gvLightPurpleNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightPurpleNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightPurpleNew_DataCellGridEdit" />
+</asp:GridView>
+
+
+<asp:GridView SkinID="gvLightLimeGreenNew" runat="server" CssClass="gvLightLimeGreenNew"  Width="100%"  GridLines="None"   ShowFooter="true"   AutoGenerateColumns="False"   PagerStyle-HorizontalAlign="Right"   CellPadding="5"   CellSpacing="2">
+   
+   <PagerStyle CssClass="gvLightLimeGreenNew_pager" />
+   <HeaderStyle CssClass="gvLightLimeGreenNew_headerGrid" />
+   <FooterStyle CssClass="gvLightLimeGreenNew_footerGrid" />
+   <RowStyle CssClass="gvLightLimeGreenNew_DataCellGrid" />
+   <AlternatingRowStyle CssClass="gvLightLimeGreenNew_DataCellGridAlt" />
+   <EditRowStyle CssClass="gvLightLimeGreenNew_DataCellGridEdit" />
+</asp:GridView>
+

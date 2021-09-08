@@ -1,0 +1,12 @@
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\WMSCore21_Library.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\WMSCore21_Library.pdb
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\WMSCore21Common.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\qqMail.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\Neodynamic.SDK.ThermalLabel.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\EPPlus.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\bin\Debug\WMSCore21Common.pdb
+D:\TFSProjects\WMSCore21\WMSCore21_Library\obj\Debug\WMSCore21_Library.csprojAssemblyReference.cache
+D:\TFSProjects\WMSCore21\WMSCore21_Library\obj\Debug\WMSCore21_Library.csproj.CoreCompileInputs.cache
+D:\TFSProjects\WMSCore21\WMSCore21_Library\obj\Debug\WMSCore21_Library.csproj.CopyComplete
+D:\TFSProjects\WMSCore21\WMSCore21_Library\obj\Debug\WMSCore21_Library.dll
+D:\TFSProjects\WMSCore21\WMSCore21_Library\obj\Debug\WMSCore21_Library.pdb

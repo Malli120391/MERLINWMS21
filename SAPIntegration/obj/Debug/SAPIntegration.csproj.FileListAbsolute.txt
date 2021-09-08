@@ -1,0 +1,12 @@
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\SAPIntegration.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\SAPIntegration.pdb
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\MRLWMSC21Common.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\qqMail.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\Neodynamic.SDK.ThermalLabel.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\EPPlus.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\bin\Debug\MRLWMSC21Common.pdb
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\obj\Debug\SAPIntegration.csprojAssemblyReference.cache
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\obj\Debug\SAPIntegration.csproj.CoreCompileInputs.cache
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\obj\Debug\SAPIntegration.csproj.CopyComplete
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\obj\Debug\SAPIntegration.dll
+E:\TFS\MRLWMSC21\MRLWMSC21\SAPIntegration\obj\Debug\SAPIntegration.pdb

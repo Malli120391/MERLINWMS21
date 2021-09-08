@@ -1,0 +1,176 @@
+.toast-container {
+    width: 350px;
+    z-index: 9999;
+}
+
+
+* html .toast-container {
+    position: absolute;
+}
+
+.toast-item {
+    height: auto;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    border: 2px solid #999;
+    display: block;
+    position: absolute;
+    margin: 0 0 12px 0;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    box-sizing: border-box;
+    border-radius: 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .toast-item p {
+        text-align: left;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        top: unset;
+        position: relative;
+    }
+
+.toast-item-close {
+    background-image: url(images/close.gif);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-size: 15px;
+}
+
+.toast-item-image {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 37%;
+    left: 10px;
+}
+
+.toast-item-image-notice {
+    background: url(images/notice.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+
+.toast-item-image-success {
+    background: url(images/success.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+
+.toast-item-image-warning {
+    background: url(images/warning.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+
+.toast-item-image-error {
+    background: url(images/error.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+
+
+/**
+ * toast types
+ *
+ * pattern: toast-type-[value]
+ * where 'value' is the real value of the plugin option 'type'
+ *
+ */
+.toast-type-notice {
+    color: rgba(165, 153, 153, 0.20);
+    background: #eaf5ff;
+    border: 2px solid rgba(165, 153, 153, 0.20);
+}
+
+.toast-type-success {
+    color: green;
+    border: 2px solid green;
+    background: #eaf5ff;
+}
+
+.toast-type-warning {
+    color: orange;
+    border: 2px solid orange;
+    background: #eaf5ff;
+}
+
+.toast-type-error {
+    color: #d7594a;
+    border: 2px solid #d7594a;
+    background-color: #eaf5ff;
+    background-image: url(../Images/banner-bg3e7818e040f1fb3244fc67d5d4b29ab6.png);
+}
+
+/**
+ * positions
+ *
+ * pattern: toast-position-[value]
+ * where 'value' is the real value of the plugin option 'position'
+ *
+ */
+.toast-position-top-left {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.toast-position-top-center {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.toast-position-top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toast-position-middle-left {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    margin-top: -40px;
+}
+
+.toast-position-middle-center {
+    position: fixed;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
+
+.toast-position-middle-right {
+    position: fixed;
+    right: 20px;
+    margin-left: -140px;
+    margin-top: -40px;
+    top: 50%;
+}
+
+
+/*Invetrax Addition */
+
+
+.toast-position-bottom-right {
+    position: fixed;
+    right: 20px;
+    margin-left: -40px;
+    margin-top: -140px;
+    top: 100%;
+}

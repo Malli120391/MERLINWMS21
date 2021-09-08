@@ -1,0 +1,12 @@
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\WMSCore21Common.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\WMSCore21Common.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\EPPlus.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\Neodynamic.SDK.ThermalLabel.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\Newtonsoft.Json.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\OfficeOpenXml.Extends.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\bin\Debug\qqMail.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\obj\Debug\WMSCore21Common.csprojAssemblyReference.cache
+D:\TFSProjects\WMSCore21\WMSCore21Common\obj\Debug\WMSCore21Common.csproj.CoreCompileInputs.cache
+D:\TFSProjects\WMSCore21\WMSCore21Common\obj\Debug\WMSCore21Common.csproj.CopyComplete
+D:\TFSProjects\WMSCore21\WMSCore21Common\obj\Debug\WMSCore21Common.dll
+D:\TFSProjects\WMSCore21\WMSCore21Common\obj\Debug\WMSCore21Common.pdb

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA31EF4F-7E1E-4838-B3AF-10B30B4E4BE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRLWMSC21Core_DataAccess</RootNamespace>
+    <AssemblyName>MRLWMSC21Core_DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\FalconWMSCore\ExternalDLLs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess\Interfaces\iInboundDAL.cs" />
+    <Compile Include="DataAccess\Interfaces\IInventoryDAL.cs" />
+    <Compile Include="DataAccess\Interfaces\iLocationDAL.cs" />
+    <Compile Include="DataAccess\Interfaces\iPalletDAL.cs" />
+    <Compile Include="DataAccess\Interfaces\iScanDAL.cs" />
+    <Compile Include="DataAccess\Interfaces\iUserDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\BaseDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\CycleCountDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\HouseKeepingDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\InboundDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\InventoryDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\LocationDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\MasterDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\OutboundDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\PalletDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\ScanningDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\ShipperIDIntegrationDAL.cs" />
+    <Compile Include="DataAccess\SqlServerImpl\UserDAL.cs" />
+    <Compile Include="DataAccess\Utilities\InventoryUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MRLWMSC21Core_BusinessEntities\MRLWMSC21Core_BusinessEntities.csproj">
+      <Project>{02e3b185-3cc2-4493-ad11-781ce4e5bd4f}</Project>
+      <Name>MRLWMSC21Core_BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRLWMSC21Core_Libraries\MRLWMSC21Core_Libraries.csproj">
+      <Project>{fe0ec17f-b987-4557-a958-cb4ba89464be}</Project>
+      <Name>MRLWMSC21Core_Libraries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

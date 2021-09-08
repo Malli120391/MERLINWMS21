@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B971DBCE-9EF6-426D-813E-5F038AAF856F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRLWMSC21Core</RootNamespace>
+    <AssemblyName>MRLWMSC21Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExternalDLLs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\BaseBL.cs" />
+    <Compile Include="Business\CycleCountBL.cs" />
+    <Compile Include="Business\GenericBL.cs" />
+    <Compile Include="Business\HouseKeepingBL.cs" />
+    <Compile Include="Business\InbondBL.cs" />
+    <Compile Include="Business\InventoryBL.cs" />
+    <Compile Include="Business\LocationBL.cs" />
+    <Compile Include="Business\LoginBL.cs" />
+    <Compile Include="Business\MasterBL.cs" />
+    <Compile Include="Business\OutboundBL.cs" />
+    <Compile Include="Business\ScanningBL.cs" />
+    <Compile Include="Business\ShipperIDIntergrationBL.cs" />
+    <Compile Include="Connected Services\SSOService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ICycleCountBL.cs" />
+    <Compile Include="Interfaces\IInboundBL.cs" />
+    <Compile Include="Interfaces\iLocationBL.cs" />
+    <Compile Include="Interfaces\iLoginBL.cs" />
+    <Compile Include="Interfaces\IOutboundBL.cs" />
+    <Compile Include="Interfaces\iScanningBL.cs" />
+    <Compile Include="Interfaces\iShipperIDIntegrationBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Release\WMSCore.dll.config" />
+    <None Include="Connected Services\SSOService\FWMSC21Core.SSOService.SubscriptionApiResponseAciveSubscription.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SSOService\FWMSC21Core.SSOService.SubscriptionApiResponseAllPlan.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SSOService\SingleSignOnDBSink.wsdl" />
+    <None Include="Connected Services\SSOService\SingleSignOnDBSink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SSOService\SingleSignOnDBSink1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SSOService\SingleSignOnDBSink2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SSOService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SSOService\SingleSignOnDBSink.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SSOService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SSOService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SSOService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\WMSCore.dll" />
+    <Content Include="bin\Release\WMSCore.pdb" />
+    <Content Include="bin\Release\WMSCore_BusinessEntities.dll" />
+    <Content Include="bin\Release\WMSCore_BusinessEntities.pdb" />
+    <Content Include="bin\Release\WMSCore_DataAccess.dll" />
+    <Content Include="bin\Release\WMSCore_DataAccess.pdb" />
+    <Content Include="bin\Release\WMSCore_Libraries.dll" />
+    <Content Include="bin\Release\WMSCore_Libraries.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="BusinessUtilities\" />
+    <Folder Include="ExternalDLLs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MRLWMSC21Core_BusinessEntities\MRLWMSC21Core_BusinessEntities.csproj">
+      <Project>{02e3b185-3cc2-4493-ad11-781ce4e5bd4f}</Project>
+      <Name>MRLWMSC21Core_BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRLWMSC21Core_DataAccess\MRLWMSC21Core_DataAccess.csproj">
+      <Project>{ca31ef4f-7e1e-4838-b3af-10b30b4e4be3}</Project>
+      <Name>MRLWMSC21Core_DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRLWMSC21Core_Libraries\MRLWMSC21Core_Libraries.csproj">
+      <Project>{fe0ec17f-b987-4557-a958-cb4ba89464be}</Project>
+      <Name>MRLWMSC21Core_Libraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MRLWMSC21_Library\MRLWMSC21_Library.csproj">
+      <Project>{0cc9e124-e54a-47ff-abdd-1c0f1b9a222f}</Project>
+      <Name>MRLWMSC21_Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

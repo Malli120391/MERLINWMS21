@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html"><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <!--<li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Outbound
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+
+
+                                <ul>
+                                    <!--ASN IMPORT-->
+                                    <ol>
+
+
+                                        <div class="gap10"></div>
+
+                                        <li id="inwardorder" class="scrollspy">
+                                            <h6 id="" class="with_in_the_block">Outward Order</h6>
+                                            <ol>
+                                                <li><span>To start an Outbound process, check if current stock is available in the inventory or not. (To check the current stock go to Main menu <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Inventory <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Current stock and search with the available filters)</span></li>
+                                                <li><span>Account and Tenant must be mapped to the Supplier.</span></li>
+                                                <li><span>Click on “Add +” button.</span></li>
+                                                <img src="outbound/1.png" class="w-150 materialboxed" />
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <li><span>Give the outward order header details..</span></li>
+                                                <img src="outbound/2.png" class="w-150 materialboxed" />
+                                                <li><span>Click on “Save” button.</span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="outbound/3.png" class="w-150 materialboxed" />
+                                                <li><span>Once the outward header details are saved, Outward Ref No. is displayed.</span></li>
+                                                <li><span>Now the status is shown as “OPEN”.</span></li>
+                                                <li><span>Now in the same page, scroll down and go to Customer PO details.</span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="outbound/4.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Add Customer PO +” button.</span></li>
+                                                <li><span>Give the mandatory fields and submit.</span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/5.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Add Material” button in the Material Details panel.</span></li>
+                                                <li><span>Give the mandatory fields and submit.</span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/6.png" class="w-150 materialboxed" />
+                                            </ol>
+                                        </li>
+                                        <li id="newinbound" class="scrollspy">
+                                            <h6 id="" class="with_in_the_block">Outbound</h6>
+                                            <ol>
+                                                <li><span>Now in the main menu go to Outbound>Create Outbound.</span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="outbound/7.png" class="w-150 materialboxed" />
+                                                <li><span>Now select an SO and click on “Get SO’s” button.</span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="outbound/8.png" class="w-150 materialboxed" />
+                                                <li><span>Now check the SO or SO’s for which the outbound is to be created and select warehouse.</span></li>
+                                                <li><span>Click on “Create Outbound” button and the below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/9.png" class="w-150 materialboxed" />
+                                                <li><span>Now go to Outbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Release Outbound. Here the OBD’s that are to be released are shown with a blinking dot near the OBD date as shown below.</span></li>
+                                                <img src="outbound/10.png" class="w-150 materialboxed" />
+                                                <li><span>Here OBD’s can be searched using the Tenant and OBD Number filters.</span></li>
+                                                <li><span>Now search for the related OBD in the displayed list and click on the release icon.</span></li>
+                                                <li><span>The below screen is displayed with the options of carrying out the OBD process or VLPD (Group OBD) process.</span></li>
+                                                <img src="outbound/11.png" class="w-150 materialboxed" />
+                                                <li><span>The delivery quantity can be edited here.</span></li>
+                                                <li>
+                                                    <span>Now check the selected OBD and click on:</span>
+                                                    <ol>
+
+                                                        <li>
+                                                            <span>Release for OBD  </span>
+                                                            <ol>
+                                                                <li><span>A pop-up is displayed as shown below.</span></li>
+                                                                <img src="outbound/12.png" class="w-150 materialboxed" />
+                                                                <li><span>Fill the data in the popup and click on “Release OBD” button.</span></li>
+                                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                                <img src="outbound/13.png" class="w-150 materialboxed" />
+                                                                <li><span>Now go to Outbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Search Outbound and the below screen is displayed.</span></li>
+                                                                <img src="outbound/14.png" class="w-150 materialboxed" />
+                                                                <li><span>Now click on edit icon in the Modify column and the below screen is displayed.</span></li>
+                                                                <li><span>Now the status is shown as “On Hold”.</span></li>
+                                                                <img src="outbound/15.png" class="w-150 materialboxed" />
+                                                                <li><span>Scroll down to 3.Pick n Check details and click on “Pick note” near the top right corner of the screen.</span></li>
+                                                                <li><span>The below shown delivery pick note is displayed.</span></li>
+                                                                <img src="outbound/16.png" class="w-150 materialboxed" />
+                                                                <li><span>Scroll the grid to the right side and click on the pick note icon.</span></li>
+                                                                <li><span>The below screen is displayed.</span></li>
+                                                                <img src="outbound/17.png" class="w-150 materialboxed" />
+                                                                <li><span>Enter quantity and click on “Pick” button.</span></li>
+                                                                <li><span>The picked quantity is shown in the table below in the same popup as shown below.</span></li>
+                                                                <img src="outbound/18.png" class="w-150 materialboxed" />
+                                                                <li><span>The picking can be cancelled here by clicking the delete icon in the above shown popup.</span></li>
+                                                                <p><b>For release VLPD the following process follows:</b></p>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <span>Release for VLPD</span>
+                                                            <ol>
+                                                                <li><span>The below shown screen is displayed with an alert message.</span></li>
+                                                                <img src="outbound/19.png" class="w-150 materialboxed" />
+                                                                <li><span>Now go to Outbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Group Outbound.</span></li>
+                                                                <li><span>Check, give the mandatory fields and click on “Create Group OBD”.</span></li>
+                                                                <li><span>The below screen is displayed.</span></li>
+                                                                <img src="outbound/20.png" class="w-150 materialboxed" />
+                                                                <li><span>Now go to group outbound list, and the below screen is displayed.</span></li>
+                                                                <img src="outbound/21.png" class="w-150 materialboxed" />
+                                                                <li><span>Click on “Initiate Pick Up” button and the below screen is displayed.</span></li>
+                                                                <img src="outbound/22.png" class="w-150 materialboxed" />
+                                                                <li><span>Click on the pick icon shown in the above page.</span></li>
+                                                                <li><span>The below screen is displayed.</span></li>
+                                                                <img src="outbound/23.png" class="w-150 materialboxed" />
+                                                                <li><span>Now click on the pick icon shown in the above page.</span></li>
+                                                                <li><span>The below screen is displayed.</span></li>
+                                                                <img src="outbound/24.png" class="w-150 materialboxed" />
+                                                                <li><span>Now a popup is displayed as shown below.</span></li>
+                                                                <img src="outbound/25.png" class="w-150 materialboxed" />
+                                                                <li><span>Give the mandatory fields and click on “Pick” button and the below screen is displayed showing the updated picked quantity and pending quantity.</span></li>
+                                                                <img src="outbound/26.png" class="w-150 materialboxed" />
+                                                                <li><span>Now once the page is refreshed, verify icon will be displayed in the grid as shown below.</span></li>
+                                                                <img src="outbound/27.png" class="w-150 materialboxed" />
+                                                                <li><span>Click on verify icon and the below shown alert message is displayed.</span></li>
+                                                                <img src="outbound/28.png" class="w-150 materialboxed" />
+
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                <li><span>Now go to Outbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Search Outbound, the below screen is displayed.</span></li>
+                                                <img src="outbound/29.png" class="w-150 materialboxed" />
+                                                <li><span>Search for the SO number and click on modify icon. The below screen is displayed.</span></li>
+                                                <img src="outbound/29.png" class="w-150 materialboxed" />
+                                                <li><span>Now give the mandatory fields and click on “Update and send to PGI” button.</span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/31.png" class="w-150 materialboxed" />
+                                                <li><span>Now go to 4.PG details, give the mandatory fields and update.</span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/32.png" class="w-150 materialboxed" />
+                                                <li><span>Now go to 6.Packing Details, give the mandatory fields and update. </span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/33.png" class="w-150 materialboxed" />
+                                                <li><span>Now go to 7.Delivery Details, give the mandatory fields and update. </span></li>
+                                                <li><span>The below screen is displayed with an alert message.</span></li>
+                                                <img src="outbound/34.png" class="w-150 materialboxed" />
+                                                <li><span>Now the user can check the status of the outbound in 1. Initiate Outbound Delivery and status will be shown as “Delivered”. The outbound process closes here.</span></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#inwardorder"><i class="material-icons article">description</i>Outward Order</a></li>
+                            <li><a href="#newinbound"><i class="material-icons article">description</i>Outbound</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>

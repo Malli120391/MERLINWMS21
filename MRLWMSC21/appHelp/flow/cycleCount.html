@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="http://livejs.com/live.js"></script>
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html"><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <!--<li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Cycle Count
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+                                <ul>
+                                    <ol>
+                                        <li>
+                                            <h6 id="home" class="with_in_the_block scrollspy">Cycle Count</h6>
+                                            <ol>
+                                                <li><span>start with the Cycle count, go to Orders <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Inventory <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Cycle Count List. </span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="cycleCount/1.png" class="w-150 materialboxed" />
+                                                <li><span>Click on “Add +” button.</span></li>
+                                                <img src="cycleCount/2.png" class="w-150 materialboxed" />
+                                                <li><span>Select the mandatory Account, Warehouse, Cycle Count, Cycle Count Name, Frequency and Cycle Count Duration and Valid From.</span></li>
+                                                <li><span>User can configure Cycle Counts for logged in account only. </span></li>
+                                                <li><span>All the configured Cycle Counts for respective Account will display in Cycle count Configuration list.</span></li>
+                                                <li><span>Cycle Count Name should be unique.</span></li>
+                                                <li><span>All mapped WH’s to respective account should display in Warehouse dropdown. User can select a WH from the dropdown list.</span></li>
+                                                <li><span>‘Is Blind Cycle Count’ checkbox should be auto checked on Cycle Count details form. If Cycle Count is configured as Blind, ‘Available Qty.’ shouldn’t display on capture screen in CC transaction.</span></li>
+                                                <li><span>User can uncheck ‘Is Blind Cycle Count’ checkbox depending on requirement. If Cycle Count is configured as non-blind, Available Qty. should display on capture screen in CC transaction.</span></li>
+                                                <li><span>After configuring a new cycle count, below grid “Entity Configuration” should get enabled.</span></li>
+                                                <li><span>Cycle Count Duration is more than Frequency configured for that CC error message “Cycle Count Duration Should Be Less Than Or Equal To Frequency.” Should come.</span></li>
+                                                <img src="cycleCount/3.png" class="w-150 materialboxed" />
+                                                <li><span>An alert message is displayed as shown above.</span></li>
+                                                <li><span>This data is displayed in the list as shown below.</span></li>
+                                                <img src="cycleCount/4.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on edit icon in the action column and below screen is displayed.</span></li>
+                                                <img src="cycleCount/5.png" class="w-150 materialboxed" />
+                                                <li><span>Click on “Add +” button and the below shown popup is displayed.</span></li>
+                                                <img src="cycleCount/6.png" class="w-150 materialboxed" />
+                                                <li><span>Give the mandatory fields and click on “Create” button. An alert message is generated as shown below.</span></li>
+                                                <img src="cycleCount/7.png" class="w-150 materialboxed" />
+                                                <li><span>User can configure one or more entities for a cycle count.</span></li>
+                                                <li>
+                                                    <span>Entity configuration should be unique.</span>
+                                                    <h6><b>Entity configuration should be unique.</b></h6>
+                                                    <ol>
+                                                        <li><span>Entity configuration should be unique.</span></li>
+                                                        <li><span>If at least one transaction/cycle is initiated (in CC Transaction module) for a configured cycle count, then user can edit only the ‘Valid To’ date and ‘Frequency’ of the respective Cycle Count.</span></li>
+                                                        <li><span>If at least one transaction/cycle is completed, then user can edit only the ‘Valid To’ date. </span></li>
+                                                        <li><span>Cycle Count Duration Should Be Less Than or Equal To Frequency.</span></li>
+                                                        <li>
+                                                            <span>5)	Validation at the time of changing Valid To: Valid to should not be less than the maximum Planned End Date of any cycle counts in the series as per the formula:</span>
+                                                            <p class="m0"><strong>PED = PSD of this Series + (Duration -1) Days</p></strong>
+                                                        </li>
+                                                        <li><span>Once all transactions for cycle count is marked completed, then no more changes are permitted for respective CC.</span></li>
+                                                        <li>
+                                                            <span>User can configure one or more entities for a cycle count.</span>
+                                                            <h6><b>Below are the cases:</b></h6>
+                                                            <ol>
+                                                                <li><span><b>Case1:</b> If user configures ‘Zone’ as an entity, on capture screen locations belong to that zone under WH should come only. And materials belongs to account should come.</span></li>
+                                                                <li><span><b>Case2:</b> If user configures ‘Material’ as an entity, on capture screen locations belong to WH should come and configured material should come.</span></li>
+                                                                <li><span><b>Case3:</b> If user configures ‘Tenant’ as an entity, on capture screen locations belong to WH should come and material should come based on Tenant.</span></li>
+                                                                <li><span><b>Case4:</b> If user configures ‘Supplier’ as an entity, on capture screen locations belong to WH should come and materials should come based on Supplier.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li><span>Now click on Cycle Count Capture. The below list is displayed.</span></li>
+                                                        <img src="cycleCount/8.png" class="w-150 materialboxed" />
+                                                        <li><span>Now click on “Initiate” button.</span></li>
+                                                        <li><span>Below shown alert message is displayed.</span></li>
+                                                        <img src="cycleCount/9.png" class="w-150 materialboxed" />
+                                                        <li><span>Now in the action column two buttons are displayed as shown below.</span></li>
+                                                        <img src="cycleCount/10.png" class="w-150 materialboxed" />
+                                                        <li><span>Now click on “Capture” button, and the below shown popup is displayed.</span></li>
+                                                        <img src="cycleCount/11.png" class="w-150 materialboxed" />
+                                                        <li><span>Give the mandatory (Location, material and Qty.) fields and save the data.</span></li>
+                                                        <img src="cycleCount/12.png" class="w-150 materialboxed" />
+                                                        <li><span>The confirmation popup is displayed confirming the release of dock as shown below.</span></li>
+                                                        <li><span>Once confirmed the “Capture” button changes to “Captured” in the action column. Screen shown below.</span></li>
+                                                        <img src="cycleCount/13.png" class="w-150 materialboxed" />
+                                                        <li><span>Now click on “Complete” button to finish the Cycle Count process.</span></li>
+                                                        <img src="cycleCount/14.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <span>Now the completed cycle count’s planned start and end dates are shown in the above displayed screen.</span>
+                                                            <h6><b>Business Rules for CC Capture:</b></h6>
+                                                            <ol id="Tariff" class="scrollspy">
+                                                                <li><span><b>Calculations of PSD and PED should be computed as per the below formulas:</b></span></li>
+                                                                <div style="padding-left: 80px;">
+                                                                    <b>For First CC in Series:</b><br />
+                                                                    PSD = Valid From of Config Table<br />
+                                                                    PED = PSD of Series + (Duration -1) Days<br /><br />
+
+                                                                    <b>For Nth CC in series:</b><br />
+                                                                    PSD = AED of (N-1)th Series + (Frequency) Days<br />
+                                                                    PED = PSD of this Series + (Duration -1) Days<br />
+                                                                </div>
+                                                                <li>
+                                                                    <span><b>CC Transaction List:</b></span>
+                                                                    <ol>
+                                                                        <li><span>Once a Cycle Count is configured for an Account(logged In), it will display on Cycle Count Transaction page. </span></li>
+                                                                        <li><span>Cycle Counts of the logged in account should display only. </span></li>
+                                                                        <li><span>Beside Search, a "Show All" Checkbox is displayed, to show completed CC also in CC transaction list. </span></li>
+                                                                        <li><span>Display order is descending Order for list elements when “Show All” checkbox is not checked and here only CC’s with status Planned and initiated should display.</span></li>
+                                                                        <li><span>Once an entity is configured to that cycle count, then only user will be able to initiate it, else initiate button will not come on CC transaction page.</span></li>
+                                                                        <li><span>If ‘Valid From’ is future date and entity is configured for that CC, initiate button won’t come before ‘Valid From’ date for that CC on CC transaction page. </span></li>
+                                                                        <li><span>By clicking on initiate button, user should be able to initiate cycle count.</span></li>
+                                                                        <li><span>After initiating cycle count, status should be changed to ‘Initiated’ from Planned.</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Edit CC : </b></span>
+                                                                    <ol>
+                                                                        <li><span>User can edit a cycle count, if status for CC is ‘Planned’. Once user has initiated the CC, user shouldn’t be able to edit CC.</span></li>
+                                                                        <li><span>PED should be an auto computed label.</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Cycle Count Capture: </b></span>
+                                                                    <ol>
+                                                                        <li><span><b>Case1: </b>If user configures ‘Zone’ as an entity, on capture screen locations belong to that zone under WH should come only. And materials belongs to account should come.</span></li>
+                                                                        <li><span><b>Case2: </b>If user configures ‘Material’ as an entity, on capture screen locations belong to WH should come and configured material should come.</span></li>
+                                                                        <li><span><b>Case3: </b>If user configures ‘Tenant’ as an entity, on capture screen locations belong to WH should come and material should come based on Tenant.</span></li>
+                                                                        <li><span><b>Case4: </b>If user configures ‘Supplier’ as an entity, on capture screen locations belong to WH should come and materials should come based on Supplier.</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li><span>If no Zone is configured then all locations under configured WH should display.</span></li>
+                                                                <li><span>Location, Material, quantity are mandatory on Capture screen. </span></li>
+                                                                <li><span>Once capturing of data is done and user saves the entered data, button should changed to ‘Captured’ from ‘capture’.</span></li>
+                                                                <li><span>After capturing data, when user clicks on Complete button, it displays message that “All locations released and transaction completed successfully” and status should be ‘Completed’ and View icon start coming for that transaction. User can view transaction by clicking on that view icon.</span></li>
+                                                                <li><span>Beside Search, a "Show All" Checkbox is displayed, to show completed CC also in CC transaction list. </span></li>
+                                                                <li><span>If user checks "Show All" Checkbox, all transactions(Planned, Initiated and Completed) will display in ascending Order on CC transaction list.</span></li>
+                                                                <li><span>If “Show All” checkbox is unchecked, CC transaction list will display only CC’s with status Planned and initiated should display in descending order.</span></li>
+                                                                <li><span>Once an entity is configured to that cycle count, then only user will be able to initiate it, else initiate button will not come on CC transaction page.</span></li>
+                                                                <li><span>User shouldn’t be able to initiate cycle count before the Planned Start date.</span></li>
+                                                                <li><span>User should be able to edit PSD to any date between the CC Configuration PSD & PED.</span></li>
+                                                                <li><span>If Cycle Count is configured as Blind, then Available Quantity shouldn’t display, for non-blind cycle counts Available Quantity should display on capture screen.</span></li>
+                                                                <li><span>Once user clicks on save button, application will ask for releasing locations, if user clicks on Yes button, data entered should be saved and locations should be released successfully.</span></li>
+                                                                <li><span>If user will add same material on same location in a single transaction, it will be display in one single record. </span></li>
+                                                                <li><span>Once user clicks on save button, application will ask for releasing locations, if user clicks on No button, data entered should be saved but locations shouldn’t be released.</span></li>
+                                                                <li><span>After completing one transaction, status for transaction should be ‘Completed’ and entry for next transaction/sequence should come in transaction list.</span></li>
+                                                                <li><span>Once all transactions are completed for respective CC(as per Valid From and Valid To date in CC configuration), entry for next transaction/sequence should not come in transaction list.</span></li>
+                                                            </ol>
+                                                            <h6><b>Hand Held Process for CC Transaction</b></h6>
+                                                            <ol id="ta" class="scrollspy">
+                                                                <li>
+                                                                    <span>Capturing is of two types in HHD - </span>
+                                                                    <ol>
+                                                                        <li><span>Manual mode – Capturing quantity is user entry</span></li>
+                                                                        <li><span>Auto mode – Capturing quantity is always 1 when item is scanned</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li><span>Capturing can happen with respect to Location.</span></li>
+                                                                <li><span>Scanned containers and locations must be under the defined warehouse of the User</span></li>
+                                                                <li><span>Scanned items must belong to respective account based upon entities configured.</span></li>
+                                                                <li><span>Location, container, item and quantity are mandatory while capturing data through HHD.</span></li>
+                                                            </ol>
+                                                            <h6><b>Cycle Count Report</b></h6>
+                                                            <ol id="Taxation" class="scrollspy">
+                                                                <li><span>Once a Cycle Count is marked as Completed, user can see CC report for that sequence/transaction by clicking on view icon in CC Transaction page for that sequence.</span></li>
+                                                                <li><span>User can navigate to REPORTS <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Audit <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Cycle Count Report</span></li>
+                                                                <li><span>Here user can see CC report for all the CC conducted till date.</span></li>
+                                                                <li><span>By default data for all CC’s will display.</span></li>
+                                                                <li><span>User can also filter CC, as per their requirements.</span></li>
+                                                                <li>
+                                                                    <span>On CC Report page, three filters are displayed:-</span>
+                                                                    <ol>
+                                                                        <p class="m0"><b>A.</b> <span>Cycle Count</span></p>
+                                                                        <p class="m0"><b>B.</b> <span>Cycle Count Name</span></p>
+                                                                        <p class="m0"><b>C.</b> <span>Sequence No.</span></p>
+                                                                    </ol>
+                                                                </li>
+                                                                <P> User can select filters -  Cycle Count, Cycle count Name and sequence no and filter cc report data.</P>
+                                                            </ol>
+                                                        </li>
+
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#home"><i class="material-icons article">description</i>Cycle Count</a></li>
+                            <li><a href="#Tariff"><i class="material-icons article">description</i>Business Rules for CC Capture</a></li>
+                            <li><a href="#ta"><i class="material-icons article">description</i>Hand Held Process for CC...</a></li>
+                            <li><a href="#Taxation"><i class="material-icons article">description</i>Cycle Count Report</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>

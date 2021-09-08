@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6af30271-3146-4717-be98-8b55a7365a5c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SingleSignOnDBSink.wsdl" MetadataType="Wsdl" ID="b045bf21-9026-48d0-a6f1-71c5ca2eec44" SourceId="1" SourceUrl="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc?wsdl" />
+    <MetadataFile FileName="SingleSignOnDBSink.xsd" MetadataType="Schema" ID="84f69e5e-d475-4f89-85e4-600dd28af129" SourceId="1" SourceUrl="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc?xsd=xsd1" />
+    <MetadataFile FileName="SingleSignOnDBSink1.xsd" MetadataType="Schema" ID="8e06e840-7ba5-414f-9b27-3d76830b6736" SourceId="1" SourceUrl="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc?xsd=xsd0" />
+    <MetadataFile FileName="SingleSignOnDBSink2.xsd" MetadataType="Schema" ID="bb857e34-2ee9-4e8a-a4d2-21781a3890a6" SourceId="1" SourceUrl="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc?xsd=xsd2" />
+    <MetadataFile FileName="SingleSignOnDBSink.disco" MetadataType="Disco" ID="55d85827-eb3d-4c6b-800e-913123059470" SourceId="1" SourceUrl="http://192.168.1.20/SSOServices/Service/SingleSignOnDBSink.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,266 @@
+/* Flexnav Base Styles */
+.flexnav {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-transform-style: preserve-3d;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 0; }
+  .flexnav.opacity {
+    opacity: 0; }
+  .flexnav.flexnav-show {
+    max-height: 2000px;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .flexnav.one-page {
+    position: fixed;
+    top: 50px;
+    right: 5%;
+    max-width: 200px; }
+  .flexnav li {
+    font-size: 100%;
+    position: relative;
+    overflow: hidden; }
+  .flexnav li a {
+      text-decoration:none;
+    position: relative;
+    display: block;
+    padding: .96em;
+    padding:10px;
+    z-index: 2;
+    overflow: hidden;
+    color: #fff;
+    background: #a6a6a2;
+    background-color:#1a79cf;
+    /*background:url("../../../Images/dolphin_bg.gif") repeat top;*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  .flexnav li ul {
+    width: 100%; }
+    .flexnav li ul li {
+      font-size: 100%;
+      position: relative;
+      overflow: hidden; }
+  .flexnav li ul.flexnav-show li {
+    overflow: visible; }
+  .flexnav li ul li a {
+    padding-left:60px;
+    display: block;
+    background: #b2b2af;
+    background-color:#1a79cf;
+
+    /*background: url("../../../Images/dolphin_bg.gif") repeat top;*/
+  }
+  .flexnav ul li ul li a {
+      
+      padding-left:120px;
+    background: #bfbfbc;background-color:#1a79cf;
+    /*background: url("../../../Images/dolphin_bg.gif") repeat top;*/
+  }
+  .flexnav ul li ul li ul li a {
+      
+    background: #cbcbc9;background-color:#1a79cf;
+    /*background: url("../../../Images/dolphin_bg.gif") repeat top;*/
+  }
+    .flexnav li .touch-button {
+        position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    /*display: inline-block;*/
+    background: #acaca1;
+    background: rgba(0, 0, 0, 0.075);
+    text-align: center; 
+    }
+  .flexnav .touch-button {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    /*display: inline-block;*/
+    background: #acaca1;
+    background: rgba(0, 0, 0, 0.075);
+    text-align: center; }
+    .flexnav .touch-button:hover {
+      cursor: pointer; }
+    .flexnav .touch-button .navicon {
+      position: relative;
+      top: 10px;
+      font-size: 12px;
+      color: #fff; }
+.menu-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  padding: 14px;
+  background: #a6a6a2;
+  background-color:#1a79cf;
+  /*background:url("../../../Images/dolphin_bg.gif") repeat top;*/
+  color: #fff;
+  cursor: pointer;
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/ 
+  font-weight:bold;
+}
+  .menu-button.one-page {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    padding-right: 45px; }
+  .menu-button .touch-button {
+      
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center; }
+    .menu-button .touch-button .navicon {
+      font-size: 16px;
+      position: relative;
+      top: 1em;
+      color: #fff; }
+
+@media all and (max-width:800px) {
+    #mnuMain {
+        display:none;
+    }
+    .MenuBG {
+        display:none
+    }
+}
+@media all and (min-width: 800px) {
+    .MobileMenu {
+        display:none;
+    }
+
+  body.one-page {
+    padding-top: 70px; }
+
+  .flexnav {
+    overflow: visible; 
+    z-index:9999;
+  }
+    .flexnav.opacity {
+      opacity: 1; }
+    .flexnav.one-page {
+      top: 0;
+      right: auto;
+      max-width: 1080px; }
+    .flexnav li {
+      position: relative;
+      list-style: none;
+      float: left;
+      display: block;
+      /*background-color: #a6a6a2;*/
+      background-color:#1a79cf;
+      /*background:url("../../../Images/dolphin_bg.gif") repeat top;*/
+      overflow: visible;
+      width: 20%;
+    }
+    .flexnav li a {
+      border-left: 1px solid #acaca1;
+      border-bottom: none; }
+    .flexnav li > ul {
+      position: absolute;
+      top: auto;
+      left: 0; }
+      .flexnav li > ul li {
+        width: 100%; }
+    .flexnav li ul li > ul {
+      margin-left: 100%;
+      top: 0; }
+    .flexnav li ul li a {
+      border-bottom: none; }
+    .flexnav li ul.open {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      z-index: 1; }
+      .flexnav li ul.open li {
+        overflow: visible;
+        max-height: 100px; }
+      .flexnav li ul.open ul.open {
+        margin-left: 100%;
+        top: 0; }
+
+  .menu-button {
+    display: none; } }
+.oldie body.one-page {
+  padding-top: 70px; }
+.oldie .flexnav {
+  overflow: visible; }
+  .oldie .flexnav.one-page {
+    top: 0;
+    right: auto;
+    max-width: 1080px; }
+  .oldie .flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    background-color: #a6a6a2;
+    /*background:url("../../../Images/dolphin_bg.gif") repeat top;*/
+    width: 20%;
+    min-height: 50px;
+    overflow: visible; }
+  .oldie .flexnav li:hover > ul {
+    display: block;
+    width: 100%;
+    overflow: visible; }
+    .oldie .flexnav li:hover > ul li {
+      width: 100%;
+      float: none; }
+  .oldie .flexnav li a {
+    border-left: 1px solid #acaca1;
+    border-bottom: none;
+    overflow: visible; }
+  .oldie .flexnav li > ul {
+    background: #acaca1;
+    position: absolute;
+    top: auto;
+    left: 0;
+    display: none;
+    z-index: 1;
+    overflow: visible; }
+  .oldie .flexnav li ul li ul {
+    top: 0; }
+  .oldie .flexnav li ul li a {
+    border-bottom: none; }
+  .oldie .flexnav li ul.open {
+    display: block;
+    width: 100%;
+    overflow: visible; }
+    .oldie .flexnav li ul.open li {
+      width: 100%; }
+    .oldie .flexnav li ul.open ul.open {
+      margin-left: 100%;
+      top: 0;
+      display: block;
+      width: 100%;
+      overflow: visible; }
+  .oldie .flexnav ul li:hover ul {
+    margin-left: 100%;
+    top: 0; }
+.oldie .menu-button {
+  display: none; }
+.oldie.ie7 .flexnav li {
+  width: 19.9%; }
+
+
+ ul, li,a{
+  
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }

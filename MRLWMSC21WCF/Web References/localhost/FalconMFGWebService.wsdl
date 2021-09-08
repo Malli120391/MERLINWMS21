@@ -1,0 +1,3298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUserLoginResult" type="tns:ArrayOfKeyValueStruct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfKeyValueStruct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="KeyValueStruct" nillable="true" type="tns:KeyValueStruct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="KeyValueStruct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductionOrderList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductionOrderListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductionOrderListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperatorActivityResuls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="vRoutingDetailsActivityID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperatorActivityResulsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperatorActivityResulsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationActivities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="OperationNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductionOrderHeaderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationActivitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperationActivitiesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivityLevelComponents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoutingDetailsActivityID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductionOrderHeaderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivityLevelComponentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActivityLevelComponentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRoleID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRoleIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserRoleIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertGoodsMovementDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RoutingDetailsActivityCaptureID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Qty" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="GoodsMovementTypeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsDamaged" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsLocallyProduced" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ScrapCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reworkroutingID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BatchNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertGoodsMovementDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpsertGoodsMovementDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsPassOrFailCaptured">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="vRouteID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmpCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vProductionOrderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsPassOrFailCapturedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsPassOrFailCapturedResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertRoutingDetailsActivityCapture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoutingdetailsActivityID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartTime" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertRoutingDetailsActivityCaptureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpsertRoutingDetailsActivityCaptureResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertRoutingDetailsActivityPassorFail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RouteActivityID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmpCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PassOrFail" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vProductionOrderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vRemarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vCheckListResultData" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="vUserRoleID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertRoutingDetailsActivityPassorFailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpsertRoutingDetailsActivityPassorFailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialReceivedList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialReceivedListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialReceivedListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialConsumedList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialConsumedListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialConsumedListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJobCardData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductionOrderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetJobCardDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetJobCardDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseFinishedProductList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseFinishedProductListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkCenterWiseFinishedProductListResult" type="tns:ArrayOfKeyValueStruct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseRejectedMatListForRework">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseRejectedMatListForReworkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkCenterWiseRejectedMatListForReworkResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRawMaterialAssignedQty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRawMaterialAssignedQtyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRawMaterialAssignedQtyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterFinishedGoodsINList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterFinishedGoodsINListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkCenterFinishedGoodsINListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScrapCodeList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetScrapCodeListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScrapCodeListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOperationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnconfirmedProductsList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Nonconfirmitytype" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnconfirmedProductsListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUnconfirmedProductsListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterProducedQty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterProducedQtyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetWorkCenterProducedQtyResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCentreFinishedQty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCentreFinishedQtyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetWorkCentreFinishedQtyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseHeaderData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseHeaderDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkCenterWiseHeaderDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastSerialNumberForMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MMID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastSerialNumberForMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLastSerialNumberForMaterialResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseProducedQty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderHeaderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WorkCenterID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkCenterWiseProducedQtyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetWorkCenterWiseProducedQtyResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSerialNumbersForWorkCenter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductionOrderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSerialNumbersForWorkCenterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSerialNumbersForWorkCenterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePositiveRecall">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="vstatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="vRoutingDetailsID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePositiveRecallResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePositiveRecallResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPositiveRecallDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="vRoutingDetailsActivityID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPositiveRecallDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPositiveRecallDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQCParameters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RoutingDetailsActivityID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vProductionOrderHeaderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQCParametersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQCParametersResult" type="tns:ArrayOfKeyValueStruct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSampleCode">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSampleCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSampleCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDropDownData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SqlString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DefaultValue" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDropDownDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDropDownDataResult" type="tns:ArrayOfKeyValueStruct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="poheaderID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="WorkCenterID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestDataResult" type="tns:ArrayOfKeyValueStruct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIORefNumber">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetIORefNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIORefNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIOBOMDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProductionOrderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIOBOMDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIOBOMDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertToolCapture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ItemCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="vRouteID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpsertToolCaptureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpsertToolCaptureResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PathName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileControl" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="WCFURL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfKeyValueStruct" nillable="true" type="tns:ArrayOfKeyValueStruct" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="decimal" type="s:decimal" />
+    </s:schema>
+    <s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductionOrderList" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductionOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperatorActivityResuls" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperatorActivityResulsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperationActivities" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperationActivitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActivityLevelComponents" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActivityLevelComponentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRoleID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRoleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertGoodsMovementDetails" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertGoodsMovementDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedSoapIn">
+    <wsdl:part name="parameters" element="tns:IsPassOrFailCaptured" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedSoapOut">
+    <wsdl:part name="parameters" element="tns:IsPassOrFailCapturedResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertRoutingDetailsActivityCapture" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertRoutingDetailsActivityCaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertRoutingDetailsActivityPassorFail" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertRoutingDetailsActivityPassorFailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialReceivedList" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialReceivedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialConsumedList" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialConsumedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetJobCardData" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetJobCardDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseFinishedProductList" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseFinishedProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseRejectedMatListForRework" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseRejectedMatListForReworkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtySoapIn">
+    <wsdl:part name="parameters" element="tns:GetRawMaterialAssignedQty" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtySoapOut">
+    <wsdl:part name="parameters" element="tns:GetRawMaterialAssignedQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterFinishedGoodsINList" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterFinishedGoodsINListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScrapCodeListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScrapCodeList" />
+  </wsdl:message>
+  <wsdl:message name="GetScrapCodeListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScrapCodeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperations" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnconfirmedProductsList" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnconfirmedProductsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtySoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterProducedQty" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtySoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterProducedQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtySoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCentreFinishedQty" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtySoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCentreFinishedQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseHeaderData" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseHeaderDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastSerialNumberForMaterial" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastSerialNumberForMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtySoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseProducedQty" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtySoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkCenterWiseProducedQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSerialNumbersForWorkCenter" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSerialNumbersForWorkCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePositiveRecall" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePositiveRecallResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPositiveRecallDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPositiveRecallDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQCParameters" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQCParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSampleCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:getSampleCode" />
+  </wsdl:message>
+  <wsdl:message name="getSampleCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:getSampleCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDropDownData" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDropDownDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestDataSoapIn">
+    <wsdl:part name="parameters" element="tns:TestData" />
+  </wsdl:message>
+  <wsdl:message name="TestDataSoapOut">
+    <wsdl:part name="parameters" element="tns:TestDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIORefNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIORefNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetIORefNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIORefNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIOBOMDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIOBOMDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureSoapIn">
+    <wsdl:part name="parameters" element="tns:UpsertToolCapture" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureSoapOut">
+    <wsdl:part name="parameters" element="tns:UpsertToolCaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsHttpGetIn">
+    <wsdl:part name="vRoutingDetailsActivityID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="OperationNumber" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsHttpGetIn">
+    <wsdl:part name="RoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDHttpGetIn">
+    <wsdl:part name="empcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsHttpGetIn">
+    <wsdl:part name="EmployeeCode" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="RoutingDetailsActivityCaptureID" type="s:string" />
+    <wsdl:part name="MCode" type="s:string" />
+    <wsdl:part name="Qty" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="GoodsMovementTypeID" type="s:string" />
+    <wsdl:part name="IsDamaged" type="s:string" />
+    <wsdl:part name="IsLocallyProduced" type="s:string" />
+    <wsdl:part name="Remarks" type="s:string" />
+    <wsdl:part name="ScrapCode" type="s:string" />
+    <wsdl:part name="reworkroutingID" type="s:string" />
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="BatchNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedHttpGetIn">
+    <wsdl:part name="vRouteID" type="s:string" />
+    <wsdl:part name="EmpCode" type="s:string" />
+    <wsdl:part name="vProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureHttpGetIn">
+    <wsdl:part name="RoutingdetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="UserCode" type="s:string" />
+    <wsdl:part name="StartTime" type="s:string" />
+    <wsdl:part name="Remarks" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailHttpGetIn">
+    <wsdl:part name="RouteActivityID" type="s:string" />
+    <wsdl:part name="EmpCode" type="s:string" />
+    <wsdl:part name="PassOrFail" type="s:string" />
+    <wsdl:part name="vProductionOrderID" type="s:string" />
+    <wsdl:part name="vRemarks" type="s:string" />
+    <wsdl:part name="vCheckListResultData" type="s:string" />
+    <wsdl:part name="vUserRoleID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtyHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="MCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetScrapCodeListHttpGetIn" />
+  <wsdl:message name="GetScrapCodeListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="Nonconfirmitytype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtyHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtyHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtyHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtyHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="MMID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtyHttpGetIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtyHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallHttpGetIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+    <wsdl:part name="EmployeeCode" type="s:string" />
+    <wsdl:part name="vstatus" type="s:string" />
+    <wsdl:part name="vRoutingDetailsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsHttpGetIn">
+    <wsdl:part name="vRoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersHttpGetIn">
+    <wsdl:part name="RoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="vProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="getSampleCodeHttpGetIn" />
+  <wsdl:message name="getSampleCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataHttpGetIn">
+    <wsdl:part name="SqlString" type="s:string" />
+    <wsdl:part name="DefaultValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="TestDataHttpGetIn">
+    <wsdl:part name="poheaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetIORefNumberHttpGetIn" />
+  <wsdl:message name="GetIORefNumberHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsHttpGetIn">
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureHttpGetIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="vRouteID" type="s:string" />
+    <wsdl:part name="EmployeeCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetIn">
+    <wsdl:part name="PathName" type="s:string" />
+    <wsdl:part name="FileControl" type="s1:StringArray" />
+    <wsdl:part name="WCFURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserLoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductionOrderListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsHttpPostIn">
+    <wsdl:part name="vRoutingDetailsActivityID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperatorActivityResulsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="OperationNumber" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationActivitiesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsHttpPostIn">
+    <wsdl:part name="RoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityLevelComponentsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDHttpPostIn">
+    <wsdl:part name="empcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsHttpPostIn">
+    <wsdl:part name="EmployeeCode" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="RoutingDetailsActivityCaptureID" type="s:string" />
+    <wsdl:part name="MCode" type="s:string" />
+    <wsdl:part name="Qty" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="GoodsMovementTypeID" type="s:string" />
+    <wsdl:part name="IsDamaged" type="s:string" />
+    <wsdl:part name="IsLocallyProduced" type="s:string" />
+    <wsdl:part name="Remarks" type="s:string" />
+    <wsdl:part name="ScrapCode" type="s:string" />
+    <wsdl:part name="reworkroutingID" type="s:string" />
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="BatchNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertGoodsMovementDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedHttpPostIn">
+    <wsdl:part name="vRouteID" type="s:string" />
+    <wsdl:part name="EmpCode" type="s:string" />
+    <wsdl:part name="vProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="IsPassOrFailCapturedHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureHttpPostIn">
+    <wsdl:part name="RoutingdetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="UserCode" type="s:string" />
+    <wsdl:part name="StartTime" type="s:string" />
+    <wsdl:part name="Remarks" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityCaptureHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailHttpPostIn">
+    <wsdl:part name="RouteActivityID" type="s:string" />
+    <wsdl:part name="EmpCode" type="s:string" />
+    <wsdl:part name="PassOrFail" type="s:string" />
+    <wsdl:part name="vProductionOrderID" type="s:string" />
+    <wsdl:part name="vRemarks" type="s:string" />
+    <wsdl:part name="vCheckListResultData" type="s:string" />
+    <wsdl:part name="vUserRoleID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertRoutingDetailsActivityPassorFailHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialReceivedListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialConsumedListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetJobCardDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseFinishedProductListHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseRejectedMatListForReworkHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtyHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="MCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRawMaterialAssignedQtyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterFinishedGoodsINListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetScrapCodeListHttpPostIn" />
+  <wsdl:message name="GetScrapCodeListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetOperationsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="Nonconfirmitytype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnconfirmedProductsListHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtyHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterProducedQtyHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtyHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCentreFinishedQtyHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseHeaderDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="MMID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastSerialNumberForMaterialHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtyHttpPostIn">
+    <wsdl:part name="ProductionOrderHeaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkCenterWiseProducedQtyHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSerialNumbersForWorkCenterHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallHttpPostIn">
+    <wsdl:part name="WorkCenterID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+    <wsdl:part name="EmployeeCode" type="s:string" />
+    <wsdl:part name="vstatus" type="s:string" />
+    <wsdl:part name="vRoutingDetailsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePositiveRecallHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsHttpPostIn">
+    <wsdl:part name="vRoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPositiveRecallDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersHttpPostIn">
+    <wsdl:part name="RoutingDetailsActivityID" type="s:string" />
+    <wsdl:part name="vProductionOrderHeaderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetQCParametersHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="getSampleCodeHttpPostIn" />
+  <wsdl:message name="getSampleCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataHttpPostIn">
+    <wsdl:part name="SqlString" type="s:string" />
+    <wsdl:part name="DefaultValue" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDropDownDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="TestDataHttpPostIn">
+    <wsdl:part name="poheaderID" type="s:string" />
+    <wsdl:part name="WorkCenterID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfKeyValueStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetIORefNumberHttpPostIn" />
+  <wsdl:message name="GetIORefNumberHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsHttpPostIn">
+    <wsdl:part name="ProductionOrderID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetIOBOMDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureHttpPostIn">
+    <wsdl:part name="ItemCode" type="s:string" />
+    <wsdl:part name="SerialNumber" type="s:string" />
+    <wsdl:part name="vRouteID" type="s:string" />
+    <wsdl:part name="EmployeeCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpsertToolCaptureHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostIn">
+    <wsdl:part name="PathName" type="s:string" />
+    <wsdl:part name="FileControl" type="s1:StringArray" />
+    <wsdl:part name="WCFURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="FalconMFGWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginSoapIn" />
+      <wsdl:output message="tns:CheckUserLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <wsdl:input message="tns:GetProductionOrderListSoapIn" />
+      <wsdl:output message="tns:GetProductionOrderListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <wsdl:input message="tns:GetOperatorActivityResulsSoapIn" />
+      <wsdl:output message="tns:GetOperatorActivityResulsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <wsdl:input message="tns:GetOperationActivitiesSoapIn" />
+      <wsdl:output message="tns:GetOperationActivitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <wsdl:input message="tns:GetActivityLevelComponentsSoapIn" />
+      <wsdl:output message="tns:GetActivityLevelComponentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <wsdl:input message="tns:GetUserRoleIDSoapIn" />
+      <wsdl:output message="tns:GetUserRoleIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <wsdl:input message="tns:UpsertGoodsMovementDetailsSoapIn" />
+      <wsdl:output message="tns:UpsertGoodsMovementDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <wsdl:input message="tns:IsPassOrFailCapturedSoapIn" />
+      <wsdl:output message="tns:IsPassOrFailCapturedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityCaptureSoapIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityCaptureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityPassorFailSoapIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityPassorFailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <wsdl:input message="tns:GetMaterialReceivedListSoapIn" />
+      <wsdl:output message="tns:GetMaterialReceivedListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <wsdl:input message="tns:GetMaterialConsumedListSoapIn" />
+      <wsdl:output message="tns:GetMaterialConsumedListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <wsdl:input message="tns:GetJobCardDataSoapIn" />
+      <wsdl:output message="tns:GetJobCardDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <wsdl:input message="tns:GetWorkCenterWiseFinishedProductListSoapIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseFinishedProductListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <wsdl:input message="tns:GetWorkCenterWiseRejectedMatListForReworkSoapIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseRejectedMatListForReworkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <wsdl:input message="tns:GetRawMaterialAssignedQtySoapIn" />
+      <wsdl:output message="tns:GetRawMaterialAssignedQtySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <wsdl:input message="tns:GetWorkCenterFinishedGoodsINListSoapIn" />
+      <wsdl:output message="tns:GetWorkCenterFinishedGoodsINListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <wsdl:input message="tns:GetScrapCodeListSoapIn" />
+      <wsdl:output message="tns:GetScrapCodeListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <wsdl:input message="tns:GetOperationsSoapIn" />
+      <wsdl:output message="tns:GetOperationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <wsdl:input message="tns:GetUnconfirmedProductsListSoapIn" />
+      <wsdl:output message="tns:GetUnconfirmedProductsListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <wsdl:input message="tns:GetWorkCenterProducedQtySoapIn" />
+      <wsdl:output message="tns:GetWorkCenterProducedQtySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <wsdl:input message="tns:GetWorkCentreFinishedQtySoapIn" />
+      <wsdl:output message="tns:GetWorkCentreFinishedQtySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <wsdl:input message="tns:GetWorkCenterWiseHeaderDataSoapIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseHeaderDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <wsdl:input message="tns:GetLastSerialNumberForMaterialSoapIn" />
+      <wsdl:output message="tns:GetLastSerialNumberForMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <wsdl:input message="tns:GetWorkCenterWiseProducedQtySoapIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseProducedQtySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <wsdl:input message="tns:GetSerialNumbersForWorkCenterSoapIn" />
+      <wsdl:output message="tns:GetSerialNumbersForWorkCenterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <wsdl:input message="tns:UpdatePositiveRecallSoapIn" />
+      <wsdl:output message="tns:UpdatePositiveRecallSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <wsdl:input message="tns:GetPositiveRecallDetailsSoapIn" />
+      <wsdl:output message="tns:GetPositiveRecallDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <wsdl:input message="tns:GetQCParametersSoapIn" />
+      <wsdl:output message="tns:GetQCParametersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <wsdl:input message="tns:getSampleCodeSoapIn" />
+      <wsdl:output message="tns:getSampleCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <wsdl:input message="tns:GetDropDownDataSoapIn" />
+      <wsdl:output message="tns:GetDropDownDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <wsdl:input message="tns:TestDataSoapIn" />
+      <wsdl:output message="tns:TestDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <wsdl:input message="tns:GetIORefNumberSoapIn" />
+      <wsdl:output message="tns:GetIORefNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <wsdl:input message="tns:GetIOBOMDetailsSoapIn" />
+      <wsdl:output message="tns:GetIOBOMDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <wsdl:input message="tns:UpsertToolCaptureSoapIn" />
+      <wsdl:output message="tns:UpsertToolCaptureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FalconMFGWebServiceHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginHttpGetIn" />
+      <wsdl:output message="tns:CheckUserLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <wsdl:input message="tns:GetProductionOrderListHttpGetIn" />
+      <wsdl:output message="tns:GetProductionOrderListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <wsdl:input message="tns:GetOperatorActivityResulsHttpGetIn" />
+      <wsdl:output message="tns:GetOperatorActivityResulsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <wsdl:input message="tns:GetOperationActivitiesHttpGetIn" />
+      <wsdl:output message="tns:GetOperationActivitiesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <wsdl:input message="tns:GetActivityLevelComponentsHttpGetIn" />
+      <wsdl:output message="tns:GetActivityLevelComponentsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <wsdl:input message="tns:GetUserRoleIDHttpGetIn" />
+      <wsdl:output message="tns:GetUserRoleIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <wsdl:input message="tns:UpsertGoodsMovementDetailsHttpGetIn" />
+      <wsdl:output message="tns:UpsertGoodsMovementDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <wsdl:input message="tns:IsPassOrFailCapturedHttpGetIn" />
+      <wsdl:output message="tns:IsPassOrFailCapturedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityCaptureHttpGetIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityCaptureHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityPassorFailHttpGetIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityPassorFailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <wsdl:input message="tns:GetMaterialReceivedListHttpGetIn" />
+      <wsdl:output message="tns:GetMaterialReceivedListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <wsdl:input message="tns:GetMaterialConsumedListHttpGetIn" />
+      <wsdl:output message="tns:GetMaterialConsumedListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <wsdl:input message="tns:GetJobCardDataHttpGetIn" />
+      <wsdl:output message="tns:GetJobCardDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <wsdl:input message="tns:GetWorkCenterWiseFinishedProductListHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseFinishedProductListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <wsdl:input message="tns:GetWorkCenterWiseRejectedMatListForReworkHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseRejectedMatListForReworkHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <wsdl:input message="tns:GetRawMaterialAssignedQtyHttpGetIn" />
+      <wsdl:output message="tns:GetRawMaterialAssignedQtyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <wsdl:input message="tns:GetWorkCenterFinishedGoodsINListHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterFinishedGoodsINListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <wsdl:input message="tns:GetScrapCodeListHttpGetIn" />
+      <wsdl:output message="tns:GetScrapCodeListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <wsdl:input message="tns:GetOperationsHttpGetIn" />
+      <wsdl:output message="tns:GetOperationsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <wsdl:input message="tns:GetUnconfirmedProductsListHttpGetIn" />
+      <wsdl:output message="tns:GetUnconfirmedProductsListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <wsdl:input message="tns:GetWorkCenterProducedQtyHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterProducedQtyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <wsdl:input message="tns:GetWorkCentreFinishedQtyHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCentreFinishedQtyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <wsdl:input message="tns:GetWorkCenterWiseHeaderDataHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseHeaderDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <wsdl:input message="tns:GetLastSerialNumberForMaterialHttpGetIn" />
+      <wsdl:output message="tns:GetLastSerialNumberForMaterialHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <wsdl:input message="tns:GetWorkCenterWiseProducedQtyHttpGetIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseProducedQtyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <wsdl:input message="tns:GetSerialNumbersForWorkCenterHttpGetIn" />
+      <wsdl:output message="tns:GetSerialNumbersForWorkCenterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <wsdl:input message="tns:UpdatePositiveRecallHttpGetIn" />
+      <wsdl:output message="tns:UpdatePositiveRecallHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <wsdl:input message="tns:GetPositiveRecallDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetPositiveRecallDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <wsdl:input message="tns:GetQCParametersHttpGetIn" />
+      <wsdl:output message="tns:GetQCParametersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <wsdl:input message="tns:getSampleCodeHttpGetIn" />
+      <wsdl:output message="tns:getSampleCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <wsdl:input message="tns:GetDropDownDataHttpGetIn" />
+      <wsdl:output message="tns:GetDropDownDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <wsdl:input message="tns:TestDataHttpGetIn" />
+      <wsdl:output message="tns:TestDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <wsdl:input message="tns:GetIORefNumberHttpGetIn" />
+      <wsdl:output message="tns:GetIORefNumberHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <wsdl:input message="tns:GetIOBOMDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetIOBOMDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <wsdl:input message="tns:UpsertToolCaptureHttpGetIn" />
+      <wsdl:output message="tns:UpsertToolCaptureHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpGetIn" />
+      <wsdl:output message="tns:UploadFileHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FalconMFGWebServiceHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input message="tns:CheckUserLoginHttpPostIn" />
+      <wsdl:output message="tns:CheckUserLoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <wsdl:input message="tns:GetProductionOrderListHttpPostIn" />
+      <wsdl:output message="tns:GetProductionOrderListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <wsdl:input message="tns:GetOperatorActivityResulsHttpPostIn" />
+      <wsdl:output message="tns:GetOperatorActivityResulsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <wsdl:input message="tns:GetOperationActivitiesHttpPostIn" />
+      <wsdl:output message="tns:GetOperationActivitiesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <wsdl:input message="tns:GetActivityLevelComponentsHttpPostIn" />
+      <wsdl:output message="tns:GetActivityLevelComponentsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <wsdl:input message="tns:GetUserRoleIDHttpPostIn" />
+      <wsdl:output message="tns:GetUserRoleIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <wsdl:input message="tns:UpsertGoodsMovementDetailsHttpPostIn" />
+      <wsdl:output message="tns:UpsertGoodsMovementDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <wsdl:input message="tns:IsPassOrFailCapturedHttpPostIn" />
+      <wsdl:output message="tns:IsPassOrFailCapturedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityCaptureHttpPostIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityCaptureHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <wsdl:input message="tns:UpsertRoutingDetailsActivityPassorFailHttpPostIn" />
+      <wsdl:output message="tns:UpsertRoutingDetailsActivityPassorFailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <wsdl:input message="tns:GetMaterialReceivedListHttpPostIn" />
+      <wsdl:output message="tns:GetMaterialReceivedListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <wsdl:input message="tns:GetMaterialConsumedListHttpPostIn" />
+      <wsdl:output message="tns:GetMaterialConsumedListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <wsdl:input message="tns:GetJobCardDataHttpPostIn" />
+      <wsdl:output message="tns:GetJobCardDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <wsdl:input message="tns:GetWorkCenterWiseFinishedProductListHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseFinishedProductListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <wsdl:input message="tns:GetWorkCenterWiseRejectedMatListForReworkHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseRejectedMatListForReworkHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <wsdl:input message="tns:GetRawMaterialAssignedQtyHttpPostIn" />
+      <wsdl:output message="tns:GetRawMaterialAssignedQtyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <wsdl:input message="tns:GetWorkCenterFinishedGoodsINListHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterFinishedGoodsINListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <wsdl:input message="tns:GetScrapCodeListHttpPostIn" />
+      <wsdl:output message="tns:GetScrapCodeListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <wsdl:input message="tns:GetOperationsHttpPostIn" />
+      <wsdl:output message="tns:GetOperationsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <wsdl:input message="tns:GetUnconfirmedProductsListHttpPostIn" />
+      <wsdl:output message="tns:GetUnconfirmedProductsListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <wsdl:input message="tns:GetWorkCenterProducedQtyHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterProducedQtyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <wsdl:input message="tns:GetWorkCentreFinishedQtyHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCentreFinishedQtyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <wsdl:input message="tns:GetWorkCenterWiseHeaderDataHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseHeaderDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <wsdl:input message="tns:GetLastSerialNumberForMaterialHttpPostIn" />
+      <wsdl:output message="tns:GetLastSerialNumberForMaterialHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <wsdl:input message="tns:GetWorkCenterWiseProducedQtyHttpPostIn" />
+      <wsdl:output message="tns:GetWorkCenterWiseProducedQtyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <wsdl:input message="tns:GetSerialNumbersForWorkCenterHttpPostIn" />
+      <wsdl:output message="tns:GetSerialNumbersForWorkCenterHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <wsdl:input message="tns:UpdatePositiveRecallHttpPostIn" />
+      <wsdl:output message="tns:UpdatePositiveRecallHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <wsdl:input message="tns:GetPositiveRecallDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetPositiveRecallDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <wsdl:input message="tns:GetQCParametersHttpPostIn" />
+      <wsdl:output message="tns:GetQCParametersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <wsdl:input message="tns:getSampleCodeHttpPostIn" />
+      <wsdl:output message="tns:getSampleCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <wsdl:input message="tns:GetDropDownDataHttpPostIn" />
+      <wsdl:output message="tns:GetDropDownDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <wsdl:input message="tns:TestDataHttpPostIn" />
+      <wsdl:output message="tns:TestDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <wsdl:input message="tns:GetIORefNumberHttpPostIn" />
+      <wsdl:output message="tns:GetIORefNumberHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <wsdl:input message="tns:GetIOBOMDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetIOBOMDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <wsdl:input message="tns:UpsertToolCaptureHttpPostIn" />
+      <wsdl:output message="tns:UpsertToolCaptureHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpPostIn" />
+      <wsdl:output message="tns:UploadFileHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FalconMFGWebServiceSoap" type="tns:FalconMFGWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <soap:operation soapAction="http://tempuri.org/CheckUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <soap:operation soapAction="http://tempuri.org/GetProductionOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <soap:operation soapAction="http://tempuri.org/GetOperatorActivityResuls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <soap:operation soapAction="http://tempuri.org/GetOperationActivities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <soap:operation soapAction="http://tempuri.org/GetActivityLevelComponents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <soap:operation soapAction="http://tempuri.org/GetUserRoleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <soap:operation soapAction="http://tempuri.org/UpsertGoodsMovementDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <soap:operation soapAction="http://tempuri.org/IsPassOrFailCaptured" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <soap:operation soapAction="http://tempuri.org/UpsertRoutingDetailsActivityCapture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <soap:operation soapAction="http://tempuri.org/UpsertRoutingDetailsActivityPassorFail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialReceivedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialConsumedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <soap:operation soapAction="http://tempuri.org/GetJobCardData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterWiseFinishedProductList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterWiseRejectedMatListForRework" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <soap:operation soapAction="http://tempuri.org/GetRawMaterialAssignedQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterFinishedGoodsINList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <soap:operation soapAction="http://tempuri.org/GetScrapCodeList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <soap:operation soapAction="http://tempuri.org/GetOperations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <soap:operation soapAction="http://tempuri.org/GetUnconfirmedProductsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterProducedQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCentreFinishedQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterWiseHeaderData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <soap:operation soapAction="http://tempuri.org/GetLastSerialNumberForMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <soap:operation soapAction="http://tempuri.org/GetWorkCenterWiseProducedQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <soap:operation soapAction="http://tempuri.org/GetSerialNumbersForWorkCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <soap:operation soapAction="http://tempuri.org/UpdatePositiveRecall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <soap:operation soapAction="http://tempuri.org/GetPositiveRecallDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <soap:operation soapAction="http://tempuri.org/GetQCParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <soap:operation soapAction="http://tempuri.org/getSampleCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <soap:operation soapAction="http://tempuri.org/GetDropDownData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <soap:operation soapAction="http://tempuri.org/TestData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <soap:operation soapAction="http://tempuri.org/GetIORefNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <soap:operation soapAction="http://tempuri.org/GetIOBOMDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <soap:operation soapAction="http://tempuri.org/UpsertToolCapture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FalconMFGWebServiceSoap12" type="tns:FalconMFGWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <soap12:operation soapAction="http://tempuri.org/CheckUserLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <soap12:operation soapAction="http://tempuri.org/GetProductionOrderList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <soap12:operation soapAction="http://tempuri.org/GetOperatorActivityResuls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <soap12:operation soapAction="http://tempuri.org/GetOperationActivities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <soap12:operation soapAction="http://tempuri.org/GetActivityLevelComponents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRoleID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <soap12:operation soapAction="http://tempuri.org/UpsertGoodsMovementDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <soap12:operation soapAction="http://tempuri.org/IsPassOrFailCaptured" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <soap12:operation soapAction="http://tempuri.org/UpsertRoutingDetailsActivityCapture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <soap12:operation soapAction="http://tempuri.org/UpsertRoutingDetailsActivityPassorFail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialReceivedList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialConsumedList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <soap12:operation soapAction="http://tempuri.org/GetJobCardData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterWiseFinishedProductList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterWiseRejectedMatListForRework" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <soap12:operation soapAction="http://tempuri.org/GetRawMaterialAssignedQty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterFinishedGoodsINList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <soap12:operation soapAction="http://tempuri.org/GetScrapCodeList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <soap12:operation soapAction="http://tempuri.org/GetOperations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <soap12:operation soapAction="http://tempuri.org/GetUnconfirmedProductsList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterProducedQty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCentreFinishedQty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterWiseHeaderData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <soap12:operation soapAction="http://tempuri.org/GetLastSerialNumberForMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkCenterWiseProducedQty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <soap12:operation soapAction="http://tempuri.org/GetSerialNumbersForWorkCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePositiveRecall" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetPositiveRecallDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <soap12:operation soapAction="http://tempuri.org/GetQCParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <soap12:operation soapAction="http://tempuri.org/getSampleCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <soap12:operation soapAction="http://tempuri.org/GetDropDownData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <soap12:operation soapAction="http://tempuri.org/TestData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetIORefNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetIOBOMDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <soap12:operation soapAction="http://tempuri.org/UpsertToolCapture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FalconMFGWebServiceHttpGet" type="tns:FalconMFGWebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <http:operation location="/CheckUserLogin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <http:operation location="/GetProductionOrderList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <http:operation location="/GetOperatorActivityResuls" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <http:operation location="/GetOperationActivities" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <http:operation location="/GetActivityLevelComponents" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <http:operation location="/GetUserRoleID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <http:operation location="/UpsertGoodsMovementDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <http:operation location="/IsPassOrFailCaptured" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <http:operation location="/UpsertRoutingDetailsActivityCapture" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <http:operation location="/UpsertRoutingDetailsActivityPassorFail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <http:operation location="/GetMaterialReceivedList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <http:operation location="/GetMaterialConsumedList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <http:operation location="/GetJobCardData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <http:operation location="/GetWorkCenterWiseFinishedProductList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <http:operation location="/GetWorkCenterWiseRejectedMatListForRework" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <http:operation location="/GetRawMaterialAssignedQty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <http:operation location="/GetWorkCenterFinishedGoodsINList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <http:operation location="/GetScrapCodeList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <http:operation location="/GetOperations" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <http:operation location="/GetUnconfirmedProductsList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <http:operation location="/GetWorkCenterProducedQty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <http:operation location="/GetWorkCentreFinishedQty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <http:operation location="/GetWorkCenterWiseHeaderData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <http:operation location="/GetLastSerialNumberForMaterial" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <http:operation location="/GetWorkCenterWiseProducedQty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <http:operation location="/GetSerialNumbersForWorkCenter" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <http:operation location="/UpdatePositiveRecall" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <http:operation location="/GetPositiveRecallDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <http:operation location="/GetQCParameters" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <http:operation location="/getSampleCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <http:operation location="/GetDropDownData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <http:operation location="/TestData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <http:operation location="/GetIORefNumber" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <http:operation location="/GetIOBOMDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <http:operation location="/UpsertToolCapture" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FalconMFGWebServiceHttpPost" type="tns:FalconMFGWebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <http:operation location="/CheckUserLogin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductionOrderList">
+      <http:operation location="/GetProductionOrderList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperatorActivityResuls">
+      <http:operation location="/GetOperatorActivityResuls" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperationActivities">
+      <http:operation location="/GetOperationActivities" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLevelComponents">
+      <http:operation location="/GetActivityLevelComponents" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleID">
+      <http:operation location="/GetUserRoleID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertGoodsMovementDetails">
+      <http:operation location="/UpsertGoodsMovementDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPassOrFailCaptured">
+      <http:operation location="/IsPassOrFailCaptured" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityCapture">
+      <http:operation location="/UpsertRoutingDetailsActivityCapture" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertRoutingDetailsActivityPassorFail">
+      <http:operation location="/UpsertRoutingDetailsActivityPassorFail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceivedList">
+      <http:operation location="/GetMaterialReceivedList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialConsumedList">
+      <http:operation location="/GetMaterialConsumedList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobCardData">
+      <http:operation location="/GetJobCardData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseFinishedProductList">
+      <http:operation location="/GetWorkCenterWiseFinishedProductList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseRejectedMatListForRework">
+      <http:operation location="/GetWorkCenterWiseRejectedMatListForRework" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRawMaterialAssignedQty">
+      <http:operation location="/GetRawMaterialAssignedQty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterFinishedGoodsINList">
+      <http:operation location="/GetWorkCenterFinishedGoodsINList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScrapCodeList">
+      <http:operation location="/GetScrapCodeList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperations">
+      <http:operation location="/GetOperations" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnconfirmedProductsList">
+      <http:operation location="/GetUnconfirmedProductsList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterProducedQty">
+      <http:operation location="/GetWorkCenterProducedQty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCentreFinishedQty">
+      <http:operation location="/GetWorkCentreFinishedQty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseHeaderData">
+      <http:operation location="/GetWorkCenterWiseHeaderData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastSerialNumberForMaterial">
+      <http:operation location="/GetLastSerialNumberForMaterial" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkCenterWiseProducedQty">
+      <http:operation location="/GetWorkCenterWiseProducedQty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerialNumbersForWorkCenter">
+      <http:operation location="/GetSerialNumbersForWorkCenter" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePositiveRecall">
+      <http:operation location="/UpdatePositiveRecall" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPositiveRecallDetails">
+      <http:operation location="/GetPositiveRecallDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQCParameters">
+      <http:operation location="/GetQCParameters" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSampleCode">
+      <http:operation location="/getSampleCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <http:operation location="/GetDropDownData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestData">
+      <http:operation location="/TestData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIORefNumber">
+      <http:operation location="/GetIORefNumber" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIOBOMDetails">
+      <http:operation location="/GetIOBOMDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertToolCapture">
+      <http:operation location="/UpsertToolCapture" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FalconMFGWebService">
+    <wsdl:port name="FalconMFGWebServiceSoap" binding="tns:FalconMFGWebServiceSoap">
+      <soap:address location="http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FalconMFGWebServiceSoap12" binding="tns:FalconMFGWebServiceSoap12">
+      <soap12:address location="http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FalconMFGWebServiceHttpGet" binding="tns:FalconMFGWebServiceHttpGet">
+      <http:address location="http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FalconMFGWebServiceHttpPost" binding="tns:FalconMFGWebServiceHttpPost">
+      <http:address location="http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

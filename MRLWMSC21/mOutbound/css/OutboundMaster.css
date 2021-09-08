@@ -1,0 +1,109 @@
+﻿/* 
+    Author :
+    Date: 24/01/2015
+    Date Modified:24/01/2015
+*/
+
+
+/*Custom Dailog Box Css*/
+
+.ui-dialog .ui-dialog-titlebar {
+    color: white;
+    background-color: #8EBD21;
+}
+
+
+/*Button box css*/
+.ui-button-large {
+    color: #fff;
+    background-color: #a6d043;
+    border-color: #8EBD21;
+}
+
+    .ui-button-large:hover, .ui-button-large:focus, .ui-button-large.focus, .ui-button-large:active, .ui-button-large.active, .open > .dropdown-toggle.ui-button-large {
+    background-color: #8EBD21;
+    }
+
+.gvLightOrangeNew_pager span {
+    box-shadow: var(--z1);
+    padding: 0px;
+    display: inline-block !important;
+    border: 2px solid var(--sideNav-bg) !important;
+    background-color: var(--sideNav-bg) !important;
+    width: 20px !important;
+    height: 20px !important;
+    color: #fff;
+}
+.ui-button-small {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #a6d043;
+    border: solid 1px #8EBD21;
+    padding: 3px 5px 3px 5px;
+    border-radius: 4px;
+}
+
+.ui-button-small:hover, .ui-button-small:focus, .ui-button-small.focus, .ui-button-small:active, .ui-button-small.active, .open > .dropdown-toggle.ui-button-small {
+    background-color: #8EBD21;
+}
+
+
+.btnSearch {
+
+    background-color: #8EBD21;
+    border-color: #8EBD21;
+
+}
+
+.txt_search {
+   
+    border: 1px solid #8EBD21;
+   
+}
+.txt_search:focus {
+    outline: none;
+    border:1px solid #8EBD21;
+}
+
+
+.lnkViewButton {
+
+    text-decoration: none;
+font-size: 13px;
+font-weight: 600;
+color:red;
+
+}
+
+/*Custom Jquery Accordino*/
+/*.ui-accordion .ui-accordion-header {
+    color:black;
+    background-color:#eefeca;
+    border-color: #bbe559;
+    border-bottom:1px solid #bbe559;
+}
+
+.ui-accordion .ui-accordion-content {
+    border-color: #bbe559;
+    top: 2px;
+}*/
+/*.ui-icon { width: 16px; height: 16px; background-image: url(../../images/ui-icons_4ca300_256x240.png); }*/
+
+
+
+
+
+
+/*.ui-menu .ui-menu-item a:hover , .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover{
+    background-color: #8EBD21;
+    background-image:none;
+    color:white;
+    
+    border:none;    
+}
+/*.ui-datepicker-prev:hover, .ui-datepicker-next:hover ,.ui-datepicker-prev:active, .ui-datepicker-next:active,.ui-datepicker-prev::selection, .ui-datepicker-next::selection{
+    background-color: transparent;
+
+}*/

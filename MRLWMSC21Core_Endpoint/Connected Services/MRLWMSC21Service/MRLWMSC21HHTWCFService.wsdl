@@ -1,0 +1,2394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MRLWMSC21HHTWCFService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/MRLWMSC21_WCF/MRLWMSC21HHTWCFService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/MRLWMSC21_WCF/MRLWMSC21HHTWCFService.svc?xsd=xsd1" namespace="http://microsoft.com/wsdl/types/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetBinToBinStorageLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBinToBinStorageLocations" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetBinToBinStorageLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBinToBinStorageLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertBinToBinTransferItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertBinToBinTransferItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertBinToBinTransferItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertBinToBinTransferItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVLPDPickedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVLPDPickedList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVLPDPickedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVLPDPickedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DeleteVLPDPickedItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVLPDPickedItems" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DeleteVLPDPickedItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVLPDPickedItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDPickedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDPickedList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDPickedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDPickedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckStrickyCompliance_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStrickyCompliance" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckStrickyCompliance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckStrickyComplianceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferContainer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferContainer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferContainer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SaveBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBook" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SaveBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UploadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UploadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetJobOrderList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobOrderList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetJobOrderList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUserDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetail" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUserDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMenuLinks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuLinks" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMenuLinks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMenuLinksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundStatistics" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOutboundStatistics_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutboundStatistics" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOutboundStatistics_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutboundStatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInOutActivities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInOutActivities" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInOutActivities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInOutActivitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOutboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutboundList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOutboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetJobOrderOutboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobOrderOutboundList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetJobOrderOutboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobOrderOutboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInOutOperations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInOutOperations" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInOutOperations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInOutOperationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetLiveStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiveStock" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetLiveStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiveStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWarehouses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouses" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWarehouses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehousesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSuppliers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSuppliers" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSuppliers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSuppliersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetShipmentStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentStatus" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetShipmentStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDeliveryStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryStatus" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDeliveryStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDocumentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentType" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDocumentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPartNumberList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartNumberList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPartNumberList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartNumberListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVersionDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVersionDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_MaterialStorageParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:MaterialStorageParameters" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_MaterialStorageParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MaterialStorageParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_MaterialReceived_InputMessage">
+    <wsdl:part name="parameters" element="tns:MaterialReceived" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_MaterialReceived_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MaterialReceivedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateReceiveItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReceiveItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateReceiveItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReceiveItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPOList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPOList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSOList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSOList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialType" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWHForWHList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWHForWHList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWHForWHList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWHForWHListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetShipmentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentType" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetShipmentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_PODDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:PODDelivery" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_PODDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PODDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPendingOutboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingOutboundList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPendingOutboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingOutboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentStock" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMSPsReceiving_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMSPsReceiving" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMSPsReceiving_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMSPsReceivingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialStorageParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialStorageParameters" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialStorageParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialStorageParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDropDownData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDropDownData" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDropDownData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDropDownDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPOItemProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOItemProperties" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPOItemProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPOItemPropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialReceived_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialReceived" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialReceived_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialReceivedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DeleteGoodsMomentDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGoodsMomentDetails" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_DeleteGoodsMomentDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGoodsMomentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSOItemProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOItemProperties" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSOItemProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSOItemPropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetAvailbleQtyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailbleQtyList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetAvailbleQtyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailbleQtyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialPicked_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialPicked" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetMaterialPicked_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaterialPickedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateGoosOUT_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGoosOUT" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateGoosOUT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGoosOUTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStockListForInterTransfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStockListForInterTransfer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStockListForInterTransfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStockListForInterTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertInternalTransfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertInternalTransfer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertInternalTransfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertInternalTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUOMData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMData" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetUOMData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUOMDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CycleCountCapture_InputMessage">
+    <wsdl:part name="parameters" element="tns:CycleCountCapture" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CycleCountCapture_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CycleCountCaptureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetReleaseVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReleaseVersion" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetReleaseVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReleaseVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GoodsInData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GoodsInData" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GoodsInData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GoodsInDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateEPCCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEPCCodes" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateEPCCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEPCCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CartonValidatorAtPutaway_InputMessage">
+    <wsdl:part name="parameters" element="tns:CartonValidatorAtPutaway" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CartonValidatorAtPutaway_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CartonValidatorAtPutawayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocation" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CartonPutaway_InputMessage">
+    <wsdl:part name="parameters" element="tns:CartonPutaway" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CartonPutaway_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CartonPutawayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStockListForInterTransferFromContainer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStockListForInterTransferFromContainer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStockListForInterTransferFromContainer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStockListForInterTransferFromContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetConatinerLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConatinerLocation" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetConatinerLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConatinerLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetConatinerLocationBin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConatinerLocationBin" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetConatinerLocationBin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConatinerLocationBinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentLocationForPutaway_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocationForPutaway" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCurrentLocationForPutaway_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentLocationForPutawayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertInternalTransferContainerCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertInternalTransferContainerCode" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertInternalTransferContainerCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertInternalTransferContainerCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerForInternalTransfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerForInternalTransfer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerForInternalTransfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerForInternalTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SKuTransfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:SKuTransfer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SKuTransfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SKuTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStoreRefNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreRefNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStoreRefNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreRefNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDockVehicles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDockVehicles" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetDockVehicles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDockVehiclesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPoInvoiceNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoInvoiceNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPoInvoiceNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoInvoiceNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerOBD_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerOBD" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerOBD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerOBDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerStock" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckContainerStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContainerStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_ValidateCartonLiveStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCartonLiveStock" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_ValidateCartonLiveStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateCartonLiveStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWarehouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetWarehouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateReceiveItemForHHT_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReceiveItemForHHT" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdateReceiveItemForHHT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReceiveItemForHHTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStorageLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStorageLocations" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetStorageLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStorageLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetobdRefNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetobdRefNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetobdRefNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetobdRefNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSONos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSONos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSONos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSONosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetAvailbleQtyListforHHT_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailbleQtyListforHHT" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetAvailbleQtyListforHHT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailbleQtyListforHHTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdatePickItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePickItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpdatePickItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePickItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPoNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPoNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPoNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVLPDID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVLPDID" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetVLPDID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVLPDIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetItemToPick_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemToPick" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetItemToPick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemToPickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTenants_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenants" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTenants_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetLiveStockData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiveStockData" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetLiveStockData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLiveStockDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertPickItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertPickItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertPickItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertPickItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckLocationForLiveStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLocationForLiveStock" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckLocationForLiveStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLocationForLiveStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCCNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCCNames" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCCNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCCNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_IsBlockedLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsBlockedLocation" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_IsBlockedLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsBlockedLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCycleCountInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountInformation" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetCycleCountInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCycleCountInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertCycleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertCycleCount" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertCycleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertCycleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_ReleaseCycleCountLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseCycleCountLocation" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_ReleaseCycleCountLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseCycleCountLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_BlockLocationForCycleCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:BlockLocationForCycleCount" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_BlockLocationForCycleCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BlockLocationForCycleCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenVLPDNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenVLPDNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenVLPDNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenVLPDNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenLoadsheetList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenLoadsheetList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenLoadsheetList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenLoadsheetListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPendingOBDListForLoading_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingOBDListForLoading" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetPendingOBDListForLoading_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPendingOBDListForLoadingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertLoadCreated_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertLoadCreated" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertLoadCreated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertLoadCreatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertLoad_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertLoad" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertLoad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertLoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_LoadVerification_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadVerification" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_LoadVerification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadVerificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenVLPDNosForSorting_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenVLPDNosForSorting" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOpenVLPDNosForSorting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOpenVLPDNosForSortingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_VLPDSorting_InputMessage">
+    <wsdl:part name="parameters" element="tns:VLPDSorting" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_VLPDSorting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VLPDSortingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckDockInbound_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDockInbound" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckDockInbound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDockInboundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetBinCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBinCount" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetBinCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBinCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferOrderNos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferOrderNos" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferOrderNos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferOrderNosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferID" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetTransferID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckItemForTransfer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckItemForTransfer" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckItemForTransfer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckItemForTransferResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetItemTOPutAway_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemTOPutAway" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetItemTOPutAway_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItemTOPutAwayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertPutAwayItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertPutAwayItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_UpsertPutAwayItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpsertPutAwayItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CloseTransferOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseTransferOrder" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CloseTransferOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseTransferOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundNo" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetInboundNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInboundNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckPutAwayItemQty_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPutAwayItemQty" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckPutAwayItemQty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPutAwayItemQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SkipItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:SkipItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_SkipItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SkipItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSkipReasonList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkipReasonList" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetSkipReasonList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSkipReasonListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_VLPDSkipItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:VLPDSkipItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_VLPDSkipItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VLPDSkipItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetReceivedQty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceivedQty" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetReceivedQty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceivedQtyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDNo" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDItemToPick_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDItemToPick" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_GetOBDItemToPick_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOBDItemToPickResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckMaterialAvailablilty_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMaterialAvailablilty" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckMaterialAvailablilty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMaterialAvailabliltyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_OBDSkipItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:OBDSkipItem" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_OBDSkipItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OBDSkipItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckTenatMaterial_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckTenatMaterial" />
+  </wsdl:message>
+  <wsdl:message name="IMRLWMSC21HHTWCFService_CheckTenatMaterial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckTenatMaterialResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMRLWMSC21HHTWCFService">
+    <wsdl:operation name="GetBinToBinStorageLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinToBinStorageLocations" message="tns:IMRLWMSC21HHTWCFService_GetBinToBinStorageLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinToBinStorageLocationsResponse" message="tns:IMRLWMSC21HHTWCFService_GetBinToBinStorageLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertBinToBinTransferItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertBinToBinTransferItem" message="tns:IMRLWMSC21HHTWCFService_UpsertBinToBinTransferItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertBinToBinTransferItemResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertBinToBinTransferItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVLPDPickedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDPickedList" message="tns:IMRLWMSC21HHTWCFService_GetVLPDPickedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDPickedListResponse" message="tns:IMRLWMSC21HHTWCFService_GetVLPDPickedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVLPDPickedItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteVLPDPickedItems" message="tns:IMRLWMSC21HHTWCFService_DeleteVLPDPickedItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteVLPDPickedItemsResponse" message="tns:IMRLWMSC21HHTWCFService_DeleteVLPDPickedItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDPickedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDPickedList" message="tns:IMRLWMSC21HHTWCFService_GetOBDPickedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDPickedListResponse" message="tns:IMRLWMSC21HHTWCFService_GetOBDPickedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckStrickyCompliance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckStrickyCompliance" message="tns:IMRLWMSC21HHTWCFService_CheckStrickyCompliance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckStrickyComplianceResponse" message="tns:IMRLWMSC21HHTWCFService_CheckStrickyCompliance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferContainer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferContainer" message="tns:IMRLWMSC21HHTWCFService_GetTransferContainer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferContainerResponse" message="tns:IMRLWMSC21HHTWCFService_GetTransferContainer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBook">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SaveBook" message="tns:IMRLWMSC21HHTWCFService_SaveBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SaveBookResponse" message="tns:IMRLWMSC21HHTWCFService_SaveBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UploadFile" message="tns:IMRLWMSC21HHTWCFService_UploadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UploadFileResponse" message="tns:IMRLWMSC21HHTWCFService_UploadFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobOrderList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderList" message="tns:IMRLWMSC21HHTWCFService_GetJobOrderList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderListResponse" message="tns:IMRLWMSC21HHTWCFService_GetJobOrderList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetail" message="tns:IMRLWMSC21HHTWCFService_GetUserDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetailResponse" message="tns:IMRLWMSC21HHTWCFService_GetUserDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLinks">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMenuLinks" message="tns:IMRLWMSC21HHTWCFService_GetMenuLinks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMenuLinksResponse" message="tns:IMRLWMSC21HHTWCFService_GetMenuLinks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundStatistics">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundStatistics" message="tns:IMRLWMSC21HHTWCFService_GetInboundStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundStatisticsResponse" message="tns:IMRLWMSC21HHTWCFService_GetInboundStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutboundStatistics">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundStatistics" message="tns:IMRLWMSC21HHTWCFService_GetOutboundStatistics_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundStatisticsResponse" message="tns:IMRLWMSC21HHTWCFService_GetOutboundStatistics_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutActivities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutActivities" message="tns:IMRLWMSC21HHTWCFService_GetInOutActivities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutActivitiesResponse" message="tns:IMRLWMSC21HHTWCFService_GetInOutActivities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundList" message="tns:IMRLWMSC21HHTWCFService_GetInboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundListResponse" message="tns:IMRLWMSC21HHTWCFService_GetInboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundList" message="tns:IMRLWMSC21HHTWCFService_GetOutboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundListResponse" message="tns:IMRLWMSC21HHTWCFService_GetOutboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobOrderOutboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderOutboundList" message="tns:IMRLWMSC21HHTWCFService_GetJobOrderOutboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderOutboundListResponse" message="tns:IMRLWMSC21HHTWCFService_GetJobOrderOutboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutOperations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutOperations" message="tns:IMRLWMSC21HHTWCFService_GetInOutOperations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutOperationsResponse" message="tns:IMRLWMSC21HHTWCFService_GetInOutOperations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLiveStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStock" message="tns:IMRLWMSC21HHTWCFService_GetLiveStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStockResponse" message="tns:IMRLWMSC21HHTWCFService_GetLiveStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehouses" message="tns:IMRLWMSC21HHTWCFService_GetWarehouses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehousesResponse" message="tns:IMRLWMSC21HHTWCFService_GetWarehouses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSuppliers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSuppliers" message="tns:IMRLWMSC21HHTWCFService_GetSuppliers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSuppliersResponse" message="tns:IMRLWMSC21HHTWCFService_GetSuppliers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentStatus" message="tns:IMRLWMSC21HHTWCFService_GetShipmentStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentStatusResponse" message="tns:IMRLWMSC21HHTWCFService_GetShipmentStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDeliveryStatus" message="tns:IMRLWMSC21HHTWCFService_GetDeliveryStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDeliveryStatusResponse" message="tns:IMRLWMSC21HHTWCFService_GetDeliveryStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCustomers" message="tns:IMRLWMSC21HHTWCFService_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCustomersResponse" message="tns:IMRLWMSC21HHTWCFService_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDocumentType" message="tns:IMRLWMSC21HHTWCFService_GetDocumentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDocumentTypeResponse" message="tns:IMRLWMSC21HHTWCFService_GetDocumentType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartNumberList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPartNumberList" message="tns:IMRLWMSC21HHTWCFService_GetPartNumberList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPartNumberListResponse" message="tns:IMRLWMSC21HHTWCFService_GetPartNumberList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVersionDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVersionDetails" message="tns:IMRLWMSC21HHTWCFService_GetVersionDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVersionDetailsResponse" message="tns:IMRLWMSC21HHTWCFService_GetVersionDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MaterialStorageParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialStorageParameters" message="tns:IMRLWMSC21HHTWCFService_MaterialStorageParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialStorageParametersResponse" message="tns:IMRLWMSC21HHTWCFService_MaterialStorageParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MaterialReceived">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialReceived" message="tns:IMRLWMSC21HHTWCFService_MaterialReceived_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialReceivedResponse" message="tns:IMRLWMSC21HHTWCFService_MaterialReceived_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReceiveItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItem" message="tns:IMRLWMSC21HHTWCFService_UpdateReceiveItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItemResponse" message="tns:IMRLWMSC21HHTWCFService_UpdateReceiveItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOList" message="tns:IMRLWMSC21HHTWCFService_GetPOList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOListResponse" message="tns:IMRLWMSC21HHTWCFService_GetPOList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSOList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOList" message="tns:IMRLWMSC21HHTWCFService_GetSOList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOListResponse" message="tns:IMRLWMSC21HHTWCFService_GetSOList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialType" message="tns:IMRLWMSC21HHTWCFService_GetMaterialType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialTypeResponse" message="tns:IMRLWMSC21HHTWCFService_GetMaterialType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWHForWHList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWHForWHList" message="tns:IMRLWMSC21HHTWCFService_GetWHForWHList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWHForWHListResponse" message="tns:IMRLWMSC21HHTWCFService_GetWHForWHList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentType" message="tns:IMRLWMSC21HHTWCFService_GetShipmentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentTypeResponse" message="tns:IMRLWMSC21HHTWCFService_GetShipmentType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PODDelivery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/PODDelivery" message="tns:IMRLWMSC21HHTWCFService_PODDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/PODDeliveryResponse" message="tns:IMRLWMSC21HHTWCFService_PODDelivery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingOutboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOutboundList" message="tns:IMRLWMSC21HHTWCFService_GetPendingOutboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOutboundListResponse" message="tns:IMRLWMSC21HHTWCFService_GetPendingOutboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentStock" message="tns:IMRLWMSC21HHTWCFService_GetCurrentStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentStockResponse" message="tns:IMRLWMSC21HHTWCFService_GetCurrentStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMSPsReceiving">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMSPsReceiving" message="tns:IMRLWMSC21HHTWCFService_GetMSPsReceiving_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMSPsReceivingResponse" message="tns:IMRLWMSC21HHTWCFService_GetMSPsReceiving_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DoWork" message="tns:IMRLWMSC21HHTWCFService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DoWorkResponse" message="tns:IMRLWMSC21HHTWCFService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetails" message="tns:IMRLWMSC21HHTWCFService_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetailsResponse" message="tns:IMRLWMSC21HHTWCFService_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialStorageParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialStorageParameters" message="tns:IMRLWMSC21HHTWCFService_GetMaterialStorageParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialStorageParametersResponse" message="tns:IMRLWMSC21HHTWCFService_GetMaterialStorageParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDropDownData" message="tns:IMRLWMSC21HHTWCFService_GetDropDownData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDropDownDataResponse" message="tns:IMRLWMSC21HHTWCFService_GetDropDownData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPOItemProperties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOItemProperties" message="tns:IMRLWMSC21HHTWCFService_GetPOItemProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOItemPropertiesResponse" message="tns:IMRLWMSC21HHTWCFService_GetPOItemProperties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceived">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialReceived" message="tns:IMRLWMSC21HHTWCFService_GetMaterialReceived_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialReceivedResponse" message="tns:IMRLWMSC21HHTWCFService_GetMaterialReceived_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGoodsMomentDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteGoodsMomentDetails" message="tns:IMRLWMSC21HHTWCFService_DeleteGoodsMomentDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteGoodsMomentDetailsResponse" message="tns:IMRLWMSC21HHTWCFService_DeleteGoodsMomentDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSOItemProperties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOItemProperties" message="tns:IMRLWMSC21HHTWCFService_GetSOItemProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOItemPropertiesResponse" message="tns:IMRLWMSC21HHTWCFService_GetSOItemProperties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailbleQtyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyList" message="tns:IMRLWMSC21HHTWCFService_GetAvailbleQtyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyListResponse" message="tns:IMRLWMSC21HHTWCFService_GetAvailbleQtyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialPicked">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialPicked" message="tns:IMRLWMSC21HHTWCFService_GetMaterialPicked_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialPickedResponse" message="tns:IMRLWMSC21HHTWCFService_GetMaterialPicked_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGoosOUT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateGoosOUT" message="tns:IMRLWMSC21HHTWCFService_UpdateGoosOUT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateGoosOUTResponse" message="tns:IMRLWMSC21HHTWCFService_UpdateGoosOUT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStockListForInterTransfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransfer" message="tns:IMRLWMSC21HHTWCFService_GetStockListForInterTransfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransferResponse" message="tns:IMRLWMSC21HHTWCFService_GetStockListForInterTransfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertInternalTransfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransfer" message="tns:IMRLWMSC21HHTWCFService_UpsertInternalTransfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransferResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertInternalTransfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUOMData" message="tns:IMRLWMSC21HHTWCFService_GetUOMData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUOMDataResponse" message="tns:IMRLWMSC21HHTWCFService_GetUOMData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CycleCountCapture">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CycleCountCapture" message="tns:IMRLWMSC21HHTWCFService_CycleCountCapture_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CycleCountCaptureResponse" message="tns:IMRLWMSC21HHTWCFService_CycleCountCapture_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReleaseVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReleaseVersion" message="tns:IMRLWMSC21HHTWCFService_GetReleaseVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReleaseVersionResponse" message="tns:IMRLWMSC21HHTWCFService_GetReleaseVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GoodsInData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GoodsInData" message="tns:IMRLWMSC21HHTWCFService_GoodsInData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GoodsInDataResponse" message="tns:IMRLWMSC21HHTWCFService_GoodsInData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/Test" message="tns:IMRLWMSC21HHTWCFService_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/TestResponse" message="tns:IMRLWMSC21HHTWCFService_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEPCCodes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateEPCCodes" message="tns:IMRLWMSC21HHTWCFService_UpdateEPCCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateEPCCodesResponse" message="tns:IMRLWMSC21HHTWCFService_UpdateEPCCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CartonValidatorAtPutaway">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonValidatorAtPutaway" message="tns:IMRLWMSC21HHTWCFService_CartonValidatorAtPutaway_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonValidatorAtPutawayResponse" message="tns:IMRLWMSC21HHTWCFService_CartonValidatorAtPutaway_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocation" message="tns:IMRLWMSC21HHTWCFService_GetCurrentLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocationResponse" message="tns:IMRLWMSC21HHTWCFService_GetCurrentLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CartonPutaway">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonPutaway" message="tns:IMRLWMSC21HHTWCFService_CartonPutaway_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonPutawayResponse" message="tns:IMRLWMSC21HHTWCFService_CartonPutaway_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStockListForInterTransferFromContainer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransferFromContainer" message="tns:IMRLWMSC21HHTWCFService_GetStockListForInterTransferFromContainer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransferFromContainerResponse" message="tns:IMRLWMSC21HHTWCFService_GetStockListForInterTransferFromContainer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConatinerLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocation" message="tns:IMRLWMSC21HHTWCFService_GetConatinerLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocationResponse" message="tns:IMRLWMSC21HHTWCFService_GetConatinerLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConatinerLocationBin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocationBin" message="tns:IMRLWMSC21HHTWCFService_GetConatinerLocationBin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocationBinResponse" message="tns:IMRLWMSC21HHTWCFService_GetConatinerLocationBin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocationForPutaway">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocationForPutaway" message="tns:IMRLWMSC21HHTWCFService_GetCurrentLocationForPutaway_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocationForPutawayResponse" message="tns:IMRLWMSC21HHTWCFService_GetCurrentLocationForPutaway_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertInternalTransferContainerCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransferContainerCode" message="tns:IMRLWMSC21HHTWCFService_UpsertInternalTransferContainerCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransferContainerCodeResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertInternalTransferContainerCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerForInternalTransfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerForInternalTransfer" message="tns:IMRLWMSC21HHTWCFService_CheckContainerForInternalTransfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerForInternalTransferResponse" message="tns:IMRLWMSC21HHTWCFService_CheckContainerForInternalTransfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SKuTransfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SKuTransfer" message="tns:IMRLWMSC21HHTWCFService_SKuTransfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SKuTransferResponse" message="tns:IMRLWMSC21HHTWCFService_SKuTransfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreRefNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStoreRefNos" message="tns:IMRLWMSC21HHTWCFService_GetStoreRefNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStoreRefNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetStoreRefNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDockVehicles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDockVehicles" message="tns:IMRLWMSC21HHTWCFService_GetDockVehicles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDockVehiclesResponse" message="tns:IMRLWMSC21HHTWCFService_GetDockVehicles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoInvoiceNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoInvoiceNos" message="tns:IMRLWMSC21HHTWCFService_GetPoInvoiceNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoInvoiceNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetPoInvoiceNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainer" message="tns:IMRLWMSC21HHTWCFService_CheckContainer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerResponse" message="tns:IMRLWMSC21HHTWCFService_CheckContainer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerOBD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerOBD" message="tns:IMRLWMSC21HHTWCFService_CheckContainerOBD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerOBDResponse" message="tns:IMRLWMSC21HHTWCFService_CheckContainerOBD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerStock" message="tns:IMRLWMSC21HHTWCFService_CheckContainerStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerStockResponse" message="tns:IMRLWMSC21HHTWCFService_CheckContainerStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCartonLiveStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/ValidateCartonLiveStock" message="tns:IMRLWMSC21HHTWCFService_ValidateCartonLiveStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/ValidateCartonLiveStockResponse" message="tns:IMRLWMSC21HHTWCFService_ValidateCartonLiveStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehouse" message="tns:IMRLWMSC21HHTWCFService_GetWarehouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehouseResponse" message="tns:IMRLWMSC21HHTWCFService_GetWarehouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReceiveItemForHHT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItemForHHT" message="tns:IMRLWMSC21HHTWCFService_UpdateReceiveItemForHHT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItemForHHTResponse" message="tns:IMRLWMSC21HHTWCFService_UpdateReceiveItemForHHT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStorageLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStorageLocations" message="tns:IMRLWMSC21HHTWCFService_GetStorageLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStorageLocationsResponse" message="tns:IMRLWMSC21HHTWCFService_GetStorageLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetobdRefNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetobdRefNos" message="tns:IMRLWMSC21HHTWCFService_GetobdRefNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetobdRefNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetobdRefNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSONos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSONos" message="tns:IMRLWMSC21HHTWCFService_GetSONos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSONosResponse" message="tns:IMRLWMSC21HHTWCFService_GetSONos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailbleQtyListforHHT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyListforHHT" message="tns:IMRLWMSC21HHTWCFService_GetAvailbleQtyListforHHT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyListforHHTResponse" message="tns:IMRLWMSC21HHTWCFService_GetAvailbleQtyListforHHT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePickItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdatePickItem" message="tns:IMRLWMSC21HHTWCFService_UpdatePickItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdatePickItemResponse" message="tns:IMRLWMSC21HHTWCFService_UpdatePickItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPoNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoNos" message="tns:IMRLWMSC21HHTWCFService_GetPoNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetPoNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVLPDID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDID" message="tns:IMRLWMSC21HHTWCFService_GetVLPDID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDIDResponse" message="tns:IMRLWMSC21HHTWCFService_GetVLPDID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemToPick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemToPick" message="tns:IMRLWMSC21HHTWCFService_GetItemToPick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemToPickResponse" message="tns:IMRLWMSC21HHTWCFService_GetItemToPick_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTenants">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTenants" message="tns:IMRLWMSC21HHTWCFService_GetTenants_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTenantsResponse" message="tns:IMRLWMSC21HHTWCFService_GetTenants_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLiveStockData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStockData" message="tns:IMRLWMSC21HHTWCFService_GetLiveStockData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStockDataResponse" message="tns:IMRLWMSC21HHTWCFService_GetLiveStockData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPickItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPickItem" message="tns:IMRLWMSC21HHTWCFService_UpsertPickItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPickItemResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertPickItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLocationForLiveStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckLocationForLiveStock" message="tns:IMRLWMSC21HHTWCFService_CheckLocationForLiveStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckLocationForLiveStockResponse" message="tns:IMRLWMSC21HHTWCFService_CheckLocationForLiveStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCCNames" message="tns:IMRLWMSC21HHTWCFService_GetCCNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCCNamesResponse" message="tns:IMRLWMSC21HHTWCFService_GetCCNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsBlockedLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/IsBlockedLocation" message="tns:IMRLWMSC21HHTWCFService_IsBlockedLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/IsBlockedLocationResponse" message="tns:IMRLWMSC21HHTWCFService_IsBlockedLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCycleCountInformation" message="tns:IMRLWMSC21HHTWCFService_GetCycleCountInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCycleCountInformationResponse" message="tns:IMRLWMSC21HHTWCFService_GetCycleCountInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertCycleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertCycleCount" message="tns:IMRLWMSC21HHTWCFService_UpsertCycleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertCycleCountResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertCycleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseCycleCountLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/ReleaseCycleCountLocation" message="tns:IMRLWMSC21HHTWCFService_ReleaseCycleCountLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/ReleaseCycleCountLocationResponse" message="tns:IMRLWMSC21HHTWCFService_ReleaseCycleCountLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BlockLocationForCycleCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/BlockLocationForCycleCount" message="tns:IMRLWMSC21HHTWCFService_BlockLocationForCycleCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/BlockLocationForCycleCountResponse" message="tns:IMRLWMSC21HHTWCFService_BlockLocationForCycleCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenVLPDNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNos" message="tns:IMRLWMSC21HHTWCFService_GetOpenVLPDNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetOpenVLPDNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenLoadsheetList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenLoadsheetList" message="tns:IMRLWMSC21HHTWCFService_GetOpenLoadsheetList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenLoadsheetListResponse" message="tns:IMRLWMSC21HHTWCFService_GetOpenLoadsheetList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingOBDListForLoading">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOBDListForLoading" message="tns:IMRLWMSC21HHTWCFService_GetPendingOBDListForLoading_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOBDListForLoadingResponse" message="tns:IMRLWMSC21HHTWCFService_GetPendingOBDListForLoading_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertLoadCreated">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoadCreated" message="tns:IMRLWMSC21HHTWCFService_UpsertLoadCreated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoadCreatedResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertLoadCreated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertLoad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoad" message="tns:IMRLWMSC21HHTWCFService_UpsertLoad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoadResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertLoad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadVerification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/LoadVerification" message="tns:IMRLWMSC21HHTWCFService_LoadVerification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/LoadVerificationResponse" message="tns:IMRLWMSC21HHTWCFService_LoadVerification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenVLPDNosForSorting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNosForSorting" message="tns:IMRLWMSC21HHTWCFService_GetOpenVLPDNosForSorting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNosForSortingResponse" message="tns:IMRLWMSC21HHTWCFService_GetOpenVLPDNosForSorting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VLPDSorting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSorting" message="tns:IMRLWMSC21HHTWCFService_VLPDSorting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSortingResponse" message="tns:IMRLWMSC21HHTWCFService_VLPDSorting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDockInbound">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckDockInbound" message="tns:IMRLWMSC21HHTWCFService_CheckDockInbound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckDockInboundResponse" message="tns:IMRLWMSC21HHTWCFService_CheckDockInbound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBinCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinCount" message="tns:IMRLWMSC21HHTWCFService_GetBinCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinCountResponse" message="tns:IMRLWMSC21HHTWCFService_GetBinCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferOrderNos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferOrderNos" message="tns:IMRLWMSC21HHTWCFService_GetTransferOrderNos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferOrderNosResponse" message="tns:IMRLWMSC21HHTWCFService_GetTransferOrderNos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferID" message="tns:IMRLWMSC21HHTWCFService_GetTransferID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferIDResponse" message="tns:IMRLWMSC21HHTWCFService_GetTransferID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckItemForTransfer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckItemForTransfer" message="tns:IMRLWMSC21HHTWCFService_CheckItemForTransfer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckItemForTransferResponse" message="tns:IMRLWMSC21HHTWCFService_CheckItemForTransfer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTOPutAway">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemTOPutAway" message="tns:IMRLWMSC21HHTWCFService_GetItemTOPutAway_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemTOPutAwayResponse" message="tns:IMRLWMSC21HHTWCFService_GetItemTOPutAway_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPutAwayItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPutAwayItem" message="tns:IMRLWMSC21HHTWCFService_UpsertPutAwayItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPutAwayItemResponse" message="tns:IMRLWMSC21HHTWCFService_UpsertPutAwayItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseTransferOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CloseTransferOrder" message="tns:IMRLWMSC21HHTWCFService_CloseTransferOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CloseTransferOrderResponse" message="tns:IMRLWMSC21HHTWCFService_CloseTransferOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundNo" message="tns:IMRLWMSC21HHTWCFService_GetInboundNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundNoResponse" message="tns:IMRLWMSC21HHTWCFService_GetInboundNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPutAwayItemQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckPutAwayItemQty" message="tns:IMRLWMSC21HHTWCFService_CheckPutAwayItemQty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckPutAwayItemQtyResponse" message="tns:IMRLWMSC21HHTWCFService_CheckPutAwayItemQty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SkipItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SkipItem" message="tns:IMRLWMSC21HHTWCFService_SkipItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/SkipItemResponse" message="tns:IMRLWMSC21HHTWCFService_SkipItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSkipReasonList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSkipReasonList" message="tns:IMRLWMSC21HHTWCFService_GetSkipReasonList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSkipReasonListResponse" message="tns:IMRLWMSC21HHTWCFService_GetSkipReasonList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VLPDSkipItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSkipItem" message="tns:IMRLWMSC21HHTWCFService_VLPDSkipItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSkipItemResponse" message="tns:IMRLWMSC21HHTWCFService_VLPDSkipItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceivedQty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReceivedQty" message="tns:IMRLWMSC21HHTWCFService_GetReceivedQty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReceivedQtyResponse" message="tns:IMRLWMSC21HHTWCFService_GetReceivedQty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/Logout" message="tns:IMRLWMSC21HHTWCFService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/LogoutResponse" message="tns:IMRLWMSC21HHTWCFService_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDNo" message="tns:IMRLWMSC21HHTWCFService_GetOBDNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDNoResponse" message="tns:IMRLWMSC21HHTWCFService_GetOBDNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDItemToPick">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDItemToPick" message="tns:IMRLWMSC21HHTWCFService_GetOBDItemToPick_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDItemToPickResponse" message="tns:IMRLWMSC21HHTWCFService_GetOBDItemToPick_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValidateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckValidateUser" message="tns:IMRLWMSC21HHTWCFService_CheckValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckValidateUserResponse" message="tns:IMRLWMSC21HHTWCFService_CheckValidateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMaterialAvailablilty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckMaterialAvailablilty" message="tns:IMRLWMSC21HHTWCFService_CheckMaterialAvailablilty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckMaterialAvailabliltyResponse" message="tns:IMRLWMSC21HHTWCFService_CheckMaterialAvailablilty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OBDSkipItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/OBDSkipItem" message="tns:IMRLWMSC21HHTWCFService_OBDSkipItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/OBDSkipItemResponse" message="tns:IMRLWMSC21HHTWCFService_OBDSkipItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckTenatMaterial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckTenatMaterial" message="tns:IMRLWMSC21HHTWCFService_CheckTenatMaterial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckTenatMaterialResponse" message="tns:IMRLWMSC21HHTWCFService_CheckTenatMaterial_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMRLWMSC21HHTWCFService" type="tns:IMRLWMSC21HHTWCFService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBinToBinStorageLocations">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinToBinStorageLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertBinToBinTransferItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertBinToBinTransferItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVLPDPickedList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDPickedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVLPDPickedItems">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteVLPDPickedItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDPickedList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDPickedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckStrickyCompliance">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckStrickyCompliance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferContainer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBook">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/SaveBook" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobOrderList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetail">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMenuLinks">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMenuLinks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundStatistics">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutboundStatistics">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundStatistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutActivities">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutActivities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutboundList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOutboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetJobOrderOutboundList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetJobOrderOutboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInOutOperations">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInOutOperations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLiveStock">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouses">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehouses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSuppliers">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSuppliers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentStatus">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryStatus">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDeliveryStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentType">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDocumentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartNumberList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPartNumberList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVersionDetails">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVersionDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialStorageParameters">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialStorageParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MaterialReceived">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/MaterialReceived" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReceiveItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSOList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialType">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWHForWHList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWHForWHList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShipmentType">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetShipmentType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PODDelivery">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/PODDelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingOutboundList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOutboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentStock">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMSPsReceiving">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMSPsReceiving" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialStorageParameters">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialStorageParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDropDownData">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDropDownData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPOItemProperties">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPOItemProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialReceived">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialReceived" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGoodsMomentDetails">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/DeleteGoodsMomentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSOItemProperties">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSOItemProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailbleQtyList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialPicked">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetMaterialPicked" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGoosOUT">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateGoosOUT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStockListForInterTransfer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertInternalTransfer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUOMData">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetUOMData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CycleCountCapture">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CycleCountCapture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReleaseVersion">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReleaseVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GoodsInData">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GoodsInData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEPCCodes">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateEPCCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CartonValidatorAtPutaway">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonValidatorAtPutaway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocation">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CartonPutaway">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CartonPutaway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStockListForInterTransferFromContainer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStockListForInterTransferFromContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConatinerLocation">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConatinerLocationBin">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetConatinerLocationBin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentLocationForPutaway">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCurrentLocationForPutaway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertInternalTransferContainerCode">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertInternalTransferContainerCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerForInternalTransfer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerForInternalTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SKuTransfer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/SKuTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreRefNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStoreRefNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDockVehicles">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetDockVehicles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoInvoiceNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoInvoiceNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerOBD">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerOBD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckContainerStock">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckContainerStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateCartonLiveStock">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/ValidateCartonLiveStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouse">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetWarehouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReceiveItemForHHT">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdateReceiveItemForHHT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStorageLocations">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetStorageLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetobdRefNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetobdRefNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSONos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSONos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailbleQtyListforHHT">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetAvailbleQtyListforHHT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePickItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpdatePickItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPoNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVLPDID">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetVLPDID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemToPick">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemToPick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTenants">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTenants" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLiveStockData">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetLiveStockData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPickItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPickItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLocationForLiveStock">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckLocationForLiveStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCNames">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCCNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsBlockedLocation">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/IsBlockedLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCycleCountInformation">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetCycleCountInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertCycleCount">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertCycleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseCycleCountLocation">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/ReleaseCycleCountLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BlockLocationForCycleCount">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/BlockLocationForCycleCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenVLPDNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenLoadsheetList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenLoadsheetList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPendingOBDListForLoading">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetPendingOBDListForLoading" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertLoadCreated">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoadCreated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertLoad">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertLoad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadVerification">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/LoadVerification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpenVLPDNosForSorting">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOpenVLPDNosForSorting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VLPDSorting">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSorting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDockInbound">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckDockInbound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBinCount">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetBinCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferOrderNos">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferOrderNos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferID">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetTransferID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckItemForTransfer">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckItemForTransfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTOPutAway">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetItemTOPutAway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpsertPutAwayItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/UpsertPutAwayItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseTransferOrder">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CloseTransferOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInboundNo">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetInboundNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPutAwayItemQty">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckPutAwayItemQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SkipItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/SkipItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSkipReasonList">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetSkipReasonList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VLPDSkipItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/VLPDSkipItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceivedQty">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetReceivedQty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDNo">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOBDItemToPick">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/GetOBDItemToPick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValidateUser">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMaterialAvailablilty">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckMaterialAvailablilty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OBDSkipItem">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/OBDSkipItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckTenatMaterial">
+      <soap:operation soapAction="http://tempuri.org/IMRLWMSC21HHTWCFService/CheckTenatMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MRLWMSC21HHTWCFService">
+    <wsdl:port name="BasicHttpBinding_IMRLWMSC21HHTWCFService" binding="tns:BasicHttpBinding_IMRLWMSC21HHTWCFService">
+      <soap:address location="http://localhost/MRLWMSC21_WCF/MRLWMSC21HHTWCFService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

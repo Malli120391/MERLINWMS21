@@ -1,0 +1,2 @@
+Problem with updating miscellaneous rates:    at MRLWMSC21.TPL.Invoice.TPLBillHandler.getUpdatedSummaryWithMiscellaneousRates(SummaryPage summary, IList`1 activeRates, Int32 previousInvCount) in e:\MRLWMSC21-3PL\MRLWMSC21\TPL\Invoice\TPLBillHandler.cs:line 1624[9/6/2017 12:00:59 PM] 
+Problem with updating miscellaneous rates:    at MRLWMSC21.TPL.Invoice.TPLBillHandler.getUpdatedSummaryWithMiscellaneousRates(SummaryPage summary, IList`1 activeRates, Int32 previousInvCount) in e:\MRLWMSC21-3PL\MRLWMSC21\TPL\Invoice\TPLBillHandler.cs:line 1624[9/6/2017 12:08:13 PM] 

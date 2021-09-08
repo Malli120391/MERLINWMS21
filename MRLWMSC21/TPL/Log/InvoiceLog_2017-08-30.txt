@@ -1,0 +1,4 @@
+exception while sending invoice to tenant:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MRLWMSC21.TPL.Invoice.TPLBillHandler.sendInvoiceToTenant(TenantInfo tenantData, NetworkCredential credential) in e:\MRLWMSC21-3PL\MRLWMSC21\TPL\Invoice\TPLBillHandler.cs:line 1783[8/30/2017 5:21:57 PM] 
+exception while sending invoice to tenant:    at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at MRLWMSC21.TPL.Invoice.TPLBillHandler.sendInvoiceToTenant(TenantInfo tenantData, NetworkCredential credential) in e:\MRLWMSC21-3PL\MRLWMSC21\TPL\Invoice\TPLBillHandler.cs:line 1783[8/30/2017 5:50:52 PM] 

@@ -1,0 +1,2 @@
+pause
+whoami

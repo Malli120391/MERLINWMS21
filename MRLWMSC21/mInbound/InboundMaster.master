@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InboundMaster.master.cs" Inherits="MRLWMSC21.mInbound.InboundMaster"  %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="css/InboundMaster.css" rel="stylesheet" />
+    <link href='<%=ResolveClientUrl("~/App_Themes/Inbound/Inbound_Style.css") %>' type="text/css" rel="stylesheet" />
+    <script src="../Scripts/cookie.min.js"></script>
+      <div>
+          <div class="module_yellow">
+              <div class="ModuleHeader" height="35px">
+                   <div><a href="../Default.aspx">Home</a> <i class="material-icons">arrow_right</i> <a href="#">Inbound</a> <i class="material-icons">arrow_right</i> <span class="breadcrumbd" contenteditable="false"><asp:Literal ID="ltFormSubHeading" runat="server"/> </span></div>
+                  <%-- <div class="mandatory"><b>Note:</b> <span style="color:red"> __ </span>Indicates mandatory fields</div>--%>
+                  
+              </div>
+             
+          </div>
+           <div>
+               <div class="module_yellow">
+                     <asp:ContentPlaceHolder runat="server" ID="IBContent"  />
+              </div>
+           </div>
+       </div>
+    
+              <div class="yellow_td asidenav">
+                   <asp:Literal runat="server"  ID="ltMenuInbound" /> 
+              </div>
+</asp:Content>

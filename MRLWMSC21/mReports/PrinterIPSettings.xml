@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<PrinterSettings>
+  <Settings>
+    <PrinterName>MetaVision B/W(176)</PrinterName>
+    <PrinterIP>10.180.25.176</PrinterIP>
+  </Settings>
+  <Settings>
+    <PrinterName>Lab B/W(177)</PrinterName>
+    <PrinterIP>LAB PRINTER</PrinterIP>
+  </Settings>
+  <Settings>
+    <PrinterName>MetaVision Color(178)</PrinterName>
+    <PrinterIP>HP LaserJet 500 color M551 PCL6</PrinterIP>
+  </Settings>
+</PrinterSettings>

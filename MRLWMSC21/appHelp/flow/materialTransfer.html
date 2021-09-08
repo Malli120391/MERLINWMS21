@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html"><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <!--<li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Material Transfer
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+                                <ul>
+                                    <ol>
+                                        <li>
+                                            <h6 id="" class="with_in_the_block">Material Transfer</h6>
+                                            <ol>
+                                                <li><span>To create an Inward Order; Account, Tenant, Materials must be created as mentioned earlier in masters module.</span></li>
+                                                <li><span>Material must be mapped to the Tenant.</span></li>
+                                                <li><span>Now go to Orders <img style="vertical-align:text-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> House Keeping <img style="vertical-align:text-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Material Transfer, the below page is displayed.</span></li>
+                                                <img src="cycleCount/15.png" class="w-150 materialboxed" />
+                                                <li>
+                                                    <span><b>User can perform four types of Material Transfers:</b></span>
+                                                    <ol>
+                                                        <li><span>Bin To Bin</span></li>
+                                                        <li><span>SL to SL</span></li>
+                                                        <li><span>Expiry Material Movement</span></li>
+                                                        <li><span>Fast Moving Loc Fulfilling</span></li>
+                                                    </ol>
+                                                </li>
+                                                <li id="bb" class="scrollspy">
+                                                    <h6 id="" class="with_in_the_block">Bin To Bin</h6>
+                                                    <ol>
+                                                        <li><span>User can transfer materials from one bin to another bin by using this material transfer type.</span></li>
+                                                        <li><span>Click on “Add+” button and the below popup is displayed.</span></li>
+                                                        <img src="cycleCount/16.png" class="w-150 materialboxed" />
+                                                        <li><span>Tenant and Transfer Type are mandatory. </span></li>
+                                                        <li><span>Here Transfer type should be Bin To Bin.</span></li>
+                                                        <img src="cycleCount/17.png" class="w-150 materialboxed" />
+                                                        <li><span>Once the data is given and saved, Ref. No. is auto generated.</span></li>
+                                                        <li><span>An alert message is displayed as shown below.</span></li>
+                                                        <img src="cycleCount/18.png" class="w-150 materialboxed" />
+                                                        <li><span>Here Ref. No. should be unique.</span></li>
+                                                        <li><span>Fill Transfer Details info. Here, Part#, Location, Quantity and To Location are mandatory fields.</span></li>
+                                                        <img src="cycleCount/19.png" class="w-150 materialboxed" />
+                                                        <li><span>After filling details, user needs to click on Save Details button as shown below:</span></li>
+                                                        <img src="cycleCount/20.png" class="w-150 materialboxed" />
+                                                        <li><span>Now click on Back To List button. </span></li>
+                                                        <li><span>Here select Transfer Type – Bin To Bin and Status – Initiated and click on Search button.</span></li>
+                                                        <li><span>Now for respective record, click on Initiate button. Below screen is displayed.</span></li>
+                                                        <img src="cycleCount/21.png" class="w-150 materialboxed" />
+                                                        <li><span>Now select Transfer Type – Bin To Bin and Status as ‘In Process’. Below screen is displayed:</span></li>
+                                                        <img src="cycleCount/22.png" class="w-150 materialboxed" />
+                                                        <li><span>Click on Edit icon for the same record. Below screen is displayed:</span></li>
+                                                        <img src="cycleCount/23.png" class="w-150 materialboxed" />
+                                                        <li><span>Here select ‘To Container’ from auto-complete.</span></li>
+                                                        <img src="cycleCount/24.png" class="w-150 materialboxed" />
+                                                        <li><span>Click on Transfer button. Below alert should display and transfer of material qty should happen from one bin to other bin.</span></li>
+                                                        <img src="cycleCount/25.png" class="w-150 materialboxed" />
+                                                        <li><span>Now user can check in Current stock whether material qty is deducted from one bin and added to another bin as shown below:</span></li>
+                                                        <img src="cycleCount/26.png" class="w-150 materialboxed" />
+                                                    </ol>
+                                                </li>
+                                                <li id="sltsl" class="scrollspy">
+                                                    <h6 id="" class="with_in_the_block">SL to SL</h6>
+                                                    <ol>
+                                                        <li><span>User can transfer materials from one SLoc to another SLoc by using this material transfer type.</span></li>
+                                                        <li><span>Click on “Add+” button and the below popup is displayed.</span></li>
+                                                        <img src="cycleCount/27.png" class="w-150 materialboxed" />
+                                                        <li><span>Tenant and Transfer Type are mandatory. </span></li>
+                                                        <li><span>Here Transfer type should be SL To SL.</span></li>
+                                                        <img src="cycleCount/28.png" class="w-150 materialboxed" />
+                                                        <li><span>Once the data is given and saved, Ref. No. is auto generated.</span></li>
+                                                        <li><span>An alert message is displayed as shown below.</span></li>
+                                                        <img src="cycleCount/29.png" class="w-150 materialboxed" />
+                                                        <li><span>Here Ref. No. should be unique.</span></li>
+                                                        <li><span>Check the Current stock page:</span></li>
+                                                        <img src="cycleCount/30.png" class="w-150 materialboxed" />
+                                                        <li><span>Fill Transfer Details info. Here, Part#, Location, Quantity, From SL and To SL are mandatory fields.</span></li>
+                                                        <img src="cycleCount/31.png" class="w-150 materialboxed" />
+                                                        <li><span>After filling details, user needs to click on Save Details button as shown below:</span></li>
+                                                        <img src="cycleCount/32.png" class="w-150 materialboxed" />
+                                                        <img src="cycleCount/33.png" class="w-150 materialboxed" />
+                                                        <li><span>Now click on Back To List button.</span></li>
+                                                        <li><span>Here select Transfer Type – SL To SL and Status – Initiated and click on Search button.</span></li>
+                                                        <li><span>Now for respective record, click on Initiate button. Below screen is displayed.</span></li>
+                                                        <img src="cycleCount/34.png" class="w-150 materialboxed" />
+                                                        <img src="cycleCount/35.png" class="w-150 materialboxed" />
+                                                        <li><span>After Initiating, check the Current stock report.</span></li>
+                                                        <li><span>Transfer is happened to given To SLoc. User can check Current Stock report to verify the transfer.</span></li>
+                                                        <img src="cycleCount/36.png" class="w-150 materialboxed" />
+                                                    </ol>
+                                                </li>
+                                                <li id="exp" class="scrollspy">
+                                                    <h6 id="" class="with_in_the_block">Expiry Material Movement</h6>
+                                                    <ol>
+                                                        <li>
+                                                            <span>Auto transfer order is generated every midnight for expired material.</span>
+                                                        </li>
+                                                        <h6><b>Process Explanation with example:-</b></h6>
+                                                        <li><span>Suppose today (17-Aug-2018) user has performed Inbound for material MI having expiry date ’20-Aug2018’.</span></li>
+                                                        <li><span>It means on 20-August-2018 M1 material will be expired.</span></li>
+                                                        <li><span>20 Aug midnight, one job will run on backend and transfer order will get generated for material M1.</span></li>
+                                                        <li><span>For checking that generated transfer order, user needs to select Transfer Type – Expiry Material Movement and status – Initiated and click on Search button as shown below:</span></li>
+                                                        <img src="cycleCount/37.png" class="w-150 materialboxed" />
+                                                        <li><span>Click on Initiate button. Below screen will display</span></li>
+                                                        <img src="cycleCount/38.png" class="w-150 materialboxed" />
+                                                        <li><span>Now select Transfer Type – Expiry Material Movement and Status – In Process and click on Search button.</span></li>
+                                                        <li><span>Now Transfer orders for Expired Material should display which are in process.</span></li>
+                                                        <li><span>Click on Edit link for that record.</span></li>
+                                                        <li><span>Transfer Detail record should come with all the details of material and quarantine location</span></li>
+                                                        <li><span>User needs to select To Container and click the the transfer button.</span></li>
+                                                    </ol>
+                                                </li>
+                                                <li id="exp" class="scrollspy">
+                                                    <h6 id="" class="with_in_the_block">Fast Moving locations Fulfillment</h6>
+                                                    <ol>
+                                                        <img src="cycleCount/39.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <span><b>Process Explanation with example</b></span>
+                                                            <ol>
+                                                                <li><span>Go to Orders <img style="vertical-align:text-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Inward Orders</span></li>
+                                                                <li><span>Create PO: PO1800138  and  INB: FKW1800028 for 300 qty of ‘RawMaterial’ and receive at location Z103A0101(which is not a fast moving location)</span></li>
+                                                                <li><span>Create one more PO: PO1800139 and  INB: FKW1800029 for 300 qty of RawMaterial’ and receive at location Z202A0203(FastMoving Location).</span></li>
+                                                                <li><span>Go to Orders <img style="vertical-align:text-top" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Outward Orders</span></li>
+                                                                <li><span>Create SO: SO1800103 with 290 qty </span></li>
+                                                                <li><span>Created and release OBD(1800104).</span></li>
+                                                                <li><span>While picking, system should suggest FastMoving Loc i.e Z202A0203 for picking item RawMaterial.</span></li>
+                                                                <li><span>Once user starts picking items and on fast moving location stock goes below min threshold for the bin.</span></li>
+                                                                <li><span>Auto transfer order should get created to fullfil bin stock to its max threshold for the fast moving bin.</span></li>
+                                                                <li><span>Now user needs to Select Transfer Order: FastMoving Loc Fulfilling and Status – Initiated, user will get auto generated transfer order for FastMoving bin material.</span></li>
+                                                            </ol>
+                                                        </li>
+
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#bb"><i class="material-icons article">description</i>Bin To Bin</a></li>
+                            <li><a href="#sltsl"><i class="material-icons article">description</i>SL to SL</a></li>
+                            <li><a href="#exp"><i class="material-icons article">description</i>Expiry Material Movement</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+
+
+body{
+	background: #f6f7fa;
+}
+
+.m0{
+	margin: 0;
+}
+
+.p10{
+	padding: 10px;
+}
+
+.customSearch{
+	padding: 10px;
+    position: relative;
+    width:30%;
+}
+
+.customSearch input{
+    border: 0px !important;
+    outline: 0px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 5px;
+    bottom: 5px;
+    padding-left: 55px;
+    background: #dadada;
+    border-radius: 43px;
+}
+
+.customSearch img{
+	vertical-align: -webkit-baseline-middle;
+    position: relative;
+    z-index: 999;
+    top: 3px;
+}
+
+.contentBlock{
+	width: 100%;
+
+	position: relative;
+}
+
+.customSearch input::placeholder{
+	font-size:16px;
+	font-weight: 100; 
+	color: #212121;
+}
+
+.customSearch input:focus{
+	background: #fff;
+	transition: background 100ms ease-in,width 100ms ease-out;
+	border: 1px solid rgba(0,0,0,0);
+	    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.contentBlock .collapsible{
+	border: 0 !important;
+	box-shadow: none;
+}
+
+.collapsible-header{
+	    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    color:rgb(33, 33, 33);
+}
+
+.collapsible .active{
+	    background: #f3fbff;
+}
+
+
+.collapsible{
+	margin-top: 0px;
+}
+
+a{
+	    color: #0e0e0e;
+    font-size: 13px;
+}
+
+.collapsible-body{
+	 padding: 1rem 2rem;
+}
+
+.collapsible-body ul li {
+    margin: 10px 0px;
+
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex .imgse img{
+	width:131px;
+}
+
+.lightborder{
+	    border-bottom: 1px solid #cccccc6b;
+}
+
+.title-meta{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post{
+	padding: 10px;
+}
+
+.post p{
+	    color: #212121;
+    font-size: 13px;
+}
+
+.tabs .tab a{
+	    color: #9e9e9e;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+	    color: #3F51B5;
+}
+
+.tabs .indicator{ background-color: #3F51B5; z-index: 2;
+}
+.linee{
+    height: 2px;
+    background: #cac9c9;
+    transform: translateY(-2PX);
+    Z-INDEX: 0;
+    POSITION: RELATIVE;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+.right-fotter {
+    width: 100%;
+    text-align: center;
+    padding-right: 4%;
+    line-height: 45px;
+    position: absolute;
+    bottom: 0;
+}
+#footer12 {
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.header {
+    background-position-x: center;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-color: #3F51B5;
+    background-size: auto 180px;
+    height: 250px;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    background-image: url(http://qualityserver/data/account-home-background.png);
+    position: fixed;
+}
+
+.mainTitle{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 140px;
+}
+
+.nav{
+	    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fff;
+        display: flex;
+    justify-content: space-between;
+}
+
+.white-color{
+	color: #fff;
+}
+
+.white-color i{
+	    font-size: 19px;
+}
+
+.pl0{
+	padding-left:0px !important; 
+}
+
+.flex__{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.collapsible-header{
+	font-size: 13px; 
+	    color: #716d6d;
+}
+
+.collapsible-header .material-icons{
+	    font-size: 19px;
+	        color: #716d6d;
+}
+
+.row-mb0{
+	margin-bottom: 0px;
+}
+
+.collapsible{
+	margin-bottom: 0px; 
+}
+
+.pl0{
+	padding: 0px !important; 
+}

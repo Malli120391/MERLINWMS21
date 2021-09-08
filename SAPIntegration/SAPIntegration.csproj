@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C0AD5EC-3278-4C31-A95C-78049BD2996C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAPIntegration</RootNamespace>
+    <AssemblyName>SAPIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\InvCustomer.cs" />
+    <Compile Include="BusinessObjects\InvInventory.cs" />
+    <Compile Include="BusinessObjects\InvItem.cs" />
+    <Compile Include="BusinessObjects\InvPurchaseOrderInfo.cs" />
+    <Compile Include="BusinessObjects\InvSalesOrderInfo.cs" />
+    <Compile Include="BusinessObjects\InvVendor.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="INOUT\CommonDAO.cs" />
+    <Compile Include="INOUT\CustomerManager.cs" />
+    <Compile Include="INOUT\ItemManager.cs" />
+    <Compile Include="INOUT\OrderManager.cs" />
+    <Compile Include="INOUT\PurchaseOrderManager.cs" />
+    <Compile Include="INOUT\SalesOrderManager.cs" />
+    <Compile Include="INOUT\VendorManager.cs" />
+    <Compile Include="Parser\InboundObjectProcess.cs" />
+    <Compile Include="Parser\InboundParser.cs" />
+    <Compile Include="Parser\InvParserException.cs" />
+    <Compile Include="Parser\SerializeDeserialize.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XSD\Customer.designer.cs" />
+    <Compile Include="XSD\MaterialMaster.designer.cs" />
+    <Compile Include="XSD\MaterialMasterRetail.designer.cs" />
+    <Compile Include="XSD\ORDERS02.designer.cs" />
+    <Compile Include="XSD\POInfo.designer.cs" />
+    <Compile Include="XSD\POSO.designer.cs" />
+    <Compile Include="XSD\Vendor.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MRLWMSC21Common\MRLWMSC21Common.csproj">
+      <Project>{9c1aa6a0-1bde-44d5-b777-23d4940e6261}</Project>
+      <Name>MRLWMSC21Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XSD\Customer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\MaterialMaster.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\MaterialMasterRetail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\ORDERS02.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\POInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\POSO.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\Vendor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XML\Customer.xml" />
+    <Content Include="XML\Material.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XML\MaterialRetail.xml" />
+    <Content Include="XML\POInfo.xml" />
+    <Content Include="XML\Vendor.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

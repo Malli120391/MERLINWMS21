@@ -1,0 +1,84 @@
+﻿
+        .module_login {
+            border:none;
+            /*background:lavender url("Images/wood_pattern.jpg") 0 50%;*/
+             background-color:#e6e3e3;
+             background: -moz-linear-gradient(left, #fff 0%, #ffb700 3%, #f2f2f2 35%, #eae8e8 97%, #dbd7d7 100%);
+            background: -webkit-gradient(linear, left , right, color-stop(0%,#fff), color-stop(3%,#f2f2f2), color-stop(35%,#f2f2f2), color-stop(97%,#eae8e8), color-stop(100%,#dbd7d7));
+            background: -webkit-linear-gradient(right, #fff 0%,#ffe49e 3%,#f2f2f2 35%,#eae8e8 97%,#dbd7d7 100%);
+            background: -o-linear-gradient(right, #fff 0%,#ffb700 3%,#f2f2f2 35%,#eae8e8 97%,#dbd7d7 100%);
+            background: -ms-linear-gradient(right, #fff 0%,#ffb700 3%,#f2f2f2 35%,#eae8e8 97%,#dbd7d7 100%);
+            background: linear-gradient(to right, #fff 20%,#f2f2f2 60%,#eae8e8 80% ,#dbd7d7 100%);
+        }
+        .MenuBG,.Header,.MobileMenu {
+            display:none;
+            background-color:white;
+        }
+        .log-in {
+            color: #6c6763;
+            padding-right: 2px;
+        }
+        .cssinv {
+            position:absolute;
+            top: 16px;
+            right: 26px;
+        }
+        .sign-up-inv {
+            position:absolute;
+            color: #e85b13;
+    padding-left: 14px;
+    padding-top:12px;
+    font-weight:bold;
+    font-family: calibri;
+    font-size: 19px;
+
+        }
+.sign-up {
+    color: #e85b13;
+    padding-left: 14px;
+    font-weight:bold;
+    font-family: calibri;
+    font-size: 19px;
+}
+        .txt_Blue_Small_login {
+           font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    width: 85%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height:25px;
+    border: 3px solid #ebe6e2;
+    background-color:white;
+        }
+        .txt_Blue_Small_login:hover,txt_Blue_Small_login::selection {
+            border-color: #CCC;
+            outline:none;
+            box-shadow: 0px 0px 0px #ccc;
+
+            /*border: 3px solid #ebe6e2;*/
+        }
+            
+        .main {
+            width: 550px;
+    margin: 60px auto 30px;
+    padding: 15px;
+    position: relative;
+    height:260px;
+    /* Styles */
+    background: #fff;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),        
+        0 1px 5px rgba(0,0,0,0.2),        
+        0 0 0 12px rgba(213, 210, 210, 0.74); 
+        }
+  

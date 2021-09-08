@@ -1,0 +1,15 @@
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore.dll.config
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\Newtonsoft.Json.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore21Core_Libraries.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore_BusinessEntities.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore_DataAccess.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore_BusinessEntities.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore_DataAccess.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core\bin\Debug\WMSCore21Core_Libraries.pdb
+D:\TFSProjects\WMSCore21\WMSCore21Core\obj\Debug\WMSCore21Core.csprojAssemblyReference.cache
+D:\TFSProjects\WMSCore21\WMSCore21Core\obj\Debug\WMSCore21Core.csproj.CoreCompileInputs.cache
+D:\TFSProjects\WMSCore21\WMSCore21Core\obj\Debug\WMSCore21Core.csproj.CopyComplete
+D:\TFSProjects\WMSCore21\WMSCore21Core\obj\Debug\WMSCore.dll
+D:\TFSProjects\WMSCore21\WMSCore21Core\obj\Debug\WMSCore.pdb

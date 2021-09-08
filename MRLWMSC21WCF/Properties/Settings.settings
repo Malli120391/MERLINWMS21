@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MRLWMSC21WCF.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MRLWMSC21WCF_localhost_FalconMFGWebService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx</Value>
+    </Setting>
+    <Setting Name="FalconWCF_localhost_FalconMFGWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/FalconWMS_SL/mWebServices/FalconMFGWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html"><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Master Data
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+                                <ul>
+                                    <ol>
+                                        <li>
+                                            <h6 id="" class="with_in_the_block">Master Data</h6>
+                                            <p>The master data related features are listed below:</p>
+                                            <img src="master/1.png" class="w-150 materialboxed" />
+                                            <ol>
+                                                <li class="scrollspy" id="Account">
+                                                    <h6 id="" class="with_in_the_block">Account</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../TPL/AccountList.aspx" target="_blank">Account</a> </span></li>
+                                                        <li><span><b>Screen:</b> The following screen displays the access to Account Master for Inventrax User / Super Admin:</span></li>
+                                                        <img src="master/2.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Description</h6>
+                                                            <ol>
+                                                                <li>
+                                                                    <span><b>Functionality:</b> Functionality of Inventrax User / Super Admin in Account List screen:</span>
+                                                                    <ol>
+                                                                        <li><span>Create a New Account through Add+ button</span></li>
+                                                                        <li><span>Have access to view all the active accounts in Account List page of Merlin application</span></li>
+                                                                        <p>Search Account will list out all the active accounts in the dropdown and will fetch the search field record based on user selection.</p>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Functionality of Inventrax User / Super Admin in Account Form screen:</b></span>
+                                                                    <ol>
+                                                                        <li><span>New account can be created by providing Account Name, Unique Account Code, Company Name and Company Logo</span></li>
+                                                                        <img src="master/3.png" class="w-150 materialboxed" />
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Warehouse Creation:</b> </span>
+                                                                    <ol>
+                                                                        <li><span>After creating an Account, warehouse under that account must be created - </span></li>
+                                                                        <li><span>Warehouse code is unique for an Account which must be of 3 Characters </span></li>
+                                                                        <img src="master/4.png" class="w-150 materialboxed" />
+                                                                        <li><span>Dock Creation – A dock can be created after creating warehouse and Dock No is unique for a warehouse under an account. A dock can be created for Inbound, Outbound or Both. For every dock created, dock locations will be added in the database.</span></li>
+                                                                        <img src="master/5.png" class="w-150 materialboxed" />
+                                                                        <li><span><b>Zone Creation:</b> Default Docking Zone code will be generated after creating the Warehouse. Zones under a warehouse can be created clicking on Create Zone apart from Dock zone ‘DZ’.</span></li>
+                                                                    </ol>
+                                                                    <ol>
+                                                                        <li>
+                                                                            <h6 id="" class="with_in_the_block">Business Rules</h6>
+                                                                            <ol>
+                                                                                <li><span>‘DZ’ Zone code cannot be updated or deleted</span></li>
+                                                                                <li><span>Zone code is unique for a warehouse</span></li>
+                                                                                <li><span>Zone can be deleted only if locations are not present under the Zone otherwise it cannot be deleted</span></li>
+                                                                                <li><span>Locations under a Zone can be added through Add Loc button.</span></li>
+                                                                                <img src="master/6.png" class="w-150 materialboxed" />
+                                                                                <img src="master/7.png" class="w-150 materialboxed" />
+                                                                            </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Account User Creation:</b> Account User will be created for the Account with Account Admin role. Email id is unique for the entire application since it is used for Login. Warehouse should be selected for the Account user.</span>
+                                                                    <img src="master/8.png" class="w-150 materialboxed" />
+                                                                </li>
+                                                                <li>
+                                                                    <span><b>Account Admin:</b> Account User which is created by Inventrax User / Super Admin for an Account can be Logged into application and the Company Logo given while Account creation can be seen in the top left.</span>
+                                                                    <img src="master/9.png" class="w-150 materialboxed" />
+                                                                </li>
+                                                                <li>
+                                                                    <h6 id="" class="with_in_the_block"> Functionality of Account Admin:</h6>
+                                                                    <img src="master/10.png" class="w-150 materialboxed" />
+                                                                    <ol>
+                                                                        <li><span>Account Admin will have access to a specific account.</span></li>
+                                                                        <li><span>Manage warehouses (including docks, zones) and users under the account.</span></li>
+                                                                        <li><span>Account Admin will set the preferences across the account.</span></li>
+                                                                        <li><span>Create Tenant users and warehouse ops users and assign roles to access the application</span></li>
+                                                                        <li><span>Selecting Warehouse is mandate when user type is Account & warehouse Ops</span></li>
+                                                                        <li><span>Selecting tenant is mandate when user type is tenant</span></li>
+                                                                        <img src="master/11.png" class="w-150 materialboxed" />
+                                                                    </ol>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="scrollspy" id="Tenant">
+                                                    <h6 id="" class="with_in_the_block">Tenant</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../TPL/TenantLIST.aspx" target="_blank">Tenant</a> </span></li>
+                                                        <img src="master/12.png" class="w-150 materialboxed" />
+
+                                                        <div class="gap10"></div>
+                                                        <h6 id="" class="with_in_the_block">Description</h6>
+                                                        <div style="padding-left:25px;">
+                                                            <li>
+                                                                <span>
+                                                                    This feature allows the user to view the list of tenants available for the respective account. An account can have multiple tenants mapped to it. It provides Search, Edit, and Update functions based on the user role.  <br />
+                                                                    The mandatory fields marked in red must be entered to create a new tenant. Authorized users can create ‘Tenant’.
+                                                                </span>
+                                                            </li>
+                                                            <img src="master/13.png" class="w-150 materialboxed" />
+                                                        </div>
+
+                                                        <div class="gap10"></div>
+                                                        <h6 id="" class="with_in_the_block">Billing Information</h6>
+                                                        <div style="padding-left:25px;">
+                                                            <li><span>All the billing information for a particular tenant is given in the billing information grid and all the bills for that tenant will be generated to that address.</span></li>
+                                                            <img src="master/14.png" class="w-150 materialboxed" />
+                                                        </div>
+
+                                                        <div class="gap10"></div>
+                                                        <h6 id="" class="with_in_the_block">Contract Information</h6>
+                                                        <div style="padding-left:25px;">
+                                                            <li><span>All the contract information for a particular tenant  with respect to warehouse is given in the contract information grid and all the details like contract period, agreement files and the warehouse details for that tenant will be mapped.</span></li>
+                                                            <img src="master/15.png" class="w-150 materialboxed" />
+                                                        </div>
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Functionality</h6>
+                                                            <ol>
+                                                                <li><span>The tenants can be searched with tenant Name </span></li>
+                                                                <li><span>The ‘Edit’ function in tenant List allows modifying the tenant details with account field disabled (since account is unique) </span></li>
+                                                                <li>
+                                                                    <span>On creation of new tenant following sections will be visible to update the required data</span>
+                                                                    <ol>
+                                                                        <li><span><b>Billing Information:</b> Allows adding billing information of the tenant.</span></li>
+                                                                        <li><span><b>Contract Information:</b> Allows adding contract information of the tenant.</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="scrollspy" id="Supplier">
+                                                    <h6 id="" class="with_in_the_block">Supplier</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mMaterialManagement/SupplierList.aspx" target="_blank">Supplier</a> </span></li>
+                                                        <img src="master/16.png" class="w-150 materialboxed" />
+                                                        <div class="gap10"></div>
+                                                        <h6 id="" class="with_in_the_block">Description</h6>
+                                                        <li><span>This feature allows the user to view the list of suppliers available in the system and provides Search, Add new supplier, Edit, Update status, Export to Excel and Import excel functions based on the user role. </span></li>
+                                                        <img src="master/17.png" class="w-150 materialboxed" />
+                                                        <div class="gap10"></div>
+                                                        <h6 id="" class="with_in_the_block">Functionality</h6>
+                                                        <li>
+                                                            <span>
+                                                                System forwards this request to concerned Dept. (System sends an alert via automated email of this request). A unique supplier code (3 characters) for this supplier will be auto-generated.
+                                                                Once the supplier is created, system enables the use of this supplier in Item Master Request.
+                                                                The mandatory fields marked in red asterisk must be entered to create a new supplier request.
+                                                                Authorized users can create ‘Supplier’ and update the ‘Is Approved’ status / Supplier details
+                                                            </span>
+                                                            <ol>
+                                                                <li><span>The suppliers can be searched with Supplier Name, tenant with the tenant name and the accounts with the account name.</span></li>
+                                                                <li><span>The ‘Edit’ function in Supplier List allows modifying the supplier details with Supplier Code field disabled (since supplier code is unique).</span></li>
+                                                                <li><span>The entire supplier list that is displayed can be exported as an ‘Excel file’ for reference.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <span>On creation of new supplier following sections will be visible to update the required data </span>
+                                                            <ol>
+                                                                <li><span><b>Supplier Details:</b> Allows adding basic information of the supplier.</span></li>
+                                                                <li>
+                                                                    <span>
+                                                                        <b>Contact Person Details:</b> Allows adding contact person information.
+                                                                        Supplier is the one who supplies material to the Tenant. Following are the requirements to create and manage Supplier
+                                                                    </span>
+                                                                </li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Business Rules</h6>
+                                                            <ol>
+                                                                <li><span>Create New Supplier and Manage the Supplier with the Data points provided from the existing system for a given tenant </span></li>
+                                                                <li><span>Unique Supplier Code should be maintained against each supplier</span></li>
+                                                                <li><span>System will bulk import Supplier list from and Excel/CSV format provided </span></li>
+                                                                <li><span>System will seamlessly sync Suppliers details from an Existing System if an Integration is setup. Suppliers list with filters are provided</span></li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="scrollspy" id="Customer">
+                                                    <h6 id="" class="with_in_the_block">Customer</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mMaterialManagement/CustomerList.aspx" target="_blank">Customer</a> </span></li>
+                                                        <img src="master/18.png" class="w-150 materialboxed" />
+                                                        <div class="gap10"></div>
+                                                        <li>
+                                                            <h6 class="with_in_the_block">Description</h6>
+                                                            <ol>
+                                                                <li><span>This feature allows the user to view the list of customers available for the respective account. An account can have multiple customers mapped to tenant. It provides Search, Edit, Update and Export to Excel and Import Excel functions based on the user role.   </span></li>
+                                                                <li><span>Customer is the one who consumes material from the Tenant.</span></li>
+                                                                <li><span>The mandatory fields marked in red must be entered to create a new customer. </span></li>
+                                                                <li><span>Authorized users can create ‘customer’.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 class="with_in_the_block">Functionality</h6>
+                                                            <ol>
+                                                                <li><span>We can request an addition of new customer in the master data, based on the materials they need. User enters details of customer like Account, Tenant, Customer Name, Customer Code as shown in the following screen. </span></li>
+                                                                <img src="master/19.png" class="w-150 materialboxed" />
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="scrollspy" id="ItemMaster">
+                                                    <h6 id="" class="with_in_the_block">Item Master</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mMaterialManagement/MaterialMasterList.aspx" target="_blank">Item Master</a> </span></li>
+                                                        <img src="master/20.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <h6 class="with_in_the_block">Description</h6>
+                                                            <ol>
+                                                                <li><span>This feature allows the user to view the list of materials available in the system and provides Search, Edit, Copy, Print Label, Add Materials, Export to Excel, Import excel functions based on the user role.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 class="with_in_the_block">Functionality</h6>
+                                                            <ol>
+                                                                <li><span>The Items can be searched with Material Type / Supplier / Part No. </span></li>
+                                                                <li><span>The ‘Edit’ function in ‘Item Master List’ allows to modify the item details (part no. is unique)</span></li>
+                                                                <li><span>The ‘Copy’ function in ‘Item Master List’ allows to create a ‘new item’ (change in Part Number) with source item data</span></li>
+                                                                <li><span>The entire item master list that is displayed can be exported as an ‘Excel file’ for reference </span></li>
+                                                                <li>
+                                                                    <h6 class="with_in_the_block">Import Excel</h6>
+                                                                    <ol>
+                                                                        <li><span>This feature allows the user to import the materials (materials will be created in bulk) from a default excel template with basic header data (part no., material type, product category, storage condition, item description, BUoM, BUoM/Qty., MUoM, MUoM/Qty.)</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li><span>The ‘Print’ function allows to print barcode labels with the provided Part Number and enters required fields Mfg. Date, Exp. Date, Serial No., Batch No., Str. Ref. No., Req. No., Quantity and selects Printer, Label size</span></li>
+                                                                <img src="master/21.png" class="w-150 materialboxed" />
+                                                                <li>
+                                                                    <h6 class="with_in_the_block">Description</h6>
+                                                                    <ol>
+                                                                        <li><span>This feature allows the user to request a new item to be added into the Item Master, before using the item in any of the system transactions.</span></li>
+                                                                        <li><span>Item detailed data is further segregated into groups such as Basic Material details, Supplier Details, UoM Configuration, Storage Condition details and MSP’s.</span></li>
+                                                                        <li><span>Item should be configured based on Supplier and Tenant.</span></li>
+                                                                        <li><span>The mandatory fields marked in red asterisk must be entered to create a new item request. </span></li>
+                                                                        <li><span>Stock Keeping Unit (SKU) /Part number is a Unique Code to identify items in the Item Master </span></li>
+
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <h6 class="with_in_the_block">Functionality</h6>
+                                                                    <ol>
+                                                                        <p>On creation of new item following sections will be visible to update the required data </p>
+                                                                        <li><span>Supplier Details and Tenant Details: Allows to add supplier(s) and Tenant for the material </span></li>
+                                                                        <li>
+                                                                            <span>UoM Configuration</span>
+                                                                            <ol>
+                                                                                <li><span>UoM Conversion</span></li>
+                                                                                <li>
+                                                                                    <span>Allows to configure UoM(s) for the material </span>
+                                                                                    <ol>
+                                                                                        <li><span>Base UoM will be configured on selection of UoM type and it will always be 1</span></li>
+                                                                                        <li><span>Once B.UoM is configured, besides B.UoM, system automatically adds Min. Pick UoM in UoM type list with its UoM, Qty. Per UoM same as B.UoM</span></li>
+                                                                                        <li><span>UoM type lists only the pending unconfigured UoM types for this item master</span></li>
+                                                                                    </ol>
+                                                                                </li>
+                                                                            </ol>
+                                                                            <p>Attachments: - Tech. Datasheets, Eng. Drawings, CoC and other significant documents can be attached for a given supplier without any limitation on the document nos.</p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <h6 class="with_in_the_block">Business Rules</h6>
+
+                                                                    <ol>
+                                                                        <br />
+                                                                        <h6 class="with_in_the_block">MSP’s</h6>
+                                                                        <li><span>“Default MSP’s will be updated based on default Material Type, MSP configuration” (Ex: For Material Type ‘RM-Raw Material’ ,default MSP’s like Mfg. Date, Serial No., Batch No. will be set)</span></li>
+                                                                        <li><span>If ‘Is Required’ checkbox is enabled then it must be a mandatory field in ‘Goods-IN’ </span></li>
+                                                                        <br />
+                                                                        <h6 class="with_in_the_block">UoM’s</h6>
+                                                                        <li><span>If decimal inventory is allowed, then Qty. Per UoM of Base. UoM  should be greater than the MinPick Qty. Per UoM  else MinPick Qty. Per UoM should be greater</span></li>
+                                                                        <li><span>UoM of B.UoM and Alt.UoM cannot be same</span></li>
+                                                                        <li><span>If UoM of B.UoM and MinPick UoM are same then Alt.UoM’s UoM should be different from the former</span></li>
+                                                                        <li><span>If UoM of ‘Alt. UoM’s , MinPick are same’, then ‘Qty. Per UoM of Alt. UoM’s should be multiple of MinPick Qty. per UoM’(other than that qty)</span></li>
+                                                                        <li><span>Once ‘Alt. UoM’s’ are configured, cannot edit ‘B.UoM, MinPick UoM’</span></li>
+                                                                        <li><span>‘B.UoM, MinPick UoM cannot be deleted’ until ‘Alt. UoM’s are deleted’</span></li>
+                                                                        <li><span>UoM Types configured for an item cannot be modified/deleted, ‘once the Goods Movement(IN/OUT) transaction is done’</span></li>
+                                                                        <li><span>When item code is configured in PO/SO then cannot edit UoM, quantity but can add a new item</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li>
+                                                                    <h6 class="with_in_the_block">Business Rules:</h6>
+                                                                    <ol>
+                                                                        <li><span>When an account user creates new item then all the tenants under that account should come in Tenant drop down</span></li>
+                                                                        <li><span>When a tenant user creates new item then only tenant user mapped tenant should come in Tenant drop down </span></li>
+                                                                        <li><span><b>Part number:</b> Part number will be unique based on account and tenant level.</span></li>
+                                                                        <li>
+                                                                            <span><b>Edit:</b></span>
+                                                                            Once material is mapped to PO, cannot modify the item details, supplier details, material storage parameter details and UoM details
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                            </ol>
+
+                                                        </li>
+                                                    </ol>
+                                                </li>
+
+                                                <li class="scrollspy" id="kitplanner">
+                                                    <h6 id="" class="with_in_the_block">Kit Planner List</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mMaterialManagement/KitPlannerList.aspx" target="_blank">Kit Planner List</a> </span></li>
+                                                        <img src="master/22.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Description</h6>
+                                                            <ol>
+                                                                <li><span>This feature allows the user to view the list of kit items available and to request a new kit to be added in the kit planner before using the item in any of the system transactions. Kit Planner provides Search, Edit, Add/Edit Kit Items, Export to Excel functions based on the user role.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Functionality</h6>
+                                                            <ol>
+                                                                <li><span>The Items can be searched with a given Part Number.</span></li>
+                                                                <li><span>The ‘Add New Kit’ function allows to add parent kit (part no., supplier, description, BUoM/Qty.)</span></li>
+                                                                <li><span>The ‘Edit’ function provided in each of the item allows user to modify the kit details.</span></li>
+                                                                <li>
+                                                                    <span>The ‘Child Kit Items’ function in the Add/Edit Kit Items column allows to add child kit items to the parent (part no., kit UoM/Qty., Qty.)</span>
+                                                                    <ol>
+                                                                        <li><span>The ‘Edit’ function in each of the Kit items allows to modify the kit details. One or more child items with their basic details can be updated to the Parent.</span></li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li><span>The entire kit planner list that is displayed can be exported as an ‘Excel file’ for reference.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Business Rules</h6>
+                                                            <ol>
+                                                                <li><span>Only the items with approved and active status, can be configured in kit planner and also will be available in the list.</span></li>
+                                                                <li><span>On modifying an already configured kit parent, system will remap the child items to the newly entered parent material.</span></li>
+                                                                <li><span>Item configured in kit planner cannot be child to the same kit but can be a child item for another kit planner item.</span></li>
+                                                                <li><span>Once kit planner is mapped to PO/SO, then cannot modify the item details, active/delete status.</span></li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+
+                                                <li class="scrollspy" id="locationManager">
+                                                    <h6 id="" class="with_in_the_block">Location Manager</h6>
+                                                    <ol>
+                                                        <li><span>Navigation:  Home <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Master Data <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> <a href="../../mMaterialManagement/LocationManager.aspx" target="_blank">Location Manager</a> </span></li>
+                                                        <img src="master/23.png" class="w-150 materialboxed" />
+                                                        <li>
+                                                            <h6 id="" class="with_in_the_block">Description</h6>
+                                                            <ol>
+                                                                <li><span>Interactive location management and warehouse zone floor map tool. Enables the warehouse operators to view the complete zone floor map from the last storage unit (locations/bins) to the highest classification (Racks) in its hierarchy in an interactive map. Operators can create, modify, add and delete locations based on the business logic configured. Bulk Locations can also be created. Operators can search and plot locations based on the Item, Tenant.</span></li>
+                                                                <li><span>The following screen is used to manage the location(s) in a warehouse. User can get the location/Bin by selecting warehouse and Zone (Site code) </span></li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>
+                                                            <h6 class="with_in_the_block">Functionality</h6>
+                                                            <ol>
+                                                                <li><span>The following screen displays the locations on selection of warehouse and Zone having Rack, Bay and Location/Bin. (Ex: S101V01).This interactive tool help the user to view the Item and their quantities in a bay by placing the mouse pointer over the bin.</span></li>
+                                                                <li><span><b>New Location:</b> System creates new locations i.e., Bulk locations in a ‘Warehouse’ and its corresponding ‘Zone (Site Code)’ using slider selection of Rack, Bay and Location/Bin available as shown in the following figure.</span></li>
+                                                                <img src="master/24.png" class="w-150 materialboxed" />
+                                                                <li><span><strong>Location Code Genealogy:</strong> For example, consider the created location as <strong>‘WM01A0102’</strong> for which</span></li>
+                                                                <p class="m0"><b>WM - Zone code</b></p>
+                                                                <div style="padding-left:25px">
+                                                                    <p class="m0"><b>01 – Rack</b></p>
+                                                                    <p class="m0"><b>A – Level</b></p>
+                                                                    <p class="m0"><b>01 – Column</b></p>
+                                                                    <p class="m0"><b>02 - Bin </b></p>
+                                                                </div>
+                                                                <li><span><b>Delete:</b> Allows deleting the empty Location(s)/Bin(s) in a Warehouse and its corresponding Zone (Site code) </span></li>
+                                                                <img src="master/25.png" class="w-150 materialboxed" />
+                                                                
+                                                                    <li><h6 class="with_in_the_block">Modify</h6>
+                                                                        <ol>
+                                                                            <li><span>Permits to view and modify the location(s) details in separate pop-up as shown above.</span></li>
+                                                                            <li><span>‘Allow Mixed Material’ is checked in Green, then Mixed materials are allowed to be placed in that location while goods receipt.</span></li>
+                                                                            <li><span>‘Allow Mixed Material’ is unchecked, then Fixed materials are allowed to be placed in that location while goods receipt.</span></li>
+                                                                            <li><span>For a location ‘Is Quarantine’ is selected as ‘Yes’, then only the damaged/discrepancy materials are to be received in that location.</span></li>
+                                                                           <li><span>
+                                                                                ‘Fast- Moving Location’ is checked in Green, then Fast-moving goods will be placed in that location while Goods receipt
+                                                                                ‘Active Location’ is checked in Green, then the location will be blocked and will not be shown on selection of warehouse and Zone
+                                                                                Specific Tenant and Supplier under Tenant can be mapped to the selected location in Modify
+                                                                            </span></li>
+                                                                            <li><span>Once the Location/Bin details are updated, the system terminates the screen.</span></li>
+                                                                        </ol>
+                                                                    </li>
+                                                                <li><h6 class="with_in_the_block">Bulk Modify</h6>
+                                                                    <ol>
+                                                                        <li><span>Permits to Bulk modify the location(s) details in separate pop-up as shown below.</span></li>
+                                                                        <img src="master/26.png" class="w-150 materialboxed" />
+                                                                        <li><span>‘Allow Mixed Material’ is checked in Green, then Mixed materials are allowed to be placed in that location while goods receipt.</span></li>
+                                                                        <li><span>‘Is Quarantine’ is checked in Green, then only the damaged/discrepancy materials are to be received in that location.</span></li>
+                                                                        <li><span>‘Fast- Moving Location’ is checked in Green, then Fast-moving goods will be placed in that location while Goods receipt</span></li>
+                                                                        <li><span>‘Active Location’ is checked in Green, then the location will be blocked and will not be shown on selection of warehouse and Zone </span></li>
+                                                                        <li><span>Specific Tenant and Supplier under Tenant can be mapped to the selected location in Modify</span></li>
+                                                                        <li><span>Bulk Modify is performed based on Rack wise – columns and levels under the rack and all the above 
+                                                                            mentioned updates can be applied based on User selection.
+                                                                            </span>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                <li><h6 class="with_in_the_block">Add</h6>
+                                                                    <ol>
+                                                                        <li><span>Permits to Add New Locations by providing details in separate pop-up as shown below Permits to Add New Locations by providing details in separate pop-up as shown below</span></li>
+                                                                        <img src="master/27.png" class="w-150 materialboxed" />
+                                                                        <li><span><b>Search:</b> System shows ‘Location/Bin(s)’ on selection of search category in a ‘Warehouse’ and its corresponding ‘Zone (Site code)’ as shown in the following screens</span></li>
+                                                                        <li><span>Select Search Category <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Tenant. Will fetch the Locations mapped to a specific tenant and will be highlighted in ‘Blue’ color </span></li>
+                                                                        <img src="master/28.png" class="w-150 materialboxed" />
+                                                                        <li><span>If Select Search Category <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Part Number. Will fetch the Locations where the Part Number is present and will be highlighted in ‘Turquoise color</span></li>
+                                                                        <img src="master/29.png" class="w-150 materialboxed" />
+                                                                        <li><span>Green color indicates Filled locations.</span></li>
+                                                                        <li><span>Pale purple color indicates Empty locations.</span></li>
+                                                                        <li><span>On moving the mouse pointer over the filled locations, it displays the Parts of a supplier present in the location and the current quantity under Available, In-OH, Ob-OH.</span></li>
+                                                                        <li><span>On moving the mouse pointer over the filled locations, it displays the Bin Replenishment Data.</span></li>
+                                                                        <li><span>On moving the mouse pointer over the filled locations, it displays the mapped Suppliers.</span></li>
+                                                                        <li><h6 class="with_in_the_block">Business Rules</h6>
+                                                                            <ol>
+                                                                                <li><span>Location Code must start with zone code and based on genealogy</span></li>
+                                                                                <li><span>Locations can be created by Warehouse Manager / Account Admin</span></li>
+                                                                                <li><span>If a location is marked as Fast-Moving location, then the same will be suggested during Goods receipt if the item is configured with Bin replenishment details in Item master</span></li>
+                                                                                <li><span>A location cannot be deleted when Items are currently present</span></li>
+                                                                                <li><span>User type with ‘ View Only’ Role can only View the Location Manager screen</span></li>
+                                                                            </ol>
+                                                                        </li>
+                                                                    </ol>
+                                                                </li>
+                                                                
+                                                            </ol>
+                                                        </li>
+                                                        
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#Account"><i class="material-icons article">description</i>Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#Tenant"><i class="material-icons article">description</i>Tenant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#Supplier"><i class="material-icons article">description</i>Supplier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#Customer"><i class="material-icons article">description</i>Customer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#ItemMaster"><i class="material-icons article">description</i>Item Master&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#kitplanner"><i class="material-icons article">description</i>Kit Planner List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#locationManager"><i class="material-icons article">description</i>location Manager&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>

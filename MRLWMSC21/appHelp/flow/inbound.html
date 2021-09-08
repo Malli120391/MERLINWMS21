@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="cjs/app.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root {
+            --bg-color: #FF5722;
+        }
+
+        .aside li a {
+            display: block;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+
+        .aside {
+            position: absolute;
+            padding: 0 10px;
+        }
+
+        .sideNav {
+            position: fixed;
+        }
+
+            .sideNav ul {
+                margin-top: 0;
+                margin-left: 5vw;
+            }
+
+                .sideNav ul li a {
+                    position: relative;
+                    transition: color 0.1s ease-in;
+                    display: block;
+                    padding: 3px;
+                    padding-left: 40px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    color: #4a4949;
+                    transition: 0.3s all;
+                    border-right: 3px solid transparent;
+                }
+
+                    .sideNav ul li a .article {
+                        fill: #949494;
+                        position: absolute;
+                        top: 3px;
+                        left: -12px;
+                        font-size: 20px;
+                    }
+
+        .table-of-contents a.active {
+            border-left: 0px solid var(--bg-color);
+            padding-left: 40px;
+            color: var(--bg-color);
+            border-right: 3px solid;
+            transition: 0.3s all;
+        }
+
+        a.active .article {
+            fill: var(--bg-color) !important;
+        }
+
+        .table-of-contents a:hover {
+            border-left: 0px solid #ff5722;
+            color: var(--bg-color);
+            padding-left: 40px;
+        }
+
+        .footerBlock ul {
+            display: flex;
+            padding-left: 9%;
+            padding-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="../img/MRLWMSC21.png" alt="logo" style="width: 40%;" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../troubleshooting/inboundTroubleshoot.html" ><i class="material-icons">settings_ethernet</i>Trouble Shoot</a></li>
+                    <li><a href="javascript:void(0)"><a onclick="window.history.back();" class="btn waves-effect waves-light indigo darken-2">Go Back</a> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col m2" style="padding: 0; ">
+                    <div class="card m0" style="     position: fixed;width: 17%;bottom: 0;padding-top: 50px;top: 0;  box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock" style="padding:0px;">
+                            <ul class="collapsible">
+                                <li>
+                                    <a class="collapsible-header" href="master.html"><i class="material-icons">all_inbox</i>Master Data</a>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Orders</div>
+                                    <div class="collapsible-body">
+                                        <div class="info">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <a class="collapsible-header" href="cycleCount.html">Cycle Count</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="materialTransfer.html">Material Transfer</a>
+                                                </li>
+                                                <li>
+                                                    <a class="collapsible-header" href="returns.html">Returns</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="collapsible-header" href="inbound.html"><i class="material-icons">archive</i>Inbound</a>
+                                </li>
+
+                                <li>
+                                    <a href="outbound.html" class="collapsible-header"><i class="material-icons">unarchive</i>Outbound</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="3pl.html" class="collapsible-header"><i class="material-icons">commute</i>3PL</a>
+                                </li>
+                                <!--<li>
+                                    <a href="cycleCount.html" class="collapsible-header"><i class="material-icons">pie_chart</i>Reports</a>
+                                </li>-->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col m7">
+                    <a href="flow.html" class="chip z-depth-1 white">
+                        Home
+                        <i class="close material-icons">home</i>
+                    </a>
+                    <div onclick="window.history.back();" class="chip z-depth-1 white chipactive">
+                        Inbound
+                        <i class="close material-icons">close</i>
+                    </div>
+                    <div class="card m0" style="    box-shadow: 0 2px 5px 0 rgb(42, 82, 223); overflow: hidden; border-right: 0px;">
+
+                        <div class="contentBlock">
+                            <div class="post">
+
+
+                                <ul>
+                                    <!--ASN IMPORT-->
+                                    <ol>
+
+
+                                        <div class="gap10"></div>
+
+                                        <li id="inwardorder" class="scrollspy">
+                                            <h6 id="" class="with_in_the_block">Inward Order</h6>
+                                            <ol>
+                                                <li><span>To create an Inward Order; Account, Tenant and Supplier must be created as mentioned earlier in masters module.</span></li>
+                                                <li><span>Account and Tenant must be mapped to the Supplier.</span></li>
+                                                <li><span>Now go to Orders <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Inward Order, the below page is displayed.</span></li>
+                                                <img src="inbound/1.png" class="w-150 materialboxed" />
+                                                <li><span>Click on “Add+” button and the below popup is displayed.</span></li>
+                                                <img src="inbound/2.png" class="w-150 materialboxed" />
+                                                <li><span>Order type, Inward Date, Tenant and Supplier are mandatory. Once the data is given and saved Inward Order Ref. No. is auto generated.</span></li>
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/3.png" class="w-150 materialboxed" />
+                                                <li><span>The status changes to “OPEN”.</span></li>
+                                                <li><span>Now in above screen click on “Add material +” button and a screen is displayed as shown below.</span></li>
+                                                <img src="inbound/4.png" class="w-150 materialboxed" />
+                                                <li><span>The part # in material details must be created initially in Item master. (Refer Masters manual 2.5)</span></li>
+                                                <li><span>Once the mandatory fields i.e. part #, UoM Qty. and Quantity are given click on “Update” button.</span></li>
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/5.png" class="w-150 materialboxed" />
+                                                <li><span>In the above screen click on “Add Invoice +” button in Supplier Invoice details and the below screen is displayed.</span></li>
+                                                <img src="inbound/6.png" class="w-150 materialboxed" />
+                                                <li><span>Invoice Number and Invoice date are mandatory. Once the supplier invoice details are given click on “Update” button and an alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/7.png" class="w-150 materialboxed" />
+                                                <li><span>Now in the same screen in Material Details, Invoice column click on Add Invoice which is in red (indicating invoice to be added).</span></li>
+                                                <li><span>The below popup is displayed.</span></li>
+                                                <img src="inbound/8.png" class="w-150 materialboxed" />
+                                                <li><span>Click on “Add Invoice Details” button and the below screen is displayed.</span></li>
+                                                <img src="inbound/9.png" class="w-150 materialboxed" />
+                                                <li><span>Now give the mandatory fields and submit them.</span></li>
+                                                <li><span>The submitted invoice details are displayed in the table as shown below.</span></li>
+                                                <img src="inbound/10.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Update” button beside the material details table.</span></li>
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/11.png" class="w-150 materialboxed" />
+                                                <li><span>Now in the same screen in Material Details, Invoice column the “Add Invoice” turns blue (indicating invoice is added and updated)</span></li>
+                                            </ol>
+                                        </li>
+                                        <li id="newinbound" class="scrollspy">
+                                            <h6 id="" class="with_in_the_block">New Inbound</h6>
+                                            <ol>
+                                                <li><span>In the main menu go to Inbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> New Inbound and the below screen is displayed.</span></li>
+                                                <img src="inbound/12.png" class="w-150 materialboxed" />
+                                                <li><span>Give the mandatory fields (Warehouse must be initially created in the Account (Refer Master manual 2.1)) and click on initiate shipment.</span></li>
+                                                <li><span>The status changes to “Initiated” as shown below.</span></li>
+                                                <img src="inbound/13.png" class="w-150 materialboxed" />
+                                                <li><span>To update the date and time, in the same page give the date and time and click on “Update” button. </span></li>
+                                                <img src="inbound/14.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Add Order / Invoice +” in the Inward Order/Invoice Details panel.</span></li>
+                                                <li><span>Below displayed screen is shown.</span></li>
+                                                <li><span>The Order Number must be the same as Inward Order Ref # in Orders>Inward Order>Inward Order Header Details.</span></li>
+                                                <img src="inbound/15.png" class="w-150 materialboxed" />
+                                                <li><span>Once the Inward Order/Invoice Details are given, click on “Update” button.</span></li>
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/16.png" class="w-150 materialboxed" />
+                                                <li><span>Now go to 3. Shipment Expected Details and click on “Update” and the below shown alert message is displayed.</span></li>
+                                                <img src="inbound/17.png" class="w-150 materialboxed" />
+                                                <li><span>Now if any docks are updated in Master Data>Account>Warehouse, those docks can be released here.</span></li>
+                                                <li><span>If no docks are updated there and if clicked on Dock in receiving dock Management panel then an alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/18.png" class="w-150 materialboxed" />
+                                                <li><span>Now coming to 6.Shipment Received Details, the below screen is displayed.</span></li>
+                                                <img src="inbound/19.png" class="w-150 materialboxed" />
+                                                <li><span>The below shown fields are displayed. Select the receiving store and click on “Receive” button.</span></li>
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/20.png" class="w-150 materialboxed" />
+                                                <li><span>Now RTR must be done. In 6.Shipment Received Details click on RTR[1] and the below screen is shown.</span></li>
+                                                <img src="inbound/21.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Receive” which navigates the page to Goods In as shown below.</span></li>
+                                                <img src="inbound/22.png" class="w-150 materialboxed" />
+                                                <li><span>Now select the PO Number, in Putaway list panel give all the mandatory fields as shown below.</span></li>
+                                                <img src="inbound/23.png" class="w-150 materialboxed" />
+                                                <li><span>Now click on “Receive” button and an alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/24.png" class="w-150 materialboxed" />
+                                                <li><span>Each Item must be received in the same manner.</span></li>
+                                                <li><span>Now go to Inbound <img style="vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAKRJREFUKBVjYBhaoKGhQQKE8bmaCV3y69evm4B4Pz6NGJpYWFgKGRkZpfFpZES3CcSvrKy0/vv3747///8/4ebmdgTa+gJZHVZNhDRiOA9mItCmN0D2VyAW+PbtGz9MHERj1VRWVqYOlNsPdN5/oB8du7q6biJrwnAekgZGkIb29vYbyBpAbGw2LQNagFMDSBMLiEAGzMzM0SA+NhuQ1Y2ygSEAAPHeS+oVWCBfAAAAAElFTkSuQmCC"> Search Inbound, the below data is displayed.</span></li>
+                                                <img src="inbound/25.png" class="w-150 materialboxed" />
+                                                <li><span>Search for the PO Number and click on modify icon.</span></li>
+                                                <li><span>The below screen is displayed and the status will be shown as “Shipment Received”.</span></li>
+                                                <img src="inbound/26.png" class="w-150 materialboxed" />
+                                                <li><span>Now scroll down to 8.GRN Details and click on “Add GRN +” button.</span></li>
+                                                <li><span>The below screen is displayed.</span></li>
+                                                <img src="inbound/27.png" class="w-150 materialboxed" />
+                                                <li><span>Give all the mandatory fields and click on “Line Items” button. A popup is displayed as shown below.</span></li>
+                                                <img src="inbound/28.png" class="w-150 materialboxed" />
+                                                <li><span>Now check the Action checkbox and click on “Save” button.</span></li>
+                                                <li><span>Then click the “Update” button and no the status changed to “GRN Updated” as shown below.</span></li>
+                                                <img src="inbound/29.png" class="w-150 materialboxed" />
+                                                <li><span> As the complete quantity is received no discrepancy is shown here. But if partial quantity is received then the discrepancy panel is displayed as shown below.</span></li>
+                                                <img src="inbound/30.png" class="w-150 materialboxed" />
+                                                <li><span>Here the discrepancy must be checked and saved.</span></li>
+                                                <li><span>Now in 10.Shipment Verification panel shown below, click on “verify” button to close the shipment.</span></li>
+                                                <img src="inbound/31.png" class="w-150 materialboxed" />
+                                                <li><span>An alert message is displayed as shown below.</span></li>
+                                                <img src="inbound/32.png" class="w-150 materialboxed" />
+                                                <li><span><b>With this Inbound process is completed.</b></span></li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m2">
+                    <div class="sideNav">
+
+                        <ul class="table-of-contents">
+                            <h5 style="font-size: 20px;left: -10px; position: relative; margin-top: 0px;">Help</h5>
+                            <li><a href="#inwardorder"><i class="material-icons article">description</i>Inward Order</a></li>
+                            <li><a href="#newinbound"><i class="material-icons article">description</i>New Inbound</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBlock">
+            <ul>
+                <li> ©&nbsp;&nbsp;2018 Inventrax</li>
+                <li> <a href="javascript:void(0)">&nbsp;&nbsp;-&nbsp;&nbsp;Privacy Policy</a> </li>
+                <li> <a href="javascript:void(0">&nbsp;&nbsp;-&nbsp;&nbsp;Terms of Service</a> </li>
+            </ul>
+        </div>
+        <script src="cjs/jquery.js"></script>
+        <script src="cjs/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.collapsible').collapsible();
+            });
+
+            $(document).ready(function () {
+                $('.materialboxed').materialbox();
+                $('.scrollspy').scrollSpy();
+            });
+
+
+
+        </script>
+        <script src="https://embed.small.chat/T7MH09W57G7V8R52P5.js" async></script>
+
+</body>
+</html>
